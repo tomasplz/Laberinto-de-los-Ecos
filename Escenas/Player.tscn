@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3xplgg6t3civ"]
+
+[ext_resource type="Script" path="res://Escenas/player.gd" id="1_3tpoy"]
+[ext_resource type="Texture2D" uid="uid://b1mxodluyrkun" path="res://super-mario-bros-8-bit-logo-5063362780-seeklogo.com.png" id="1_gvmme"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ytcck"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(365, 126)
+scale = Vector2(0.287394, 0.287394)
+script = ExtResource("1_3tpoy")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(6.03515, 8.61824)
+shape = SubResource("RectangleShape2D_ytcck")
+
+[node name="Super-mario-bros-8-bit-logo-5063362780-seeklogo_com" type="Sprite2D" parent="."]
+scale = Vector2(0.589018, 0.589018)
+texture = ExtResource("1_gvmme")
