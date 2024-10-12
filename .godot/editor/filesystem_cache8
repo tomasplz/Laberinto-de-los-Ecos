@@ -1,10 +1,4 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728697954
-icon.svg::CompressedTexture2D::8939604862758558659::1728697901::1728697929::1::::<><>::
-mapa.tscn::PackedScene::-1::1728685639::0::1::::<><>::
-node_2d.tscn::PackedScene::1256308720429700717::1728696154::0::1::::<><>::
-super-mario-bros-8-bit-logo-5063362780-seeklogo.com.png::CompressedTexture2D::4237524818783317541::1728627409::1728697956::1::::<><>::
-::res://Escenas/::1728697954
-player.gd::GDScript::-1::1728645188::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::-1::1728685639::0::1::::<><>::
-Untitled Diagram.drawio.png::CompressedTexture2D::6135411402855280446::1728644657::1728697956::1::::<><>::
+::res://::1728696094
+icon.svg::CompressedTexture2D::8939604862758558659::1728695682::1728696099::1::::<><>::
+Menu.tscn::PackedScene::4232210167829402676::1728695727::0::1::::<><>::
