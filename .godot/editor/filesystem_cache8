@@ -1,10 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728697954
-icon.svg::CompressedTexture2D::8939604862758558659::1728697901::1728697929::1::::<><>::
-mapa.tscn::PackedScene::-1::1728685639::0::1::::<><>::
-node_2d.tscn::PackedScene::1256308720429700717::1728696154::0::1::::<><>::
-super-mario-bros-8-bit-logo-5063362780-seeklogo.com.png::CompressedTexture2D::4237524818783317541::1728627409::1728697956::1::::<><>::
-::res://Escenas/::1728697954
-player.gd::GDScript::-1::1728645188::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::-1::1728685639::0::1::::<><>::
-Untitled Diagram.drawio.png::CompressedTexture2D::6135411402855280446::1728644657::1728697956::1::::<><>::
+::res://::1729198143
+Arduino.cs::CSharpScript::-1::1729197636::0::1::::<>Node2D<>::
+arduino.tscn::PackedScene::3671395916234419462::1729197857::0::1::::<><>::res://Arduino.cs
+mapa.tscn::PackedScene::-1::1729197636::0::1::::<><>::
+node_2d.tscn::PackedScene::1256308720429700717::1729197856::0::1::::<><>::
+super-mario-bros-8-bit-logo-5063362780-seeklogo.com.png::CompressedTexture2D::4237524818783317541::1729197636::1729197684::1::::<><>::
+::res://Escenas/::1729197684
+player.gd::GDScript::-1::1729197636::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::4400119718369752477::1729197636::0::1::::<><>::res://Escenas/player.gd<>uid://b1mxodluyrkun::::res://super-mario-bros-8-bit-logo-5063362780-seeklogo.com.png
+Untitled Diagram.drawio.png::CompressedTexture2D::6135411402855280446::1729197636::1729197684::1::::<><>::

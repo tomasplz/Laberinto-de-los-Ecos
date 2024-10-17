@@ -1,0 +1,21 @@
+# Archivos de configuración de Godot
+/.godot/
+.godot/
+*.import
+*.tmp
+*.tscn
+*.gd
+
+# Compilaciones de C#
+*.sln
+*.csproj
+*.userprefs
+/bin/
+obj/
+*.dll
+*.pdb
+
+# Archivos de caché
+/.mono/
+.mono/
+

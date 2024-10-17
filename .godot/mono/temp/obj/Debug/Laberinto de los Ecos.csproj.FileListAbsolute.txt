@@ -1,0 +1,26 @@
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/Laberinto de los Ecos.csproj.AssemblyReference.cache
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/Laberinto de los Ecos.GeneratedMSBuildEditorConfig.editorconfig
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/Laberinto de los Ecos.AssemblyInfoInputs.cache
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/Laberinto de los Ecos.AssemblyInfo.cs
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/Laberinto de los Ecos.csproj.CoreCompileInputs.cache
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/Laberinto de los Ecos.sourcelink.json
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/Laberinto de los Ecos.deps.json
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/Laberinto de los Ecos.runtimeconfig.json
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/Laberinto de los Ecos.dll
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/Laberinto de los Ecos.pdb
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/System.IO.Ports.dll
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/runtimes/linux-arm/native/libSystem.IO.Ports.Native.so
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/runtimes/linux-x64/native/libSystem.IO.Ports.Native.so
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/runtimes/linux/lib/netstandard2.0/System.IO.Ports.dll
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/runtimes/osx/lib/netstandard2.0/System.IO.Ports.dll
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/bin/Debug/runtimes/win/lib/netstandard2.0/System.IO.Ports.dll
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/Laberint.BC9EDA64.Up2Date
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/Laberinto de los Ecos.dll
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/refint/Laberinto de los Ecos.dll
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/Laberinto de los Ecos.pdb
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/Laberinto de los Ecos.genruntimeconfig.cache
+/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/Debug/ref/Laberinto de los Ecos.dll
