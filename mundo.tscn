@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://defvmyaelj307"]
+[gd_scene load_steps=3 format=3 uid="uid://defvmyaelj307"]
 
 [ext_resource type="PackedScene" uid="uid://ch0d331ek1f3y" path="res://player_1.tscn" id="1_yq3mj"]
+[ext_resource type="PackedScene" uid="uid://c5nxkdgckbb4h" path="res://player_2.tscn" id="2_hmquf"]
 
 [node name="Mundo" type="Node"]
 
 [node name="Player 1" parent="." instance=ExtResource("1_yq3mj")]
+texture_filter = 1
 position = Vector2(44, 31)
+
+[node name="player2" parent="." instance=ExtResource("2_hmquf")]
+texture_filter = 1
+position = Vector2(45, 61)

@@ -6,8 +6,8 @@ var direccion2: = 0.0
 @onready var anim := $AnimationPlayer
 @onready var sprite := $Sprite2D
 func _physics_process(_delta):
-	direccion = Input.get_axis("ui_left","ui_right") 
-	direccion2= Input.get_axis("ui_up","ui_down")
+	direccion = Input.get_axis("ui_left2","ui_right2") 
+	direccion2= Input.get_axis("ui_up2","ui_down2")
 	velocity.x = direccion * speed
 	velocity.y = direccion2 * speed
 	var animacion_a_reproducir = ""
@@ -28,4 +28,6 @@ func _physics_process(_delta):
 	if animacion_a_reproducir != " ":
 		anim.play(animacion_a_reproducir)
 	sprite.flip_h = direccion < 0 if direccion!=0 else sprite.flip_h 
+	
+	
 	move_and_slide()

@@ -1,5 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729105548
-icon.svg::CompressedTexture2D::8939604862758558659::1728864434::1729105319::1::::<><>::
-node_2d.tscn::PackedScene::1256308720429700717::1729105447::0::1::::<><>::
-Player.png::CompressedTexture2D::529389543109302408::1729105548::1729105548::1::::<><>::
+::res://::1729198717
+icon.svg::CompressedTexture2D::8939604862758558659::1728864434::1729198326::1::::<><>::
+mundo.tscn::PackedScene::7451637061533917914::1729197810::0::1::::<><>::uid://ch0d331ek1f3y::::res://player_1.tscn
+node_2d.tscn::PackedScene::1256308720429700717::1729115941::0::1::::<><>::
+player2.png::CompressedTexture2D::8468314774714368427::1729198717::1729198717::1::::<><>::
+Player.png::CompressedTexture2D::529389543109302408::1729197810::1729198326::1::::<><>::
+player_1.gd::GDScript::-1::1729197810::0::1::::<>CharacterBody2D<>::
+player_1.tscn::PackedScene::5316006380926412244::1729197810::0::1::::<><>::res://player_1.gd<>uid://hso76rggd457::::res://Player.png
