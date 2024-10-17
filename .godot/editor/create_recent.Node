@@ -1,0 +1,9 @@
+CollisionShape2D
+Area2D
+Sprite2D
+StaticBody2D
+RigidBody2D
+TileMap
+AnimationPlayer
+CharacterBody2D
+Button
