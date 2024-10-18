@@ -1,0 +1,46 @@
+#include <Keypad.h>
+
+const byte FILAS = 4;    // Número de filas
+const byte COLUMNAS = 4; // Número de columnas
+
+// Pines conectados a las filas y columnas del Keypad
+byte pinesFilas[FILAS] = {2, 3, 4, 5};        // Pines de filas del Arduino
+byte pinesColumnas[COLUMNAS] = {6, 7, 8, 9};  // Pines de columnas del Arduino
+
+// Mapa de caracteres de los botones del Keypad (no lo necesitamos usar directamente, pero sigue definido)
+char teclas[FILAS][COLUMNAS] = {
+  {'1', '2', '3', 'A'},
+  {'4', '5', '6', 'B'},
+  {'7', '8', '9', 'C'},
+  {'*', '0', '#', 'D'}
+};
+
+// Creamos el objeto Keypad
+Keypad keypad = Keypad(makeKeymap(teclas), pinesFilas, pinesColumnas, FILAS, COLUMNAS);
+
+void setup() {
+  Serial.begin(9600);  // Inicializamos la comunicación serial
+}
+
+void loop() {
+  // Lee la tecla presionada
+  char tecla = keypad.getKey();
+
+  // Si se presiona una tecla, obtenemos y enviamos las coordenadas de la tecla
+  if (tecla) {
+	// Buscar la fila y columna de la tecla presionada
+	for (byte fila = 0; fila < FILAS; fila++) {
+	  for (byte col = 0; col < COLUMNAS; col++) {
+		if (teclas[fila][col] == tecla) {
+		  // Enviar las coordenadas de la tecla presionada (solo una vez)
+		  Serial.print("(");
+		  Serial.print(fila);
+		  Serial.print(",");
+		  Serial.print(col);
+		  Serial.println(")");
+		  return;  // Salir del bucle una vez encontrada la tecla
+		}
+	  }
+	}
+  }
+}
