@@ -1,2 +1,2 @@
-﻿39211
-/app/bin/godot-bin
+﻿57423
+C:/Users/julia/OneDrive/Documentos/proyecto/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64.exe

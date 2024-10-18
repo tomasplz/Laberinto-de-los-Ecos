@@ -1,0 +1,26 @@
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\Laberinto de los Ecos.csproj.AssemblyReference.cache
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\Laberinto de los Ecos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\Laberinto de los Ecos.AssemblyInfoInputs.cache
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\Laberinto de los Ecos.AssemblyInfo.cs
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\Laberinto de los Ecos.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\Laberinto de los Ecos.sourcelink.json
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\Laberinto de los Ecos.deps.json
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\Laberinto de los Ecos.runtimeconfig.json
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\Laberinto de los Ecos.dll
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\Laberinto de los Ecos.pdb
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\System.IO.Ports.dll
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\runtimes\linux\lib\netstandard2.0\System.IO.Ports.dll
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\runtimes\osx\lib\netstandard2.0\System.IO.Ports.dll
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\bin\Debug\runtimes\win\lib\netstandard2.0\System.IO.Ports.dll
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\Laberint.BC9EDA64.Up2Date
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\Laberinto de los Ecos.dll
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\refint\Laberinto de los Ecos.dll
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\Laberinto de los Ecos.pdb
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\Laberinto de los Ecos.genruntimeconfig.cache
+C:\Users\julia\OneDrive\Documentos\GitHub\Laberinto-de-los-Ecos\.godot\mono\temp\obj\Debug\ref\Laberinto de los Ecos.dll
