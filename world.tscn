@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgpjla4vbkrmo"]
+
+[ext_resource type="PackedScene" uid="uid://x0uasgoef7lv" path="res://Player.tscn" id="1_qkv5b"]
+[ext_resource type="Script" path="res://area_2d.gd" id="2_jj83g"]
+[ext_resource type="PackedScene" uid="uid://cte4um6gdrsl" path="res://plataforma.tscn" id="2_sf8wf"]
+[ext_resource type="Texture2D" uid="uid://wsds6oenhv66" path="res://prueba/puerta.webp" id="4_k1ucs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wwenq"]
+size = Vector2(101, 120)
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_qkv5b")]
+position = Vector2(596, 475)
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_jj83g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(944.5, 464)
+shape = SubResource("RectangleShape2D_wwenq")
+
+[node name="Plataforma" parent="." instance=ExtResource("2_sf8wf")]
+position = Vector2(599, 558)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(944.875, 465.875)
+scale = Vector2(0.152806, 0.150765)
+texture = ExtResource("4_k1ucs")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

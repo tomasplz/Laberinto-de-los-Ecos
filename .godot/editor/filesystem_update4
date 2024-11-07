@@ -1,1 +1,6 @@
-res://node_2d.tscn
+res://world.tscn
+res://world2.tscn
+res://Player.tscn
+res://plataforma.tscn
+res://area_2d2.gd
+res://area_2d.gd

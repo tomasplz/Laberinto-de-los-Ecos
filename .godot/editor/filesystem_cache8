@@ -1,4 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728696094
-icon.svg::CompressedTexture2D::8939604862758558659::1728695682::1728696099::1::::<><>::
-Menu.tscn::PackedScene::4232210167829402676::1728695727::0::1::::<><>::
+::res://::1729177578
+area_2d.gd::GDScript::-1::1729113404::0::1::::<>Area2D<>::
+icon.svg::CompressedTexture2D::8939604862758558659::1729088568::1729088784::1::::<><>::
+plataforma.gd::GDScript::-1::1729112210::0::1::::<>StaticBody2D<>::
+plataforma.tscn::PackedScene::179896591018818571::1729113734::0::1::::<><>::res://plataforma.gd<>uid://chrk42vu7ic58::::res://prueba/rectangulo.png
+player.gd::GDScript::-1::1729112223::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::1667168142712372787::1729113734::0::1::::<><>::uid://bnpyefgx86wo1::::res://prueba/fantasma2.webp<>res://player.gd
+world2.tscn::PackedScene::1567542917453127371::1729113734::0::1::::<><>::uid://x0uasgoef7lv::::res://Player.tscn<>uid://cte4um6gdrsl::::res://plataforma.tscn
+world.tscn::PackedScene::5225506237948366506::1729113734::0::1::::<><>::uid://x0uasgoef7lv::::res://Player.tscn<>res://area_2d.gd<>uid://cte4um6gdrsl::::res://plataforma.tscn<>uid://wsds6oenhv66::::res://prueba/puerta.webp
+::res://prueba/::1729113679
+fantasma2.webp::CompressedTexture2D::3331305941276368822::1729109945::1729109946::1::::<><>::
+puerta.webp::CompressedTexture2D::1581529304928906777::1729113678::1729113679::1::::<><>::
+rectangulo.png::CompressedTexture2D::5299918104145487269::1729109952::1729109953::1::::<><>::
