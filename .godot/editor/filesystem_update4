@@ -1,5 +1,7 @@
-res://mapa.tscn
-res://world.tscn
-res://world2.tscn
-res://Player.tscn
-res://plataforma.tscn
+res://node_2d.tscn
+res://player_2.gd
+res://player_1.tscn
+res://mundo.tscn
+res://player_1.gd
+res://player_2.tscn
+res://player2.gd
