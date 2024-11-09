@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/Laberinto de los Ecos.csproj": {}
+    "/home/arkhm/Documents/GitHub/Laberinto-de-los-Ecos/Laberinto de los Ecos.csproj": {}
   },
   "projects": {
-    "/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/Laberinto de los Ecos.csproj": {
+    "/home/arkhm/Documents/GitHub/Laberinto-de-los-Ecos/Laberinto de los Ecos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/Laberinto de los Ecos.csproj",
+        "projectUniqueName": "/home/arkhm/Documents/GitHub/Laberinto-de-los-Ecos/Laberinto de los Ecos.csproj",
         "projectName": "Laberinto de los Ecos",
-        "projectPath": "/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/Laberinto de los Ecos.csproj",
+        "projectPath": "/home/arkhm/Documents/GitHub/Laberinto-de-los-Ecos/Laberinto de los Ecos.csproj",
         "packagesPath": "/home/arkhm/.nuget/packages/",
-        "outputPath": "/home/arkhm/Documentos/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/",
+        "outputPath": "/home/arkhm/Documents/GitHub/Laberinto-de-los-Ecos/.godot/mono/temp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/arkhm/.nuget/NuGet/NuGet.Config"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -74,11 +69,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.32, 6.0.32]"
+              "version": "[6.0.35, 6.0.35]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.32, 6.0.32]"
+              "version": "[6.0.35, 6.0.35]"
             }
           ],
           "frameworkReferences": {
@@ -86,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/app/lib/dotnet/sdk/8.0.303/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.110/RuntimeIdentifierGraph.json"
         }
       }
     }
