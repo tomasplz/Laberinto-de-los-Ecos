@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cj0ny6rys086x"]
+
+[sub_resource type="Resource" id="Resource_qvyox"]
+metadata/__load_path__ = "res://Scripts/Arduino/Arduino.cs"
+
+[node name="Node2D" type="Node2D"]
+script = SubResource("Resource_qvyox")
