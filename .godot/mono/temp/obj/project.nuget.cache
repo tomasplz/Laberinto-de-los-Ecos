@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "EfeY6REN9/XbD7Sarrlkv3JWBK7N2RRAOpyU1JAN6+VB3sWmTrwUWRjkxcQXfuexb1JoXhGPP7Gaf8h+/G2j4w==",
+  "success": true,
+  "projectFilePath": "/home/arkhm/Documents/GitHub/Laberinto-de-los-Ecos/Laberinto de los Ecos.csproj",
+  "expectedPackageFiles": [
+    "/home/arkhm/.nuget/packages/godot.sourcegenerators/4.3.0/godot.sourcegenerators.4.3.0.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/godotsharp/4.3.0/godotsharp.4.3.0.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/godotsharpeditor/4.3.0/godotsharpeditor.4.3.0.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/runtime.linux-arm.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.linux-arm.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/runtime.linux-arm64.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.linux-arm64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/runtime.linux-x64.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.linux-x64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/runtime.native.system.io.ports/5.0.0/runtime.native.system.io.ports.5.0.0.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/runtime.osx-x64.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.osx-x64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/system.io.ports/5.0.0/system.io.ports.5.0.0.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/microsoft.netcore.app.ref/6.0.35/microsoft.netcore.app.ref.6.0.35.nupkg.sha512",
+    "/home/arkhm/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.35/microsoft.aspnetcore.app.ref.6.0.35.nupkg.sha512"
+  ],
+  "logs": []
+}
