@@ -1,25 +1,27 @@
 extends CharacterBody2D
 
+# Velocidad de movimiento del personaje
+@export var speed := 200.0
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+func _physics_process(delta):
+	# Inicializa la dirección de movimiento como Vector2(0, 0)
+	var direction := Vector2.ZERO
 
+	# Usa las teclas de dirección para moverse en 8 direcciones
+	if Input.is_action_pressed("ui_right"):
+		direction.x += 1
+	if Input.is_action_pressed("ui_left"):
+		direction.x -= 1
+	if Input.is_action_pressed("ui_down"):
+		direction.y += 1
+	if Input.is_action_pressed("ui_up"):
+		direction.y -= 1
 
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
+	# Normaliza el vector para asegurar velocidad constante en diagonales
+	if direction != Vector2.ZERO:
+		direction = direction.normalized()
 
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	# Asigna la velocidad al movimiento y aplica la dirección
+	velocity = direction * speed
+	# Mueve el personaje con la función move_and_slide
 	move_and_slide()
