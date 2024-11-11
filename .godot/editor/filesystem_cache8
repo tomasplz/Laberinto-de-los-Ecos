@@ -1,15 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731290985
+::res://::1731325104
 area_2d2.gd::GDScript::-1::1730979722::0::1::::<>Area2D<>::
 area_2d.gd::GDScript::-1::1730979722::0::1::::<>Area2D<>::
 icon.svg::CompressedTexture2D::8939604862758558659::1730979715::1730979850::1::::<><>::
 node_2d.tscn::PackedScene::1256308720429700717::1730979787::0::1::::<><>::
 plataforma.gd::GDScript::-1::1730979722::0::1::::<>StaticBody2D<>::
-plataforma.tscn::PackedScene::179896591018818571::1731100834::0::1::::<><>::res://plataforma.gd<>uid://chrk42vu7ic58::::res://prueba/rectangulo.png
-player.gd::GDScript::-1::1730979722::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::1667168142712372787::1731100834::0::1::::<><>::uid://bnpyefgx86wo1::::res://prueba/fantasma2.webp<>res://player.gd
-world2.tscn::PackedScene::1567542917453127371::1731100834::0::1::::<><>::res://area_2d2.gd
-world.tscn::PackedScene::5225506237948366506::1731100834::0::1::::<><>::res://area_2d.gd<>uid://kb815gd2iwhh::::res://Assets/Appartment/upsized png/apartmentA5demo.png<>uid://crs8kgids11ur::::res://Assets/Catacombs/decorative.png<>uid://fm0dc07arb8r::::res://Assets/Catacombs/mainlevbuild.png<>uid://dnnkmnvdduq7f::::res://Assets/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar.png<>uid://d1f7dy555l5mg::::res://Assets/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar_Doors.png<>uid://bo0rcugw35fwm::::res://Assets/Mini_Dungeon_v1.0/Tilesets/Decor.png<>uid://bw1e638tygce1::::res://Assets/Mini_Dungeon_v1.0/Tilesets/Floor.png<>uid://deb83jttwtss4::::res://Assets/Mini_Dungeon_v1.0/Tilesets/Walls.png<>uid://cyu7xvcwm06qb::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://13cne7geos64::::res://Assets/MysticAcid_basics_PetricakeGames.png<>uid://x0uasgoef7lv::::res://Player.tscn
+plataforma.tscn::PackedScene::179896591018818571::1731295060::0::1::::<><>::res://plataforma.gd<>uid://chrk42vu7ic58::::res://prueba/rectangulo.png
+player.gd::GDScript::-1::1731291153::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::1667168142712372787::1731295060::0::1::::<><>::uid://bnpyefgx86wo1::::res://prueba/fantasma2.webp<>res://player.gd
+world2.tscn::PackedScene::1567542917453127371::1731295060::0::1::::<><>::res://area_2d2.gd
+world.tscn::PackedScene::5225506237948366506::1731295060::0::1::::<><>::res://area_2d.gd<>uid://kb815gd2iwhh::::res://Assets/Appartment/upsized png/apartmentA5demo.png<>uid://crs8kgids11ur::::res://Assets/Catacombs/decorative.png<>uid://fm0dc07arb8r::::res://Assets/Catacombs/mainlevbuild.png<>uid://dnnkmnvdduq7f::::res://Assets/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar.png<>uid://d1f7dy555l5mg::::res://Assets/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar_Doors.png<>uid://bo0rcugw35fwm::::res://Assets/Mini_Dungeon_v1.0/Tilesets/Decor.png<>uid://bw1e638tygce1::::res://Assets/Mini_Dungeon_v1.0/Tilesets/Floor.png<>uid://deb83jttwtss4::::res://Assets/Mini_Dungeon_v1.0/Tilesets/Walls.png<>uid://cyu7xvcwm06qb::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://13cne7geos64::::res://Assets/MysticAcid_basics_PetricakeGames.png<>uid://x0uasgoef7lv::::res://Player.tscn
 ::res://Assets/::1730980560
 MysticAcid_basics_PetricakeGames.png::CompressedTexture2D::1882857420814484211::1730980558::1730980560::1::::<><>::
 ::res://Assets/Appartment/::1730980557
