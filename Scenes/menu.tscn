@@ -1,0 +1,74 @@
+[gd_scene load_steps=2 format=3 uid="uid://xju8wwp68kfq"]
+
+[ext_resource type="PackedScene" uid="uid://dmynykgt7ly6f" path="res://Scenes/parallax_background.tscn" id="1_mw4r2"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchor_right = 1.011
+anchor_bottom = 1.006
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 10.8799
+offset_bottom = 1.5199
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="vBoxMenu" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -309.0
+offset_top = -279.5
+offset_right = 309.0
+offset_bottom = 279.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 200
+
+[node name="Logo" type="Label" parent="vBoxMenu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.984416, 0, 0.524346, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.500352, 0.671361, 1)
+theme_override_colors/font_outline_color = Color(0.598532, 0.347165, 1.92523e-07, 1)
+theme_override_font_sizes/font_size = 45
+text = "El Laberinto De Los Ecos"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="VBoxBotones" type="VBoxContainer" parent="vBoxMenu"]
+layout_mode = 2
+
+[node name="Jugar" type="Button" parent="vBoxMenu/VBoxBotones"]
+light_mask = 16
+visibility_layer = 16
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.501302, 0.628884, 0.306832, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0.577655, 0.93891, 1)
+theme_override_colors/font_color = Color(2.79158e-06, 0.618219, 0.57229, 1)
+theme_override_colors/icon_focus_color = Color(0.44305, 0.438148, 0, 1)
+theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
+text = "Jugar"
+
+[node name="Opcioones" type="Button" parent="vBoxMenu/VBoxBotones"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.501961, 0.627451, 0.305882, 1)
+theme_override_colors/font_pressed_color = Color(0.787497, 0.138773, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0.576471, 0.937255, 1)
+theme_override_colors/font_color = Color(0, 0.607013, 0.191946, 1)
+text = "Opciones
+"
+
+[node name="Salir" type="Button" parent="vBoxMenu/VBoxBotones"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.501961, 0.627451, 0.305882, 1)
+theme_override_colors/font_pressed_color = Color(0.933253, 0, 0.01992, 1)
+theme_override_colors/font_focus_color = Color(0, 0.576471, 0.937255, 1)
+theme_override_colors/font_color = Color(1, 0.503412, 0.209438, 1)
+theme_override_font_sizes/font_size = 0
+text = "Salir al escritorio"
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_mw4r2")]
