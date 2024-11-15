@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731701756
+::res://::1731704997
 area_2d2.gd::GDScript::-1::1731089978::0::1::::<>Area2D<>::
 area_2d.gd::GDScript::-1::1731089978::0::1::::<>Area2D<>::
 icon.svg::CompressedTexture2D::8939604862758558659::1728864434::1731090144::1::::<><>::
 mapa.tscn::PackedScene::3655502690575625352::1728866690::0::1::::<><>::uid://ctoblg2eyg6j7::::res://Escenas/Untitled Diagram.drawio.png<>res://Escenas/Player.tscn
-mundo.tscn::PackedScene::7451637061533917914::1731638292::0::1::::<><>::uid://ch0d331ek1f3y::::res://player_1.tscn<>uid://c5nxkdgckbb4h::::res://player_2.tscn<>uid://cwe443qaxlvfd::::res://Tileset.png<>uid://bqljidbf3ihrt::::res://Props.png<>uid://cthv2kk6cfhpu::::res://Sayako_TileB.png<>uid://b136nowyydllf::::res://Sayako_TileC.png<>uid://dmtnby1npv6t1::::res://Tileset_48x48_2.png
-node_2d.tscn::PackedScene::1256308720429700717::1731638292::0::1::::<><>::res://player_2.gd
+mundo.tscn::PackedScene::7451637061533917914::1731704800::0::1::::<><>::uid://ch0d331ek1f3y::::res://player_1.tscn<>uid://c5nxkdgckbb4h::::res://player_2.tscn<>uid://cwe443qaxlvfd::::res://Tileset.png<>uid://bqljidbf3ihrt::::res://Props.png<>uid://cthv2kk6cfhpu::::res://Sayako_TileB.png<>uid://b136nowyydllf::::res://Sayako_TileC.png<>uid://dmtnby1npv6t1::::res://Tileset_48x48_2.png
+node_2d.tscn::PackedScene::1256308720429700717::1731704799::0::1::::<><>::res://player_2.gd
 plataforma.gd::GDScript::-1::1731089978::0::1::::<>StaticBody2D<>::
 plataforma.tscn::PackedScene::179896591018818571::1731089978::0::1::::<><>::res://plataforma.gd<>uid://chrk42vu7ic58::::res://prueba/rectangulo.png
 player2.gd::GDScript::-1::1731090102::0::1::::<>CharacterBody2D<>::
@@ -14,9 +14,9 @@ player.gd::GDScript::-1::1731089978::0::1::::<>CharacterBody2D<>::
 Player.png::CompressedTexture2D::529389543109302408::1731090102::1731090144::1::::<><>::
 Player.tscn::PackedScene::1667168142712372787::1731089978::0::1::::<><>::uid://bnpyefgx86wo1::::res://prueba/fantasma2.webp<>res://player.gd
 player_1.gd::GDScript::-1::1731090102::0::1::::<>CharacterBody2D<>::
-player_1.tscn::PackedScene::5316006380926412244::1731638292::0::1::::<><>::res://player_1.gd<>uid://hso76rggd457::::res://Player.png
+player_1.tscn::PackedScene::5316006380926412244::1731704799::0::1::::<><>::res://player_1.gd<>uid://hso76rggd457::::res://Player.png
 player_2.gd::GDScript::-1::1731090102::0::1::::<>CharacterBody2D<>::
-player_2.tscn::PackedScene::6906758103045780941::1731638292::0::1::::<><>::uid://dswd53u10275h::::res://player2.png<>res://player_2.gd
+player_2.tscn::PackedScene::6906758103045780941::1731704800::0::1::::<><>::uid://dswd53u10275h::::res://player2.png<>res://player_2.gd
 Props.png::CompressedTexture2D::3532711235862186577::1731094241::1731094248::1::::<><>::
 Sayako_TileB.png::CompressedTexture2D::6122203856163685334::1731097563::1731097578::1::::<><>::
 Sayako_TileC.png::CompressedTexture2D::4271039407927393215::1731097534::1731097578::1::::<><>::
@@ -26,7 +26,7 @@ Tileset_48x48_2.png::CompressedTexture2D::8041543760099582164::1731631772::17316
 world2.tscn::PackedScene::1567542917453127371::1731089978::0::1::::<><>::uid://x0uasgoef7lv::::res://Player.tscn<>uid://cte4um6gdrsl::::res://plataforma.tscn<>uid://wsds6oenhv66::::res://prueba/puerta.webp<>res://area_2d2.gd
 world.tscn::PackedScene::5225506237948366506::1731089978::0::1::::<><>::uid://x0uasgoef7lv::::res://Player.tscn<>res://area_2d.gd<>uid://cte4um6gdrsl::::res://plataforma.tscn<>uid://wsds6oenhv66::::res://prueba/puerta.webp
 ::res://assets/::1731701435
-::res://assets/dungeon/::1731701476
+::res://assets/dungeon/::1731701759
 barrelsStacked_E.png::CompressedTexture2D::698253985464134993::1729197657::1731701759::1::::<><>::
 barrelsStacked_N.png::CompressedTexture2D::8375824720972335354::1729197657::1731701475::1::::<><>::
 barrelsStacked_S.png::CompressedTexture2D::5806869842698350560::1729197657::1731701475::1::::<><>::
