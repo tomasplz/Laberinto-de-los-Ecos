@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://x0uasgoef7lv"]
+
+[ext_resource type="Texture2D" uid="uid://bnpyefgx86wo1" path="res://prueba/fantasma2.webp" id="1_4w74u"]
+[ext_resource type="Script" path="res://player.gd" id="1_qxhii"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hu3c5"]
+size = Vector2(25, 25)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_qxhii")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_hu3c5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.109722, 0.111111)
+texture = ExtResource("1_4w74u")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

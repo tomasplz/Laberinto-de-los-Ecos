@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="Laberinto de los Ecos"
-run/main_scene="res://ArduinLogic/arduino.tscn"
-config/features=PackedStringArray("4.3", "C#", "Forward Plus")
-config/icon="res://Assets/icon.svg"
+run/main_scene="res://world.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://icon.svg"
 
 [display]
 
