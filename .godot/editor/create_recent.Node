@@ -1,1 +1,5 @@
+TextureRect
+ColorRect
+Sprite2D
+ParallaxBackground
 RichTextLabel

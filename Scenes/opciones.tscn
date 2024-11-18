@@ -1,0 +1,87 @@
+[gd_scene load_steps=6 format=3 uid="uid://2x4jl2r4t75c"]
+
+[ext_resource type="Script" path="res://Scripts/opciones.gd" id="1_wje3j"]
+[ext_resource type="Texture2D" uid="uid://bnr7pg7nweilt" path="res://Assets/UI/lll.jpg" id="2_pwogk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qfm57"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wf3v2"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yw7qe"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Opciones" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_right = 10.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wje3j")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = -4.0
+offset_top = 2.0
+offset_right = 1147.0
+offset_bottom = 647.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pwogk")
+expand_mode = 1
+
+[node name="VBoxBotones" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -309.0
+offset_top = -50.5
+offset_right = 309.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Volumen" type="Button" parent="VBoxBotones"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.501961, 0.627451, 0.305882, 1)
+theme_override_colors/font_pressed_color = Color(0.787497, 0.138773, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0.576471, 0.937255, 1)
+theme_override_colors/font_color = Color(0, 0.607013, 0.191946, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_qfm57")
+text = "Volumen
+"
+
+[node name="Pantalla" type="Button" parent="VBoxBotones"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.501961, 0.627451, 0.305882, 1)
+theme_override_colors/font_pressed_color = Color(0.933253, 0, 0.01992, 1)
+theme_override_colors/font_focus_color = Color(0, 0.576471, 0.937255, 1)
+theme_override_colors/font_color = Color(1, 0.503412, 0.209438, 1)
+theme_override_font_sizes/font_size = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wf3v2")
+text = "Pantalla"
+
+[node name="Volver" type="Button" parent="VBoxBotones"]
+light_mask = 16
+visibility_layer = 16
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.501302, 0.628884, 0.306832, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0.577655, 0.93891, 1)
+theme_override_colors/font_color = Color(2.79158e-06, 0.618219, 0.57229, 1)
+theme_override_colors/icon_focus_color = Color(0.44305, 0.438148, 0, 1)
+theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_yw7qe")
+text = "Volver"
+
+[connection signal="pressed" from="VBoxBotones/Volumen" to="." method="_on_volumen_pressed"]
+[connection signal="pressed" from="VBoxBotones/Pantalla" to="." method="_on_pantalla_pressed"]
+[connection signal="pressed" from="VBoxBotones/Volver" to="." method="_on_volver_pressed"]

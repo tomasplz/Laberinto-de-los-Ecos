@@ -1,17 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://xju8wwp68kfq"]
+[gd_scene load_steps=6 format=3 uid="uid://xju8wwp68kfq"]
 
 [ext_resource type="PackedScene" uid="uid://dmynykgt7ly6f" path="res://Scenes/parallax_background.tscn" id="1_mw4r2"]
+[ext_resource type="Script" path="res://Scripts/scriptjugar.gd" id="1_nm5el"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s27es"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a61uy"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1ync"]
+bg_color = Color(0, 0, 0, 1)
 
 [node name="Menu" type="Control"]
 layout_mode = 3
-anchor_right = 1.011
-anchor_bottom = 1.006
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 offset_left = 1.0
 offset_top = 1.0
-offset_right = 10.8799
-offset_bottom = 1.5199
+offset_right = 7.0
+offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_nm5el")
 
 [node name="vBoxMenu" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -51,14 +63,16 @@ theme_override_colors/font_focus_color = Color(0, 0.577655, 0.93891, 1)
 theme_override_colors/font_color = Color(2.79158e-06, 0.618219, 0.57229, 1)
 theme_override_colors/icon_focus_color = Color(0.44305, 0.438148, 0, 1)
 theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_s27es")
 text = "Jugar"
 
-[node name="Opcioones" type="Button" parent="vBoxMenu/VBoxBotones"]
+[node name="Opciones" type="Button" parent="vBoxMenu/VBoxBotones"]
 layout_mode = 2
 theme_override_colors/font_hover_color = Color(0.501961, 0.627451, 0.305882, 1)
 theme_override_colors/font_pressed_color = Color(0.787497, 0.138773, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0.576471, 0.937255, 1)
 theme_override_colors/font_color = Color(0, 0.607013, 0.191946, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_a61uy")
 text = "Opciones
 "
 
@@ -69,6 +83,11 @@ theme_override_colors/font_pressed_color = Color(0.933253, 0, 0.01992, 1)
 theme_override_colors/font_focus_color = Color(0, 0.576471, 0.937255, 1)
 theme_override_colors/font_color = Color(1, 0.503412, 0.209438, 1)
 theme_override_font_sizes/font_size = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_f1ync")
 text = "Salir al escritorio"
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_mw4r2")]
+
+[connection signal="pressed" from="vBoxMenu/VBoxBotones/Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="vBoxMenu/VBoxBotones/Opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="vBoxMenu/VBoxBotones/Salir" to="." method="_on_salir_pressed"]
