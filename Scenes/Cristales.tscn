@@ -1,0 +1,55 @@
+[gd_scene load_steps=10 format=3 uid="uid://il7w1uui7vxj"]
+
+[ext_resource type="Script" path="res://Scripts/cristales.gd" id="1_j8suv"]
+[ext_resource type="Texture2D" uid="uid://drjx0c3jk1sal" path="res://Scripts/Animación Cristal/frame_0.png" id="2_bl5sx"]
+[ext_resource type="Texture2D" uid="uid://dddvofi5awjmg" path="res://Scripts/Animación Cristal/frame_1.png" id="3_e6kkm"]
+[ext_resource type="Texture2D" uid="uid://f6a6qyl6o16v" path="res://Scripts/Animación Cristal/frame_2.png" id="4_wkjmp"]
+[ext_resource type="Texture2D" uid="uid://fe1x34ali7he" path="res://Scripts/Animación Cristal/frame_3.png" id="5_j5jet"]
+[ext_resource type="Texture2D" uid="uid://b0p8w0h7dt4fc" path="res://Scripts/Animación Cristal/frame_4.png" id="6_uflfn"]
+[ext_resource type="Texture2D" uid="uid://dd6av0vvct6iq" path="res://Scripts/Animación Cristal/frame_5.png" id="7_j0rl0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mmfdi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_bl5sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_e6kkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wkjmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_j5jet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_uflfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_j0rl0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4tbjr"]
+size = Vector2(92, 87)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_j8suv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_mmfdi")
+autoplay = "default"
+frame = 5
+frame_progress = 0.777445
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 23.5)
+shape = SubResource("RectangleShape2D_4tbjr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

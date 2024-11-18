@@ -1,4 +1,5 @@
-res://world.tscn
-res://world2.tscn
-res://Player.tscn
-res://plataforma.tscn
+res://Scenes/Mapa puzzle matriz.tscn
+res://Scenes/world2.tscn
+res://Scenes/Player.tscn
+res://Scenes/Cristales.tscn
+res://Scripts/cristales.gd

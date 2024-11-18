@@ -1,10 +1,13 @@
-TileMapLayer
+TextureRect
 AnimatedSprite2D
+Label
+CanvasLayer
+CollisionShape2D
+Sprite2D
+Area2D
+TileMapLayer
 CharacterBody2D
 TileMap
-CollisionShape2D
-Area2D
-Sprite2D
 StaticBody2D
 RigidBody2D
 AnimationPlayer
