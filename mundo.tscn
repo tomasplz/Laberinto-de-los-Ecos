@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://defvmyaelj307"]
+[gd_scene load_steps=17 format=3 uid="uid://defvmyaelj307"]
 
 [ext_resource type="PackedScene" uid="uid://ch0d331ek1f3y" path="res://player_1.tscn" id="1_yq3mj"]
 [ext_resource type="PackedScene" uid="uid://c5nxkdgckbb4h" path="res://player_2.tscn" id="2_hmquf"]
@@ -981,12 +981,15 @@ sources/2 = SubResource("TileSetAtlasSource_sluul")
 sources/3 = SubResource("TileSetAtlasSource_l5dfg")
 sources/4 = SubResource("TileSetAtlasSource_u7qrj")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kfawl"]
+size = Vector2(27, 39)
+
 [node name="Mundo" type="Node"]
 
 [node name="Player1" parent="." instance=ExtResource("1_yq3mj")]
 z_index = 4
 texture_filter = 1
-position = Vector2(157, 142)
+position = Vector2(160, 143)
 
 [node name="player2" parent="." instance=ExtResource("2_hmquf")]
 z_index = 4
@@ -1008,8 +1011,14 @@ layer_2/z_index = 2
 layer_2/tile_data = PackedInt32Array(2490376, 393217, 5, 2490373, 458754, 30, 2490377, 458753, 8, 2490375, 458753, 8, 2490374, 131073, 2, 2490397, 458754, 30, 2359325, 1, 0, 2424861, 1, 1, 2097197, 196609, 2, 2097198, 458754, 30)
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(731, 536)
+z_index = 4
+position = Vector2(739, 495)
 script = ExtResource("8_p73px")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+z_index = 4
+position = Vector2(-566, -307)
+shape = SubResource("RectangleShape2D_kfawl")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 texture_filter = 1

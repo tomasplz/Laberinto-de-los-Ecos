@@ -16,6 +16,8 @@ func complete_mission():
 	# Regresar a la cámara principal
 	camera_main.current = true
 	camera_secondary.current = false
+func _ready():
+	add_to_group("player")
 
 func _physics_process(_delta):
 	direccion = Input.get_axis("ui_left","ui_right") 

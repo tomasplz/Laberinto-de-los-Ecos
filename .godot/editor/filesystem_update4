@@ -1,6 +1,6 @@
-res://mundo.tscn
-res://area_2d.gd
-res://player_1.gd
 res://node_2d.tscn
 res://player_1.tscn
+res://mundo.tscn
 res://player_2.tscn
+res://area_2d.gd
+res://player_1.gd
