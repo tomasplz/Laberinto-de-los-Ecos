@@ -6,11 +6,14 @@ var mission_completed = false  # Bandera para saber si la misión se completó
 
 
 
-# Cambia entre las cámaras
 func change_camera(to_secondary: bool):
-	camera_main.current = !to_secondary  # Si 'to_secondary' es true, desactiva la cámara principal
-	camera_secondary.current = to_secondary  # Si 'to_secondary' es true, activa la cámara secundaria
-
+	# En Godot 4, asignar `current` directamente con un booleano no es posible
+	# En su lugar, se debe usar la función `Camera2D.make_current()`
+	
+	if to_secondary:
+		camera_secondary.make_current()  # Activa la cámara secundaria
+	else:
+		camera_main.make_current()
 # Llamado cuando la misión se complete
 func complete_mission():
 	mission_completed = true
