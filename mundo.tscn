@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://defvmyaelj307"]
+[gd_scene load_steps=16 format=3 uid="uid://defvmyaelj307"]
 
 [ext_resource type="PackedScene" uid="uid://ch0d331ek1f3y" path="res://player_1.tscn" id="1_yq3mj"]
 [ext_resource type="PackedScene" uid="uid://c5nxkdgckbb4h" path="res://player_2.tscn" id="2_hmquf"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b136nowyydllf" path="res://Sayako_TileC.png" id="6_j7diw"]
 [ext_resource type="Texture2D" uid="uid://dmtnby1npv6t1" path="res://Tileset_48x48_2.png" id="7_tr4qf"]
 [ext_resource type="Script" path="res://camera_2d.gd" id="8_bbf6f"]
+[ext_resource type="Script" path="res://area_2d.gd" id="8_p73px"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kup63"]
 texture = ExtResource("3_uyyai")
@@ -1007,10 +1008,14 @@ layer_2/z_index = 2
 layer_2/tile_data = PackedInt32Array(2490376, 393217, 5, 2490373, 458754, 30, 2490377, 458753, 8, 2490375, 458753, 8, 2490374, 131073, 2, 2490397, 458754, 30, 2359325, 1, 0, 2424861, 1, 1, 2097197, 196609, 2, 2097198, 458754, 30)
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(-391, 189)
+position = Vector2(731, 536)
+script = ExtResource("8_p73px")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 texture_filter = 1
 limit_left = 0
 limit_top = 0
 script = ExtResource("8_bbf6f")
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+position = Vector2(-375, 200)

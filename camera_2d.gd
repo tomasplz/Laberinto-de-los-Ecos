@@ -1,11 +1,11 @@
 extends Camera2D
 
-@onready var player_1  # Referencia al jugador 1
-@onready var player_2  # Referencia al jugador 2
+@onready var player_1  
+@onready var player_2  
 
 var max_distance : float = 200.0  # Distancia máxima entre los jugadores para determinar el zoom de la cámara
-var max_zoom : float = 1.5  # Zoom máximo
-var screen_size : Vector2  # Tamaño de la pantalla (o área visible)
+var max_zoom : float = 1.5  
+var screen_size : Vector2
 
 # Limite en la posición de los jugadores cuando la cámara alcanza el zoom máximo
 var limit_position : bool = false  # Determina si se deben limitar las posiciones de los jugadores

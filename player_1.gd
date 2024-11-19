@@ -5,6 +5,18 @@ var direccion : = 0.0
 var direccion2: = 0.0
 @onready var anim := $AnimationPlayer
 @onready var sprite := $Sprite2D
+
+@onready var camera_main = $"../Camera2D"
+@onready var camera_secondary = $"../Camera2D2"
+
+var mission_completed = false
+
+func complete_mission():
+	mission_completed = true
+	# Regresar a la cámara principal
+	camera_main.current = true
+	camera_secondary.current = false
+
 func _physics_process(_delta):
 	direccion = Input.get_axis("ui_left","ui_right") 
 	direccion2= Input.get_axis("ui_up","ui_down")
