@@ -1028,3 +1028,5 @@ script = ExtResource("8_bbf6f")
 
 [node name="Camera2D2" type="Camera2D" parent="."]
 position = Vector2(-375, 200)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

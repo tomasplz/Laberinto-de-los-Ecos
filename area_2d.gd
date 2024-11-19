@@ -4,12 +4,7 @@ extends Area2D
 
 var mission_completed = false  # Bandera para saber si la misión se completó
 
-# Detecta la entrada del jugador en el área
-func _on_Area2D_body_entered(body):
-	if body.is_in_group("player"):  # Asegúrate de que el jugador tenga el grupo "player"
-		change_camera(true)
-	else:
-		print("Algo más entró en el área.")
+
 
 # Cambia entre las cámaras
 func change_camera(to_secondary: bool):
@@ -20,3 +15,10 @@ func change_camera(to_secondary: bool):
 func complete_mission():
 	mission_completed = true
 	change_camera(false)  # Vuelve a la cámara principal
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player"):  # Asegúrate de que el jugador tenga el grupo "player"
+		change_camera(true)
+	else:
+		print("Algo más entró en el área.")
