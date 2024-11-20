@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=4 uid="uid://du8wii2jti8y"]
+[gd_scene load_steps=53 format=4 uid="uid://du8wii2jti8y"]
 
 [ext_resource type="Texture2D" uid="uid://fm0dc07arb8r" path="res://Assets/Mapa/Catacombs/mainlevbuild.png" id="1_2bffg"]
 [ext_resource type="Script" path="res://Scripts/mapa_puzzle_matriz.gd" id="1_cmh7k"]
@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://c17d6a2itpipy" path="res://Assets/Fuente/Pergamino pixel art.png" id="16_8hqn3"]
 [ext_resource type="FontFile" uid="uid://c1dye6pmg4ifm" path="res://Assets/Fuente/Pixel Times.ttf" id="16_wq6sa"]
 [ext_resource type="PackedScene" uid="uid://x1s0t0dci8r5" path="res://Scenes/VelaAnimada.tscn" id="18_65yk4"]
+[ext_resource type="Texture2D" uid="uid://dqvy5nsv44icq" path="res://Assets/light.png" id="21_q6xrh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ysje"]
 texture = ExtResource("1_2bffg")
@@ -11654,6 +11655,28 @@ que no solo enfrentarán desafíos
  tecnológicos, sino también
  sus propios temores internos."
 label_settings = SubResource("LabelSettings_t3pcj")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.617455, 0.617455, 0.617455, 1)
+
+[node name="Luz cristal" type="PointLight2D" parent="."]
+position = Vector2(879, 229)
+scale = Vector2(0.63, 0.52)
+color = Color(0.517647, 1, 1, 1)
+energy = 0.5
+texture = ExtResource("21_q6xrh")
+
+[node name="Luz escalera" type="PointLight2D" parent="."]
+position = Vector2(986, 514)
+scale = Vector2(0.63, 0.52)
+energy = 2.0
+texture = ExtResource("21_q6xrh")
+
+[node name="Luz escalera2" type="PointLight2D" parent="."]
+position = Vector2(94.9999, 112)
+scale = Vector2(0.63, 0.52)
+energy = 2.0
+texture = ExtResource("21_q6xrh")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

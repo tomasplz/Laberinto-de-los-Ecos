@@ -1,3 +1,6 @@
+Camera2D
+PointLight2D
+CanvasModulate
 Sprite2D
 Node2D
 AnimatedSprite2D
@@ -10,5 +13,3 @@ TileMapLayer
 CharacterBody2D
 TileMap
 StaticBody2D
-RigidBody2D
-AnimationPlayer

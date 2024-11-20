@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://x1s0t0dci8r5"]
+[gd_scene load_steps=6 format=3 uid="uid://x1s0t0dci8r5"]
 
 [ext_resource type="Texture2D" uid="uid://dmbkjyhga6fjs" path="res://Assets/Mapa/Catacombs/candleA_01.png" id="1_u5srq"]
 [ext_resource type="Texture2D" uid="uid://44q1cx4ykkfy" path="res://Assets/Mapa/Catacombs/candleA_04.png" id="2_jgfl2"]
+[ext_resource type="Texture2D" uid="uid://dqvy5nsv44icq" path="res://Assets/light.png" id="3_tao8v"]
 
 [sub_resource type="GDScript" id="GDScript_76ilx"]
 
@@ -168,3 +169,130 @@ sprite_frames = SubResource("SpriteFrames_hmvcw")
 autoplay = "default"
 frame = 1
 frame_progress = 0.0584559
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(32, 70)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D2" type="PointLight2D" parent="."]
+position = Vector2(283, 69)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D3" type="PointLight2D" parent="."]
+position = Vector2(29, 177)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D4" type="PointLight2D" parent="."]
+position = Vector2(283, 174)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D5" type="PointLight2D" parent="."]
+position = Vector2(584, 50)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D6" type="PointLight2D" parent="."]
+position = Vector2(624, 110)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D7" type="PointLight2D" parent="."]
+position = Vector2(654, 53)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D8" type="PointLight2D" parent="."]
+position = Vector2(504, 310)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+energy = 2.0
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D9" type="PointLight2D" parent="."]
+position = Vector2(879, 100)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D10" type="PointLight2D" parent="."]
+position = Vector2(879, 176)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D11" type="PointLight2D" parent="."]
+position = Vector2(834, 214)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D12" type="PointLight2D" parent="."]
+position = Vector2(928, 212)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D13" type="PointLight2D" parent="."]
+position = Vector2(880, 265)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D14" type="PointLight2D" parent="."]
+position = Vector2(873, 369)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D15" type="PointLight2D" parent="."]
+position = Vector2(670, 444)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D16" type="PointLight2D" parent="."]
+position = Vector2(361, 541)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D17" type="PointLight2D" parent="."]
+position = Vector2(280, 509)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D18" type="PointLight2D" parent="."]
+position = Vector2(135, 510)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D19" type="PointLight2D" parent="."]
+position = Vector2(135, 290)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D20" type="PointLight2D" parent="."]
+position = Vector2(280, 291)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
+
+[node name="PointLight2D21" type="PointLight2D" parent="."]
+position = Vector2(207, 404)
+scale = Vector2(0.4325, 0.365)
+color = Color(1, 0.610999, 0.0748225, 1)
+texture = ExtResource("3_tao8v")
