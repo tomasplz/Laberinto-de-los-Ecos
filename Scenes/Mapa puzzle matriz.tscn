@@ -11618,11 +11618,13 @@ texture = ExtResource("14_n36il")
 
 [node name="Pergamino" type="TextureRect" parent="CanvasLayer"]
 visible = false
-offset_left = 320.0
-offset_top = 15.0
-offset_right = 851.0
-offset_bottom = 623.0
+offset_left = 282.0
+offset_top = 13.0
+offset_right = 382.0
+offset_bottom = 113.0
+scale = Vector2(6, 6)
 texture = ExtResource("16_8hqn3")
+stretch_mode = 3
 
 [node name="Texto Lore" type="Label" parent="CanvasLayer"]
 visible = false
@@ -11635,7 +11637,7 @@ text = "En un mundo dominado por una red
 expertos en cibertecnología, reciben un
  misterioso mensaje. Un programa 
 conocido como Mirra, supuestamente 
-un NPCdefectuoso, está atrapado en el
+un NPC defectuoso, está atrapado en el
 Laberinto de los Ecos, un entorno virtual 
 de pruebas diseñado para explorar 
 los límites de la mente humana. Se 
