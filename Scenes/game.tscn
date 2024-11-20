@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd6tfe0i72vxy"]
+
+[ext_resource type="Texture2D" uid="uid://d0mn8r2vksolf" path="res://Assets/icon.svg" id="1_a3bl3"]
+
+[node name="Game" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(64, 65)
+texture = ExtResource("1_a3bl3")

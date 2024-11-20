@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmynykgt7ly6f"]
+
+[ext_resource type="Texture2D" uid="uid://bnr7pg7nweilt" path="res://Assets/UI/lll.jpg" id="1_12jn5"]
+[ext_resource type="Texture2D" uid="uid://cvw3lpvltxcn6" path="res://Assets/UI/ejesmesi.jpg" id="2_03dv7"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="fondo" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(577.438, 322.781)
+scale = Vector2(0.321742, 0.31955)
+texture = ExtResource("1_12jn5")
+region_rect = Rect2(-1.17957, 0.317924, 1800.38, 1010.78)
+
+[node name="oscuro1" type="Sprite2D" parent="ParallaxLayer"]
+modulate = Color(0, 0, 0, 0.772549)
+position = Vector2(578, 357.75)
+scale = Vector2(0.6925, 0.1695)
+texture = ExtResource("2_03dv7")
+
+[node name="oscuro2" type="Sprite2D" parent="ParallaxLayer"]
+modulate = Color(0, 0, 0, 0.772549)
+position = Vector2(564, 76)
+scale = Vector2(0.682, 0.0915)
+texture = ExtResource("2_03dv7")
