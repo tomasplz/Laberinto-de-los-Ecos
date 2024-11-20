@@ -1,11 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731967911
+::res://::1732077528
 icon.svg::CompressedTexture2D::8939604862758558659::1731636589::1731806639::1::::<><>::
+prueba_dirección.tscn::PackedScene::876942688558033766::1732077465::0::1::::<><>::uid://dmbkjyhga6fjs::::res://Assets/Mapa/Catacombs/candleA_01.png
 ::res://Assets/::1731967911
-::res://Assets/Fuente/::1731970064
+::res://Assets/Fuente/::1731970066
 Pergamino pixel art.png::CompressedTexture2D::6664048942793500446::1731970064::1731970066::1::::<><>::
 Pixel Times.ttf::FontFile::6605410438189551198::1731967896::1731967912::1::::<><>::
-::res://Assets/Mapa/::1731901252
+::res://Assets/Mapa/::1732077328
 MysticAcid_basics_PetricakeGames.png::CompressedTexture2D::1882857420814484211::1731636589::1731901252::1::::<><>::
 ::res://Assets/Mapa/Appartment/::1731636589
 ::res://Assets/Mapa/Appartment/png/::1731901252
@@ -261,15 +262,17 @@ Wood.png::CompressedTexture2D::5201761218200311098::1731636589::1731901252::1:::
 fantasma2.webp::CompressedTexture2D::3331305941276368822::1731636111::1731636183::1::::<><>::
 puerta.webp::CompressedTexture2D::1581529304928906777::1731636111::1731636184::1::::<><>::
 rectangulo.png::CompressedTexture2D::5299918104145487269::1731636111::1731636183::1::::<><>::
-::res://Scenes/::1731967949
-Cristales.tscn::PackedScene::586202533057225195::1731967949::0::1::::<><>::res://Scripts/cristales.gd<>uid://drjx0c3jk1sal::::res://Scripts/Animación Cristal/frame_0.png<>uid://dddvofi5awjmg::::res://Scripts/Animación Cristal/frame_1.png<>uid://f6a6qyl6o16v::::res://Scripts/Animación Cristal/frame_2.png<>uid://fe1x34ali7he::::res://Scripts/Animación Cristal/frame_3.png<>uid://b0p8w0h7dt4fc::::res://Scripts/Animación Cristal/frame_4.png<>uid://dd6av0vvct6iq::::res://Scripts/Animación Cristal/frame_5.png
-Mapa puzzle matriz.tscn::PackedScene::5225506237948366506::1731967949::0::1::::<><>::uid://fm0dc07arb8r::::res://Assets/Mapa/Catacombs/mainlevbuild.png<>uid://crs8kgids11ur::::res://Assets/Mapa/Catacombs/decorative.png<>uid://kb815gd2iwhh::::res://Assets/Mapa/Appartment/upsized png/apartmentA5demo.png<>uid://dnnkmnvdduq7f::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar.png<>uid://d1f7dy555l5mg::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar_Doors.png<>uid://bo0rcugw35fwm::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Decor.png<>uid://bw1e638tygce1::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Floor.png<>uid://deb83jttwtss4::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Walls.png<>uid://cyu7xvcwm06qb::::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://13cne7geos64::::res://Assets/Mapa/MysticAcid_basics_PetricakeGames.png<>uid://x0uasgoef7lv::::res://Scenes/Player.tscn<>uid://j7vicuvnkpse::::res://Assets/Mapa/dungeon temple/16x16/B16x16.png<>res://Scripts/area_2d.gd<>uid://cvvtfc83hxesd::::res://Assets/Mapa/Catacombs/pixil-frame-0.png<>uid://il7w1uui7vxj::::res://Scenes/Cristales.tscn<>uid://c1dye6pmg4ifm::::res://Assets/Fuente/Pixel Times.ttf
-Player.tscn::PackedScene::1667168142712372787::1731967949::0::1::::<><>::uid://bnpyefgx86wo1::::res://prueba/fantasma2.webp<>res://Scripts/player.gd
-world2.tscn::PackedScene::1567542917453127371::1731967949::0::1::::<><>::res://Scripts/area_2d2.gd
-::res://Scripts/::1731959759
+::res://Scenes/::1732077465
+Cristales.tscn::PackedScene::586202533057225195::1732077465::0::1::::<><>::res://Scripts/cristales.gd<>uid://drjx0c3jk1sal::::res://Scripts/Animación Cristal/frame_0.png<>uid://dddvofi5awjmg::::res://Scripts/Animación Cristal/frame_1.png<>uid://f6a6qyl6o16v::::res://Scripts/Animación Cristal/frame_2.png<>uid://fe1x34ali7he::::res://Scripts/Animación Cristal/frame_3.png<>uid://b0p8w0h7dt4fc::::res://Scripts/Animación Cristal/frame_4.png<>uid://dd6av0vvct6iq::::res://Scripts/Animación Cristal/frame_5.png
+Mapa puzzle matriz.tscn::PackedScene::253897468007270818::1732077465::0::1::::<><>::uid://fm0dc07arb8r::::res://Assets/Mapa/Catacombs/mainlevbuild.png<>res://Scripts/mapa_puzzle_matriz.gd<>uid://crs8kgids11ur::::res://Assets/Mapa/Catacombs/decorative.png<>uid://kb815gd2iwhh::::res://Assets/Mapa/Appartment/upsized png/apartmentA5demo.png<>uid://dnnkmnvdduq7f::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar.png<>uid://d1f7dy555l5mg::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar_Doors.png<>uid://bo0rcugw35fwm::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Decor.png<>uid://bw1e638tygce1::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Floor.png<>uid://deb83jttwtss4::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Walls.png<>uid://cyu7xvcwm06qb::::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://13cne7geos64::::res://Assets/Mapa/MysticAcid_basics_PetricakeGames.png<>uid://x0uasgoef7lv::::res://Scenes/Player.tscn<>uid://j7vicuvnkpse::::res://Assets/Mapa/dungeon temple/16x16/B16x16.png<>res://Scripts/area_2d.gd<>uid://cvvtfc83hxesd::::res://Assets/Mapa/Catacombs/pixil-frame-0.png<>uid://dppr12pfk0puw::::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://il7w1uui7vxj::::res://Scenes/Cristales.tscn<>uid://c17d6a2itpipy::::res://Assets/Fuente/Pergamino pixel art.png<>uid://c1dye6pmg4ifm::::res://Assets/Fuente/Pixel Times.ttf<>uid://x1s0t0dci8r5::::res://Scenes/VelaAnimada.tscn
+Player.tscn::PackedScene::1667168142712372787::1732077465::0::1::::<><>::uid://bnpyefgx86wo1::::res://prueba/fantasma2.webp<>res://Scripts/player.gd
+VelaAnimada.tscn::PackedScene::1669155812700813028::1732077465::0::1::::<><>::uid://dmbkjyhga6fjs::::res://Assets/Mapa/Catacombs/candleA_01.png<>uid://44q1cx4ykkfy::::res://Assets/Mapa/Catacombs/candleA_04.png
+world2.tscn::PackedScene::1567542917453127371::1732077465::0::1::::<><>::res://Scripts/area_2d2.gd
+::res://Scripts/::1732052387
 area_2d2.gd::GDScript::-1::1731934193::0::1::::<>Area2D<>::
 area_2d.gd::GDScript::-1::1731934194::0::1::::<>Area2D<>::
-cristales.gd::GDScript::-1::1731959759::0::1::::<>Area2D<>::
+cristales.gd::GDScript::-1::1732049093::0::1::::<>Area2D<>::
+mapa_puzzle_matriz.gd::GDScript::-1::1732052387::0::1::::<>Node2D<>::
 plataforma.gd::GDScript::-1::1731636589::0::1::::<>StaticBody2D<>::
 player.gd::GDScript::-1::1731955326::0::1::::<>CharacterBody2D<>::
 ::res://Scripts/Animación Cristal/::1731959414

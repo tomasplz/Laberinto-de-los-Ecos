@@ -1,9 +1,10 @@
-TextureRect
+Sprite2D
+Node2D
 AnimatedSprite2D
+TextureRect
 Label
 CanvasLayer
 CollisionShape2D
-Sprite2D
 Area2D
 TileMapLayer
 CharacterBody2D
@@ -11,4 +12,3 @@ TileMap
 StaticBody2D
 RigidBody2D
 AnimationPlayer
-Button
