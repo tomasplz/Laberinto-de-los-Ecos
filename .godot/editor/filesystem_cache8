@@ -1,11 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731720124
+::res://::1732062516
 area_2d2.gd::GDScript::-1::1731102279::0::1::::<>Area2D<>::
-area_2d.gd::GDScript::-1::1731102279::0::1::::<>Area2D<>::
+area_2d.gd::GDScript::-1::1731982696::0::1::::<>Area2D<>::
+Captura de pantalla 2024-11-18 193841.png::CompressedTexture2D::2319941019291233514::1731973227::1732062527::1::::<><>::
 icon.svg::CompressedTexture2D::8939604862758558659::1729088568::1731103197::1::::<><>::
-mapa.tscn::PackedScene::7597660597954873670::1731104821::0::1::::<><>::uid://ctjr1gqmlw0k0::::res://prueba/Tilesets/Inside_A4.png<>uid://do8edq7d360ld::::res://prueba/Tilesets/Dungeon_B.png<>uid://d3efhun2pnncl::::res://prueba/Tilesets/Sayako_TileB.png<>uid://7ohu65d0tw6::::res://prueba/Tilesets/Sayako_TileC.png<>uid://ch0d331ek1f3y::::res://player_1.tscn
-mundo.tscn::PackedScene::7451637061533917914::1731104820::0::1::::<><>::uid://ch0d331ek1f3y::::res://player_1.tscn<>uid://c5nxkdgckbb4h::::res://player_2.tscn
-node_2d.tscn::PackedScene::1256308720429700717::1731104820::0::1::::<><>::res://player_2.gd
+mapa.tscn::PackedScene::7597660597954873670::1731990004::0::1::::<><>::uid://ctjr1gqmlw0k0::::res://prueba/Tilesets/Inside_A4.png<>uid://do8edq7d360ld::::res://prueba/Tilesets/Dungeon_B.png<>uid://d3efhun2pnncl::::res://prueba/Tilesets/Sayako_TileB.png<>uid://7ohu65d0tw6::::res://prueba/Tilesets/Sayako_TileC.png<>uid://ch0d331ek1f3y::::res://player_1.tscn<>res://area_2d.gd
+mapa_2.gd::GDScript::-1::1731984765::0::1::::<>Node2D<>::
+mapa_2.tscn::PackedScene::8120090458240732463::1731986185::0::1::::<><>::res://mapa_2.gd<>uid://8b2dbvhkbca1::::res://Captura de pantalla 2024-11-18 193841.png
+mundo.tscn::PackedScene::7451637061533917914::1731986182::0::1::::<><>::uid://ch0d331ek1f3y::::res://player_1.tscn<>uid://c5nxkdgckbb4h::::res://player_2.tscn
+node_2d.tscn::PackedScene::1256308720429700717::1731978001::0::1::::<><>::res://player_2.gd
 plataforma.gd::GDScript::-1::1731102279::0::1::::<>StaticBody2D<>::
 plataforma.tscn::PackedScene::179896591018818571::1731102279::0::1::::<><>::res://plataforma.gd<>uid://chrk42vu7ic58::::res://prueba/rectangulo.png
 player2.gd::GDScript::-1::1731102112::0::1::::<>CharacterBody2D<>::
@@ -13,17 +16,17 @@ player2.png::CompressedTexture2D::8468314774714368427::1731102112::1731103197::1
 player.gd::GDScript::-1::1731102279::0::1::::<>CharacterBody2D<>::
 Player.png::CompressedTexture2D::529389543109302408::1731102112::1731103197::1::::<><>::
 Player.tscn::PackedScene::1667168142712372787::1731102279::0::1::::<><>::uid://bnpyefgx86wo1::::res://prueba/fantasma2.webp<>res://player.gd
-player_1.gd::GDScript::-1::1731102112::0::1::::<>CharacterBody2D<>::
-player_1.tscn::PackedScene::5316006380926412244::1731104820::0::1::::<><>::res://player_1.gd<>uid://hso76rggd457::::res://Player.png
+player_1.gd::GDScript::-1::1731978001::0::1::::<>CharacterBody2D<>::
+player_1.tscn::PackedScene::5316006380926412244::1731986182::0::1::::<><>::res://player_1.gd<>uid://hso76rggd457::::res://Player.png
 player_2.gd::GDScript::-1::1731102112::0::1::::<>CharacterBody2D<>::
-player_2.tscn::PackedScene::6906758103045780941::1731104820::0::1::::<><>::uid://dswd53u10275h::::res://player2.png<>res://player_2.gd
+player_2.tscn::PackedScene::6906758103045780941::1731986182::0::1::::<><>::uid://dswd53u10275h::::res://player2.png<>res://player_2.gd
 world2.tscn::PackedScene::1567542917453127371::1731102279::0::1::::<><>::uid://x0uasgoef7lv::::res://Player.tscn<>uid://cte4um6gdrsl::::res://plataforma.tscn<>uid://wsds6oenhv66::::res://prueba/puerta.webp<>res://area_2d2.gd
 world.tscn::PackedScene::5225506237948366506::1731102279::0::1::::<><>::uid://x0uasgoef7lv::::res://Player.tscn<>res://area_2d.gd<>uid://cte4um6gdrsl::::res://plataforma.tscn<>uid://wsds6oenhv66::::res://prueba/puerta.webp
 ::res://diseñoMapa/::1731720036
 ::res://diseñoMapa/SBS - Horror Texture Pack 128x128/::1731720073
 License.txt::TextFile::-1::1731016465::0::1::::<><>::
 ::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/::1731720036
-::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Brick/::1731720036
+::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Brick/::1731720139
 Horror_Brick_01-128x128.png::CompressedTexture2D::6784783715742731319::1731016464::1731720139::1::::<><>::
 Horror_Brick_02-128x128.png::CompressedTexture2D::7333955829470698610::1731016464::1731720139::1::::<><>::
 Horror_Brick_03-128x128.png::CompressedTexture2D::562178096640143902::1731016464::1731720139::1::::<><>::
@@ -38,7 +41,7 @@ Horror_Brick_11-128x128.png::CompressedTexture2D::5527002187010126942::173101646
 Horror_Brick_12-128x128.png::CompressedTexture2D::1370377205571861787::1731016464::1731720139::1::::<><>::
 Horror_Brick_13-128x128.png::CompressedTexture2D::6108129882923363134::1731016464::1731720139::1::::<><>::
 Horror_Brick_14-128x128.png::CompressedTexture2D::801461856954239000::1731016464::1731720139::1::::<><>::
-::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Floor/::1731720036
+::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Floor/::1731720140
 Horror_Floor_01-128x128.png::CompressedTexture2D::1086212283410954822::1731016464::1731720140::1::::<><>::
 Horror_Floor_02-128x128.png::CompressedTexture2D::4322825245408521058::1731016464::1731720140::1::::<><>::
 Horror_Floor_03-128x128.png::CompressedTexture2D::2530896466612132973::1731016464::1731720140::1::::<><>::
@@ -53,7 +56,7 @@ Horror_Floor_11-128x128.png::CompressedTexture2D::7860142097406167720::173101646
 Horror_Floor_12-128x128.png::CompressedTexture2D::3762528930422270590::1731016464::1731720140::1::::<><>::
 Horror_Floor_13-128x128.png::CompressedTexture2D::7223738035591204826::1731016465::1731720140::1::::<><>::
 Horror_Floor_14-128x128.png::CompressedTexture2D::9175918016393103008::1731016465::1731720140::1::::<><>::
-::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Floor/Tilesets/::1731720036
+::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Floor/Tilesets/::1731720140
 Dungeon_A1.png::CompressedTexture2D::686306330518850852::1731033867::1731720140::1::::<><>::
 Dungeon_A1.txt::TextFile::-1::1731033867::0::1::::<><>::
 Dungeon_A2.png::CompressedTexture2D::2076287254606015204::1731033867::1731720140::1::::<><>::
@@ -103,7 +106,7 @@ World_A2.png::CompressedTexture2D::2642526174597810455::1731033867::1731720140::
 World_A2.txt::TextFile::-1::1731033867::0::1::::<><>::
 World_B.png::CompressedTexture2D::4421327933102345081::1731033867::1731720140::1::::<><>::
 World_B.txt::TextFile::-1::1731033867::0::1::::<><>::
-::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Metal/::1731720036
+::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Metal/::1731720140
 Horror_Metal_01-128x128.png::CompressedTexture2D::8404125813234167205::1731016465::1731720140::1::::<><>::
 Horror_Metal_02-128x128.png::CompressedTexture2D::4026941739316242948::1731016465::1731720140::1::::<><>::
 Horror_Metal_03-128x128.png::CompressedTexture2D::6889329019973846333::1731016465::1731720140::1::::<><>::
@@ -118,7 +121,7 @@ Horror_Metal_11-128x128.png::CompressedTexture2D::932350467531539300::1731016465
 Horror_Metal_12-128x128.png::CompressedTexture2D::6699890133762584313::1731016465::1731720140::1::::<><>::
 Horror_Metal_13-128x128.png::CompressedTexture2D::7042661411475082599::1731016465::1731720140::1::::<><>::
 Horror_Metal_14-128x128.png::CompressedTexture2D::1885511639483179729::1731016465::1731720140::1::::<><>::
-::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Misc/::1731720036
+::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Misc/::1731720140
 Horror_Misc_01-128x128.png::CompressedTexture2D::4382150708024154860::1731016465::1731720140::1::::<><>::
 Horror_Misc_02-128x128.png::CompressedTexture2D::7773478811972965603::1731016465::1731720140::1::::<><>::
 Horror_Misc_03-128x128.png::CompressedTexture2D::9094782956900448609::1731016465::1731720140::1::::<><>::
@@ -134,7 +137,7 @@ Horror_Misc_12-128x128.png::CompressedTexture2D::1054637116906111909::1731016465
 Horror_Misc_13-128x128.png::CompressedTexture2D::8795959641237970182::1731016465::1731720137::1::::<><>::
 Horror_Misc_14-128x128.png::CompressedTexture2D::751039626004938630::1731016465::1731720137::1::::<><>::
 Horror_Misc_15-128x128.png::CompressedTexture2D::9082735595293083596::1731016465::1731720137::1::::<><>::
-::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Stains/::1731720036
+::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Stains/::1731720137
 Horror_Stain_01-128x128.png::CompressedTexture2D::8950565564380466689::1731016465::1731720137::1::::<><>::
 Horror_Stain_02-128x128.png::CompressedTexture2D::559617288419417064::1731016465::1731720137::1::::<><>::
 Horror_Stain_03-128x128.png::CompressedTexture2D::6091647959253806396::1731016465::1731720137::1::::<><>::
@@ -150,7 +153,7 @@ Horror_Stain_12-128x128.png::CompressedTexture2D::4447947348513361264::173101646
 Horror_Stain_13-128x128.png::CompressedTexture2D::7748757686938098107::1731016465::1731720137::1::::<><>::
 Horror_Stain_14-128x128.png::CompressedTexture2D::8480976328998842762::1731016465::1731720137::1::::<><>::
 Horror_Stain_15-128x128.png::CompressedTexture2D::5305576414287827815::1731016465::1731720137::1::::<><>::
-::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Stone/::1731720036
+::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Stone/::1731720137
 Horror_Stone_01-128x128.png::CompressedTexture2D::1441781972902640565::1731016465::1731720137::1::::<><>::
 Horror_Stone_02-128x128.png::CompressedTexture2D::2234455310447568952::1731016465::1731720137::1::::<><>::
 Horror_Stone_03-128x128.png::CompressedTexture2D::1919544908428406705::1731016465::1731720137::1::::<><>::
@@ -165,7 +168,7 @@ Horror_Stone_11-128x128.png::CompressedTexture2D::1850855221471526280::173101646
 Horror_Stone_12-128x128.png::CompressedTexture2D::8051011095234848513::1731016465::1731720137::1::::<><>::
 Horror_Stone_13-128x128.png::CompressedTexture2D::8779599852128071918::1731016465::1731720137::1::::<><>::
 Horror_Stone_14-128x128.png::CompressedTexture2D::2159764854797884633::1731016465::1731720137::1::::<><>::
-::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Wall/::1731720036
+::res://diseñoMapa/SBS - Horror Texture Pack 128x128/128x128/Wall/::1731720138
 Horror_Wall_01-128x128.png::CompressedTexture2D::828108958646582495::1731016465::1731720137::1::::<><>::
 Horror_Wall_02-128x128.png::CompressedTexture2D::4553972167710057384::1731016465::1731720137::1::::<><>::
 Horror_Wall_03-128x128.png::CompressedTexture2D::3164336197739528237::1731016465::1731720138::1::::<><>::
@@ -180,7 +183,7 @@ Horror_Wall_11-128x128.png::CompressedTexture2D::8567509266693481673::1731016465
 Horror_Wall_12-128x128.png::CompressedTexture2D::3360877055771942442::1731016465::1731720138::1::::<><>::
 Horror_Wall_13-128x128.png::CompressedTexture2D::2718484196015098361::1731016465::1731720138::1::::<><>::
 Horror_Wall_14-128x128.png::CompressedTexture2D::4123430267673173018::1731016465::1731720138::1::::<><>::
-::res://diseñoMapa/SBS - Horror Texture Pack 128x128/Tilesets/::1731720076
+::res://diseñoMapa/SBS - Horror Texture Pack 128x128/Tilesets/::1731720138
 Dungeon_A1.png::CompressedTexture2D::4524994961555147750::1731033957::1731720138::1::::<><>::
 Dungeon_A1.txt::TextFile::-1::1731033957::0::1::::<><>::
 Dungeon_A2.png::CompressedTexture2D::5666464273462983168::1731033957::1731720138::1::::<><>::

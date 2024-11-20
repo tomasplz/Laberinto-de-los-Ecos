@@ -1,7 +1,10 @@
 Camera2D
+CollisionShape2D
+Area2D
+TileMap
+Sprite2D
+Camera3D
 Node2D
 CharacterBody2D
 AnimationPlayer
-CollisionShape2D
-Sprite2D
 Node
