@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd6av0vvct6iq"
-path="res://.godot/imported/frame_5.png-11b5250a937b782d8178999ce07daab7.ctex"
+uid="uid://cqfrrerma7csh"
+path="res://.godot/imported/pixil-frame-0.png-21eaa096cf34d3821352339f7fb6257d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scripts/Animación Cristal/frame_5.png"
-dest_files=["res://.godot/imported/frame_5.png-11b5250a937b782d8178999ce07daab7.ctex"]
+source_file="res://Assets/Keypad/pixil-frame-0.png"
+dest_files=["res://.godot/imported/pixil-frame-0.png-21eaa096cf34d3821352339f7fb6257d.ctex"]
 
 [params]
 

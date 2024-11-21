@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0p8w0h7dt4fc"
-path="res://.godot/imported/frame_4.png-dcaefe864303cd01b643fcc3aa4d73ab.ctex"
+uid="uid://c42efjnyixdl2"
+path="res://.godot/imported/2 Digito.png-b1f1fea7d328de60dc1068afe0b04092.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scripts/Animación Cristal/frame_4.png"
-dest_files=["res://.godot/imported/frame_4.png-dcaefe864303cd01b643fcc3aa4d73ab.ctex"]
+source_file="res://Assets/Keypad/2 Digito.png"
+dest_files=["res://.godot/imported/2 Digito.png-b1f1fea7d328de60dc1068afe0b04092.ctex"]
 
 [params]
 

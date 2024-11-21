@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=4 uid="uid://du8wii2jti8y"]
+[gd_scene load_steps=55 format=4 uid="uid://du8wii2jti8y"]
 
 [ext_resource type="Texture2D" uid="uid://fm0dc07arb8r" path="res://Assets/Mapa/Catacombs/mainlevbuild.png" id="1_2bffg"]
 [ext_resource type="Script" path="res://Scripts/mapa_puzzle_matriz.gd" id="1_cmh7k"]
@@ -21,6 +21,7 @@
 [ext_resource type="FontFile" uid="uid://c1dye6pmg4ifm" path="res://Assets/Fuente/Pixel Times.ttf" id="16_wq6sa"]
 [ext_resource type="PackedScene" uid="uid://x1s0t0dci8r5" path="res://Scenes/VelaAnimada.tscn" id="18_65yk4"]
 [ext_resource type="Texture2D" uid="uid://dqvy5nsv44icq" path="res://Assets/light.png" id="21_q6xrh"]
+[ext_resource type="PackedScene" uid="uid://rgoadtl061ea" path="res://Scenes/Interacción keypad.tscn" id="22_5t6wr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ysje"]
 texture = ExtResource("1_2bffg")
@@ -11561,6 +11562,9 @@ font = ExtResource("16_wq6sa")
 font_size = 14
 font_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_c7dap"]
+font = ExtResource("16_wq6sa")
+
 [node name="World" type="Node2D"]
 script = ExtResource("1_cmh7k")
 
@@ -11591,17 +11595,17 @@ tile_set = SubResource("TileSet_l4243")
 [node name="Antorchas" parent="." instance=ExtResource("18_65yk4")]
 
 [node name="Player" parent="." instance=ExtResource("11_kesjh")]
-position = Vector2(410, 128)
+position = Vector2(579, 499)
 scale = Vector2(0.7, 0.7)
 
 [node name="Profundidad paredes" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAqABwAAQADABcAAAAqABsAAQADABcAAAAqABoAAQADABcAAAAqABkAAQADABcAAAAqABgAAQADABcAAAA/ACIAAQA0AAYAAAAdABcAAQAKAAcAAAAeABcAAQAaAAEAAAAfABcAAQAbAAEAAAAgABcAAQAcAAEAAAAhABcAAQAJAAcAAAAeAAwAAQAaAAEAAAAfAAwAAQAbAAEAAAAgAAwAAQAcAAEAAAAhAAwAAQAJAAcAAAAPAAwAAQAGAAMAAAAQAAwAAQAGAAMAAAARAAwAAQAGAAMAAAASAAwAAQAGAAMAAAALAAwAAQAGAAMAAAAMAAwAAQAGAAMAAAANAAwAAQAGAAMAAAAOAAwAAQAGAAMAAAAHAAsAAQAEAAIAAAAcAAwAAQAJAAcAAAAIAAwAAQAGAAMAAAAJAAwAAQAGAAMAAAAKAAwAAQAGAAMAAAAGAAwAAQAFAAwAAAACAAwAAQAFAAwAAAADAAwAAQAFAAwAAAAEAAwAAQAFAAwAAAAFAAwAAQAFAAwAAAABAAwAAQAEAAcAAAATAAkAAQAQAAQAAAAUAAkAAQADAAQAAAASAAkAAQADAAYAAAAVAAkAAQAQAAYAAAASAAoAAQADAAcAAAASAAsAAQADAAcAAAAVAAoAAQAQAAcAAAAVAAsAAQAQAAcAAAAVAAwAAQAFAAcAAAAWAAwAAQAGAAcAAAAXAAwAAQAHAAcAAAAYAAwAAQAFAAcAAAAaAAwAAQAHAAcAAAAbAAwAAQAIAAcAAAAZAAwAAQAGAAcAAAAdAAwAAQAKAAcAAAAiAAwAAQAKAAcAAAAjAAwAAQALAAcAAAAkAAwAAQAMAAcAAAAlAAwAAQANAAcAAAAmAAwAAQAOAAcAAAAnAAwAAQAMAAcAAAAoAAwAAQAMAAcAAAApAAwAAQAMAAcAAAAqAAwAAQAPAAcAAAAVABcAAQAFAAcAAAAWABcAAQAGAAcAAAAXABcAAQAHAAcAAAAYABcAAQAFAAcAAAAZABcAAQAFAAcAAAAaABcAAQAGAAcAAAAbABcAAQAHAAcAAAAcABcAAQAJAAcAAAAiABcAAQAKAAcAAAAjABcAAQALAAcAAAAkABcAAQAMAAcAAAAlABcAAQANAAcAAAAmABcAAQAOAAcAAAAnABcAAQAMAAcAAAAoABcAAQAMAAcAAAApABcAAQANAAcAAAAqABcAAQAOAAcAAAASABYAAQADAAYAAAATABYAAQAQAAQAAAAUABYAAQADAAQAAAAVABYAAQAQAAYAAAAqABYAAQADAAYAAAArABYAAQAQAAQAAAAsABYAAQADAAQAAAAtABYAAQAQAAYAAAAHAAwAAQAEAAMAAAAtABcAAQAEAAMAAAAuABcAAQAGAAMAAAAvABcAAQAGAAMAAAAwABcAAQAGAAMAAAAxABcAAQAGAAMAAAAyABcAAQAGAAMAAAAzABcAAQAGAAMAAAA0ABcAAQAGAAMAAAA1ABcAAQAGAAMAAAA2ABcAAQAGAAMAAAA3ABcAAQAGAAMAAAA4ABcAAQAGAAMAAAA5ABcAAQAGAAMAAAA6ABcAAQAGAAMAAAA7ABcAAQAGAAMAAAA8ABcAAQAGAAMAAAA9ABcAAQAGAAMAAAA+ABcAAQAGAAMAAAA/ABcAAQAGAAMAAABAABcAAQAPAAMAAAAHACIAAQAEAAcAAAAIACIAAQAFAAcAAAAJACIAAQAGAAcAAAAKACIAAQAHAAcAAAALACIAAQAIAAcAAAAMACIAAQAJAAcAAAANACIAAQAKAAcAAAAOACIAAQALAAcAAAAPACIAAQAMAAcAAAAQACIAAQANAAcAAAARACIAAQAOAAcAAAASACIAAQAPAAcAAAASACEAAQADAAYAAAATACEAAQAQAAQAAAAUACEAAQADAAQAAAAVACEAAQAQAAYAAAAWACMAAQAFAAcAAAAXACMAAQAGAAcAAAAYACMAAQAHAAcAAAAZACMAAQAIAAcAAAAaACMAAQAFAAcAAAAbACMAAQAGAAcAAAAcACMAAQAHAAcAAAAdACMAAQAIAAcAAAAgACMAAQAFAAcAAAAhACMAAQAGAAcAAAAiACMAAQAHAAcAAAAjACMAAQAIAAcAAAAkACMAAQAFAAcAAAAlACMAAQAGAAcAAAAmACMAAQAFAAcAAAAnACMAAQAGAAcAAAAoACMAAQAHAAcAAAApACMAAQAIAAcAAAAeACMAAQAJAAcAAAAfACMAAQAKAAcAAAAVACMAAQAEAAcAAAAqACMAAQAPAAcAAAAuACMAAQAEAAcAAAAvACMAAQAFAAcAAAAwACMAAQAGAAcAAAAxACMAAQAHAAcAAAAyACMAAQAIAAcAAAAzACMAAQAJAAcAAAA0ACMAAQAKAAcAAAA1ACMAAQALAAcAAAA2ACMAAQAMAAcAAAA3ACMAAQANAAcAAAA4ACMAAQAOAAcAAAA5ACMAAQAJAAcAAAA6ACMAAQAKAAcAAAA7ACMAAQALAAcAAAA8ACMAAQAMAAcAAAA9ACMAAQANAAcAAAA+ACMAAQAOAAcAAAA/ACMAAQAPAAcAAAAtACIAAQADAAQAAAArACIAAQAQAAQAAAAqACIAAQADAAYAAAAuACIAAQAQAAYAAAAsACIAAQAHAAsAAAApAAUAAAAGAAYAAAA=")
 tile_set = SubResource("TileSet_l4243")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Cambiar nivel" type="Area2D" parent="."]
 script = ExtResource("13_pdwog")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cambiar nivel"]
 position = Vector2(989, 526)
 shape = SubResource("RectangleShape2D_wwenq")
 
@@ -11658,6 +11662,15 @@ que no solo enfrentarán desafíos
  sus propios temores internos."
 label_settings = SubResource("LabelSettings_t3pcj")
 
+[node name="Interaccion Keypad" type="Label" parent="CanvasLayer"]
+visible = false
+offset_left = 751.0
+offset_top = 392.0
+offset_right = 841.0
+offset_bottom = 409.0
+text = "Presiona E "
+label_settings = SubResource("LabelSettings_c7dap")
+
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.617455, 0.617455, 0.617455, 1)
 
@@ -11675,10 +11688,14 @@ energy = 2.0
 texture = ExtResource("21_q6xrh")
 
 [node name="Luz escalera2" type="PointLight2D" parent="."]
-position = Vector2(94.9999, 112)
+position = Vector2(93, 111)
 scale = Vector2(0.63, 0.52)
 energy = 2.0
 texture = ExtResource("21_q6xrh")
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[node name="Interacción Keypad" parent="." instance=ExtResource("22_5t6wr")]
+position = Vector2(771, 460)
+scale = Vector2(2, 2)
+
+[connection signal="body_entered" from="Cambiar nivel" to="Cambiar nivel" method="_on_body_entered"]
+[connection signal="body_exited" from="Cambiar nivel" to="Cambiar nivel" method="_on_body_exited"]
