@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732148422
+::res://::1732231596
 area_2d2.gd::GDScript::-1::1731089978::0::1::::<>Area2D<>::
 area_2d.gd::GDScript::-1::1732052799::0::1::::<>Area2D<>::
 camera_2d.gd::GDScript::-1::1731974311::0::1::::<>Camera2D<>::
 icon.svg::CompressedTexture2D::8939604862758558659::1728864434::1731090144::1::::<><>::
 mapa.tscn::PackedScene::3655502690575625352::1728866690::0::1::::<><>::uid://ctoblg2eyg6j7::::res://Escenas/Untitled Diagram.drawio.png<>res://Escenas/Player.tscn
-mundo.tscn::PackedScene::7451637061533917914::1732146725::0::1::::<><>::uid://ch0d331ek1f3y::::res://player_1.tscn<>uid://c5nxkdgckbb4h::::res://player_2.tscn<>uid://cwe443qaxlvfd::::res://Tileset.png<>uid://bqljidbf3ihrt::::res://Props.png<>uid://cthv2kk6cfhpu::::res://Sayako_TileB.png<>uid://b136nowyydllf::::res://Sayako_TileC.png<>uid://dmtnby1npv6t1::::res://Tileset_48x48_2.png<>res://camera_2d.gd<>res://area_2d.gd
-node_2d.tscn::PackedScene::1256308720429700717::1732146724::0::1::::<><>::res://player_2.gd
+mundo.tscn::PackedScene::7451637061533917914::1732231571::0::1::::<><>::uid://ch0d331ek1f3y::::res://player_1.tscn<>uid://c5nxkdgckbb4h::::res://player_2.tscn<>uid://cwe443qaxlvfd::::res://Tileset.png<>uid://bqljidbf3ihrt::::res://Props.png<>uid://cthv2kk6cfhpu::::res://Sayako_TileB.png<>uid://b136nowyydllf::::res://Sayako_TileC.png<>uid://dmtnby1npv6t1::::res://Tileset_48x48_2.png<>res://camera_2d.gd<>res://area_2d.gd
+node_2d.tscn::PackedScene::1256308720429700717::1732231571::0::1::::<><>::res://player_2.gd
 plataforma.gd::GDScript::-1::1731089978::0::1::::<>StaticBody2D<>::
 plataforma.tscn::PackedScene::179896591018818571::1731089978::0::1::::<><>::res://plataforma.gd<>uid://chrk42vu7ic58::::res://prueba/rectangulo.png
 player2.gd::GDScript::-1::1731090102::0::1::::<>CharacterBody2D<>::
@@ -15,13 +15,12 @@ player.gd::GDScript::-1::1731089978::0::1::::<>CharacterBody2D<>::
 Player.png::CompressedTexture2D::529389543109302408::1731090102::1731090144::1::::<><>::
 Player.tscn::PackedScene::1667168142712372787::1731089978::0::1::::<><>::uid://bnpyefgx86wo1::::res://prueba/fantasma2.webp<>res://player.gd
 player_1.gd::GDScript::-1::1732050060::0::1::::<>CharacterBody2D<>::
-player_1.tscn::PackedScene::5316006380926412244::1732146725::0::1::::<><>::res://player_1.gd<>uid://hso76rggd457::::res://Player.png
+player_1.tscn::PackedScene::5316006380926412244::1732231571::0::1::::<><>::res://player_1.gd<>uid://hso76rggd457::::res://Player.png
 player_2.gd::GDScript::-1::1731090102::0::1::::<>CharacterBody2D<>::
-player_2.tscn::PackedScene::6906758103045780941::1732146725::0::1::::<><>::uid://dswd53u10275h::::res://player2.png<>res://player_2.gd
+player_2.tscn::PackedScene::6906758103045780941::1732231572::0::1::::<><>::uid://dswd53u10275h::::res://player2.png<>res://player_2.gd
 Props.png::CompressedTexture2D::3532711235862186577::1731094241::1731094248::1::::<><>::
 Sayako_TileB.png::CompressedTexture2D::6122203856163685334::1731097563::1731097578::1::::<><>::
 Sayako_TileC.png::CompressedTexture2D::4271039407927393215::1731097534::1731097578::1::::<><>::
-super-mario-bros-8-bit-logo-5063362780-seeklogo.com.png::CompressedTexture2D::4237524818783317541::1728866690::1731701473::1::::<><>::
 Tileset.png::CompressedTexture2D::6327067514654490313::1731094207::1731094248::1::::<><>::
 Tileset_48x48_2.png::CompressedTexture2D::8041543760099582164::1731631772::1731631777::1::::<><>::
 world2.tscn::PackedScene::1567542917453127371::1731089978::0::1::::<><>::uid://x0uasgoef7lv::::res://Player.tscn<>uid://cte4um6gdrsl::::res://plataforma.tscn<>uid://wsds6oenhv66::::res://prueba/puerta.webp<>res://area_2d2.gd
@@ -316,10 +315,9 @@ woodenSupports_E.png::CompressedTexture2D::2281636808209800596::1729197657::1731
 woodenSupports_N.png::CompressedTexture2D::8044987026477102898::1729197657::1731701758::1::::<><>::
 woodenSupports_S.png::CompressedTexture2D::1698345108031069203::1729197657::1731701473::1::::<><>::
 woodenSupports_W.png::CompressedTexture2D::277870939239867274::1729197657::1731701758::1::::<><>::
-::res://Escenas/::1731701473
+::res://Escenas/::1732227270
 player.gd::GDScript::-1::1728866690::0::1::::<>CharacterBody2D<>::
 Player.tscn::PackedScene::4400119718369752477::1728866690::0::1::::<><>::res://Escenas/player.gd<>uid://b1mxodluyrkun::::res://super-mario-bros-8-bit-logo-5063362780-seeklogo.com.png
-Untitled Diagram.drawio.png::CompressedTexture2D::6135411402855280446::1728866690::1731701473::1::::<><>::
 ::res://prueba/::1731701473
 fantasma2.webp::CompressedTexture2D::4360685150975628220::1731089978::1731701473::1::::<><>::
 puerta.webp::CompressedTexture2D::1581529304928906777::1731089978::1731701473::1::::<><>::
