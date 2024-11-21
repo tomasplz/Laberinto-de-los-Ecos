@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3 uid="uid://il7w1uui7vxj"]
 
 [ext_resource type="Script" path="res://Scripts/cristales.gd" id="1_j8suv"]
-[ext_resource type="Texture2D" uid="uid://drjx0c3jk1sal" path="res://Assets/Animación Cristal/frame_0.png" id="2_bl5sx"]
-[ext_resource type="Texture2D" uid="uid://dddvofi5awjmg" path="res://Assets/Animación Cristal/frame_1.png" id="3_e6kkm"]
-[ext_resource type="Texture2D" uid="uid://f6a6qyl6o16v" path="res://Assets/Animación Cristal/frame_2.png" id="4_wkjmp"]
-[ext_resource type="Texture2D" uid="uid://fe1x34ali7he" path="res://Assets/Animación Cristal/frame_3.png" id="5_j5jet"]
-[ext_resource type="Texture2D" uid="uid://b0p8w0h7dt4fc" path="res://Assets/Animación Cristal/frame_4.png" id="6_uflfn"]
-[ext_resource type="Texture2D" uid="uid://dd6av0vvct6iq" path="res://Assets/Animación Cristal/frame_5.png" id="7_j0rl0"]
+[ext_resource type="Texture2D" uid="uid://drjx0c3jk1sal" path="res://Assets/Mapa/Animación Cristal/frame_0.png" id="2_bl5sx"]
+[ext_resource type="Texture2D" uid="uid://dddvofi5awjmg" path="res://Assets/Mapa/Animación Cristal/frame_1.png" id="3_e6kkm"]
+[ext_resource type="Texture2D" uid="uid://f6a6qyl6o16v" path="res://Assets/Mapa/Animación Cristal/frame_2.png" id="4_wkjmp"]
+[ext_resource type="Texture2D" uid="uid://fe1x34ali7he" path="res://Assets/Mapa/Animación Cristal/frame_3.png" id="5_j5jet"]
+[ext_resource type="Texture2D" uid="uid://b0p8w0h7dt4fc" path="res://Assets/Mapa/Animación Cristal/frame_4.png" id="6_uflfn"]
+[ext_resource type="Texture2D" uid="uid://dd6av0vvct6iq" path="res://Assets/Mapa/Animación Cristal/frame_5.png" id="7_j0rl0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mmfdi"]
 animations = [{

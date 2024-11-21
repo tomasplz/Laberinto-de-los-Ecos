@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=4 uid="uid://b83ppv60i6k75"]
+[gd_scene load_steps=14 format=4 uid="uid://b83ppv60i6k75"]
 
+[ext_resource type="Script" path="res://Scripts/keypad.gd" id="1_aem0a"]
 [ext_resource type="Texture2D" uid="uid://fm0dc07arb8r" path="res://Assets/Mapa/Catacombs/mainlevbuild.png" id="1_hrf8y"]
 [ext_resource type="Texture2D" uid="uid://dqvy5nsv44icq" path="res://Assets/light.png" id="2_b1k8v"]
 [ext_resource type="Texture2D" uid="uid://cqfrrerma7csh" path="res://Assets/Keypad/pixil-frame-0.png" id="2_oc8ll"]
@@ -1042,8 +1043,10 @@ texture = ExtResource("1_hrf8y")
 sources/0 = SubResource("TileSetAtlasSource_28ucb")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_aem0a")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+texture_filter = 1
 scale = Vector2(10, 10)
 tile_map_data = PackedByteArray("AAAAAAAAAAAFAAkAAAABAAAAAAAGAAkAAAACAAAAAAAHAAkAAAADAAAAAAAFAAkAAAAEAAAAAAAGAAkAAAAFAAAAAAAHAAkAAAAGAAAAAAAHAAoAAAAGAAEAAAAHAAoAAAAGAAIAAAAHAAoAAAAHAAEAAAAHAAoAAAAHAAAAAAAHAAoAAAAFAAIAAAAHAAkAAAAFAAEAAAAHAAoAAAAEAAIAAAAGAAkAAAAEAAEAAAAGAAoAAAADAAEAAAAFAAoAAAACAAEAAAAHAAoAAAABAAEAAAAGAAoAAAAAAAEAAAAFAAoAAAAAAAIAAAAFAAkAAAABAAIAAAAGAAkAAAACAAIAAAAHAAkAAAACAAMAAAAHAAoAAAABAAMAAAAGAAoAAAAAAAMAAAAFAAoAAAADAAIAAAAFAAkAAAAEAAMAAAAGAAoAAAAFAAMAAAAHAAoAAAADAAMAAAAFAAoAAAAGAAMAAAAHAAoAAAAHAAMAAAAHAAoAAAAHAAIAAAAHAAoAAAD//wAAAAAHAAoAAAD//wEAAAAHAAoAAAD//wIAAAAHAAoAAAD//wMAAAAHAAoAAAA=")
 tile_set = SubResource("TileSet_xakqh")
@@ -1060,48 +1063,50 @@ scale = Vector2(2.545, 1.8625)
 color = Color(0.71686, 0.463594, 0, 1)
 texture = ExtResource("2_b1k8v")
 
-[node name="Pixil-frame-0" type="Sprite2D" parent="."]
+[node name="Keypad" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(585, 414)
 scale = Vector2(5, 5)
 texture = ExtResource("2_oc8ll")
 
 [node name="0DIgito" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(557, 130)
 scale = Vector2(5, 5)
 texture = ExtResource("3_nt6a5")
 
 [node name="1Digito" type="Sprite2D" parent="."]
-visible = false
+texture_filter = 1
 position = Vector2(557, 130)
 scale = Vector2(5, 5)
 texture = ExtResource("4_34w87")
 
 [node name="2Digito" type="Sprite2D" parent="."]
-visible = false
+texture_filter = 1
 position = Vector2(557, 130)
 scale = Vector2(5, 5)
 texture = ExtResource("5_7f4k5")
 
 [node name="3Digito" type="Sprite2D" parent="."]
-visible = false
+texture_filter = 1
 position = Vector2(557, 130)
 scale = Vector2(5, 5)
 texture = ExtResource("6_avial")
 
 [node name="4Digito" type="Sprite2D" parent="."]
-visible = false
+texture_filter = 1
 position = Vector2(557, 130)
 scale = Vector2(5, 5)
 texture = ExtResource("7_4g0ul")
 
 [node name="5Digito" type="Sprite2D" parent="."]
-visible = false
+texture_filter = 1
 position = Vector2(557, 130)
 scale = Vector2(5, 5)
 texture = ExtResource("8_ikiht")
 
 [node name="6Digito" type="Sprite2D" parent="."]
-visible = false
+texture_filter = 1
 position = Vector2(557, 130)
 scale = Vector2(5, 5)
 texture = ExtResource("9_em4jg")

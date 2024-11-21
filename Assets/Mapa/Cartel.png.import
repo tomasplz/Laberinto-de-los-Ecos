@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fe1x34ali7he"
-path="res://.godot/imported/frame_3.png-325b4b52fd16c6fba3b65d7784d34e95.ctex"
+uid="uid://2blv2yo0hoy6"
+path="res://.godot/imported/Cartel.png-2ee3a96a60723d3686ab53de55eac403.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Animación Cristal/frame_3.png"
-dest_files=["res://.godot/imported/frame_3.png-325b4b52fd16c6fba3b65d7784d34e95.ctex"]
+source_file="res://Assets/Mapa/Cartel.png"
+dest_files=["res://.godot/imported/Cartel.png-2ee3a96a60723d3686ab53de55eac403.ctex"]
 
 [params]
 

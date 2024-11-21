@@ -1,16 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732152927
+::res://::1732195440
 icon.svg::CompressedTexture2D::8939604862758558659::1731636589::1731806639::1::::<><>::
-prueba_dirección.tscn::PackedScene::4077774734839278287::1732152927::0::1::::<><>::uid://dmbkjyhga6fjs::::res://Assets/Mapa/Catacombs/candleA_01.png
-::res://Assets/::1732148299
+::res://Assets/::1732195440
+fantasma2.webp::CompressedTexture2D::3331305941276368822::1731636111::1732195419::1::::<><>::
 light.png::CompressedTexture2D::8327146975370696780::1732144771::1732144772::1::::<><>::
-::res://Assets/Animación Cristal/::1732146823
-frame_0.png::CompressedTexture2D::8372493077118191587::1731959412::1732146823::1::::<><>::
-frame_1.png::CompressedTexture2D::7377322049557468210::1731959412::1732146823::1::::<><>::
-frame_2.png::CompressedTexture2D::414996166167772507::1731959412::1732146823::1::::<><>::
-frame_3.png::CompressedTexture2D::360822959746325154::1731959412::1732146823::1::::<><>::
-frame_4.png::CompressedTexture2D::4174151714538115880::1731959412::1732146823::1::::<><>::
-frame_5.png::CompressedTexture2D::7433863140523502004::1731959412::1732146823::1::::<><>::
 ::res://Assets/Fuente/::1731970066
 Pergamino pixel art.png::CompressedTexture2D::6664048942793500446::1731970064::1731970066::1::::<><>::
 Pixel Times.ttf::FontFile::6605410438189551198::1731967896::1731967912::1::::<><>::
@@ -23,8 +16,17 @@ Pixel Times.ttf::FontFile::6605410438189551198::1731967896::1731967912::1::::<><
 5 Digito.png::CompressedTexture2D::4214103884419307463::1732148330::1732148331::1::::<><>::
 6 Digito.png::CompressedTexture2D::8188834144303822280::1732148330::1732148332::1::::<><>::
 pixil-frame-0.png::CompressedTexture2D::5907247538639993651::1732146977::1732148300::1::::<><>::
-::res://Assets/Mapa/::1732077328
+::res://Assets/Mapa/::1732195440
+Cartel mini.png::CompressedTexture2D::7256647058605888425::1732193609::1732195442::1::::<><>::
+Cartel.png::CompressedTexture2D::1897870000448924431::1732192645::1732195442::1::::<><>::
 MysticAcid_basics_PetricakeGames.png::CompressedTexture2D::1882857420814484211::1731636589::1731901252::1::::<><>::
+::res://Assets/Mapa/Animación Cristal/::1732146823
+frame_0.png::CompressedTexture2D::8372493077118191587::1731959412::1732195442::1::::<><>::
+frame_1.png::CompressedTexture2D::7377322049557468210::1731959412::1732195442::1::::<><>::
+frame_2.png::CompressedTexture2D::414996166167772507::1731959412::1732195442::1::::<><>::
+frame_3.png::CompressedTexture2D::360822959746325154::1731959412::1732195442::1::::<><>::
+frame_4.png::CompressedTexture2D::4174151714538115880::1731959412::1732195442::1::::<><>::
+frame_5.png::CompressedTexture2D::7433863140523502004::1731959412::1732195442::1::::<><>::
 ::res://Assets/Mapa/Appartment/::1731636589
 ::res://Assets/Mapa/Appartment/png/::1731901252
 apartmentA5demo.png::CompressedTexture2D::7876497934346021401::1731636589::1731901252::1::::<><>::
@@ -275,23 +277,24 @@ Bone.png::CompressedTexture2D::8620515694496040050::1731636589::1731901252::1:::
 Hands.png::CompressedTexture2D::8060161688065021310::1731636589::1731901252::1::::<><>::
 ::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Weapons/Wood/::1731901252
 Wood.png::CompressedTexture2D::5201761218200311098::1731636589::1731901252::1::::<><>::
-::res://prueba/::1731636184
-fantasma2.webp::CompressedTexture2D::3331305941276368822::1731636111::1731636183::1::::<><>::
+::res://prueba/::1732195417
 puerta.webp::CompressedTexture2D::1581529304928906777::1731636111::1731636184::1::::<><>::
 rectangulo.png::CompressedTexture2D::5299918104145487269::1731636111::1731636183::1::::<><>::
-::res://Scenes/::1732152928
-Cristales.tscn::PackedScene::586202533057225195::1732146821::0::1::::<><>::res://Scripts/cristales.gd<>uid://drjx0c3jk1sal::::res://Assets/Animación Cristal/frame_0.png<>uid://dddvofi5awjmg::::res://Assets/Animación Cristal/frame_1.png<>uid://f6a6qyl6o16v::::res://Assets/Animación Cristal/frame_2.png<>uid://fe1x34ali7he::::res://Assets/Animación Cristal/frame_3.png<>uid://b0p8w0h7dt4fc::::res://Assets/Animación Cristal/frame_4.png<>uid://dd6av0vvct6iq::::res://Assets/Animación Cristal/frame_5.png
-Keypad.tscn::PackedScene::4761393794689011166::1732152928::0::1::::<><>::uid://fm0dc07arb8r::::res://Assets/Mapa/Catacombs/mainlevbuild.png<>uid://dqvy5nsv44icq::::res://Assets/light.png<>uid://cqfrrerma7csh::::res://Assets/Keypad/pixil-frame-0.png<>uid://bjrkvilpl3uy7::::res://Assets/Keypad/0 DIgito.png<>uid://b4q360yxh7ora::::res://Assets/Keypad/1 digito.png<>uid://c42efjnyixdl2::::res://Assets/Keypad/2 Digito.png<>uid://bv12ciysccqy3::::res://Assets/Keypad/3 Digito.png<>uid://bcrrktk6pmheu::::res://Assets/Keypad/4 Digito.png<>uid://b1blw7vr2j2hv::::res://Assets/Keypad/5 Digito.png<>uid://dowy5wwmk6bi3::::res://Assets/Keypad/6 Digito.png
-Mapa puzzle matriz.tscn::PackedScene::253897468007270818::1732152927::0::1::::<><>::uid://fm0dc07arb8r::::res://Assets/Mapa/Catacombs/mainlevbuild.png<>res://Scripts/mapa_puzzle_matriz.gd<>uid://crs8kgids11ur::::res://Assets/Mapa/Catacombs/decorative.png<>uid://kb815gd2iwhh::::res://Assets/Mapa/Appartment/upsized png/apartmentA5demo.png<>uid://dnnkmnvdduq7f::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar.png<>uid://d1f7dy555l5mg::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar_Doors.png<>uid://bo0rcugw35fwm::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Decor.png<>uid://bw1e638tygce1::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Floor.png<>uid://deb83jttwtss4::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Walls.png<>uid://cyu7xvcwm06qb::::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://13cne7geos64::::res://Assets/Mapa/MysticAcid_basics_PetricakeGames.png<>uid://x0uasgoef7lv::::res://Scenes/Player.tscn<>uid://j7vicuvnkpse::::res://Assets/Mapa/dungeon temple/16x16/B16x16.png<>res://Scripts/area_2d.gd<>uid://cvvtfc83hxesd::::res://Assets/Mapa/Catacombs/pixil-frame-0.png<>uid://dppr12pfk0puw::::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://il7w1uui7vxj::::res://Scenes/Cristales.tscn<>uid://c17d6a2itpipy::::res://Assets/Fuente/Pergamino pixel art.png<>uid://c1dye6pmg4ifm::::res://Assets/Fuente/Pixel Times.ttf<>uid://x1s0t0dci8r5::::res://Scenes/VelaAnimada.tscn<>uid://dqvy5nsv44icq::::res://Assets/light.png<>uid://rgoadtl061ea::::res://Scenes/Interacción keypad.tscn
-Player.tscn::PackedScene::1667168142712372787::1732077465::0::1::::<><>::uid://bnpyefgx86wo1::::res://prueba/fantasma2.webp<>res://Scripts/player.gd
-Interacción keypad.tscn::PackedScene::1206446833725420696::1732153027::0::1::::<><>::res://Scenes/interacción_keypad.gd
-interacción_keypad.gd::GDScript::-1::1732152783::0::1::::<>Area2D<>::
-VelaAnimada.tscn::PackedScene::1669155812700813028::1732152927::0::1::::<><>::uid://dmbkjyhga6fjs::::res://Assets/Mapa/Catacombs/candleA_01.png<>uid://44q1cx4ykkfy::::res://Assets/Mapa/Catacombs/candleA_04.png<>uid://dqvy5nsv44icq::::res://Assets/light.png
+::res://Scenes/::1732195440
+Cristales.tscn::PackedScene::586202533057225195::1732195440::0::1::::<><>::res://Scripts/cristales.gd<>uid://drjx0c3jk1sal::::res://Assets/Mapa/Animación Cristal/frame_0.png<>uid://dddvofi5awjmg::::res://Assets/Mapa/Animación Cristal/frame_1.png<>uid://f6a6qyl6o16v::::res://Assets/Mapa/Animación Cristal/frame_2.png<>uid://fe1x34ali7he::::res://Assets/Mapa/Animación Cristal/frame_3.png<>uid://b0p8w0h7dt4fc::::res://Assets/Mapa/Animación Cristal/frame_4.png<>uid://dd6av0vvct6iq::::res://Assets/Mapa/Animación Cristal/frame_5.png
+Interacción keypad.tscn::PackedScene::1206446833725420696::1732195287::0::1::::<><>::res://Scripts/interacción_keypad.gd
+Keypad.tscn::PackedScene::4761393794689011166::1732195387::0::1::::<><>::res://Scenes/keypad.gd<>uid://fm0dc07arb8r::::res://Assets/Mapa/Catacombs/mainlevbuild.png<>uid://dqvy5nsv44icq::::res://Assets/light.png<>uid://cqfrrerma7csh::::res://Assets/Keypad/pixil-frame-0.png<>uid://bjrkvilpl3uy7::::res://Assets/Keypad/0 DIgito.png<>uid://b4q360yxh7ora::::res://Assets/Keypad/1 digito.png<>uid://c42efjnyixdl2::::res://Assets/Keypad/2 Digito.png<>uid://bv12ciysccqy3::::res://Assets/Keypad/3 Digito.png<>uid://bcrrktk6pmheu::::res://Assets/Keypad/4 Digito.png<>uid://b1blw7vr2j2hv::::res://Assets/Keypad/5 Digito.png<>uid://dowy5wwmk6bi3::::res://Assets/Keypad/6 Digito.png
+Mapa puzzle matriz.tscn::PackedScene::253897468007270818::1732195440::0::1::::<><>::uid://fm0dc07arb8r::::res://Assets/Mapa/Catacombs/mainlevbuild.png<>res://Scripts/mapa_puzzle_matriz.gd<>uid://crs8kgids11ur::::res://Assets/Mapa/Catacombs/decorative.png<>uid://kb815gd2iwhh::::res://Assets/Mapa/Appartment/upsized png/apartmentA5demo.png<>uid://dnnkmnvdduq7f::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar.png<>uid://d1f7dy555l5mg::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar_Doors.png<>uid://bo0rcugw35fwm::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Decor.png<>uid://bw1e638tygce1::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Floor.png<>uid://deb83jttwtss4::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Walls.png<>uid://cyu7xvcwm06qb::::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://13cne7geos64::::res://Assets/Mapa/MysticAcid_basics_PetricakeGames.png<>uid://x0uasgoef7lv::::res://Scenes/Player.tscn<>uid://j7vicuvnkpse::::res://Assets/Mapa/dungeon temple/16x16/B16x16.png<>res://Scripts/area_2d.gd<>uid://cvvtfc83hxesd::::res://Assets/Mapa/Catacombs/pixil-frame-0.png<>uid://dppr12pfk0puw::::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://il7w1uui7vxj::::res://Scenes/Cristales.tscn<>uid://c17d6a2itpipy::::res://Assets/Fuente/Pergamino pixel art.png<>uid://c1dye6pmg4ifm::::res://Assets/Fuente/Pixel Times.ttf<>uid://x1s0t0dci8r5::::res://Scenes/VelaAnimada.tscn<>uid://dqvy5nsv44icq::::res://Assets/light.png<>uid://2blv2yo0hoy6::::res://Assets/Mapa/Cartel.png<>uid://rgoadtl061ea::::res://Scenes/Interacción keypad.tscn<>res://Scripts/interaccion_cartel.gd<>uid://dbnf6f4ydi88t::::res://Assets/Mapa/Cartel mini.png
+Player.tscn::PackedScene::1667168142712372787::1732195417::0::1::::<><>::uid://bnpyefgx86wo1::::res://Assets/fantasma2.webp<>res://Scripts/player.gd
+VelaAnimada.tscn::PackedScene::1669155812700813028::1732195287::0::1::::<><>::uid://dmbkjyhga6fjs::::res://Assets/Mapa/Catacombs/candleA_01.png<>uid://44q1cx4ykkfy::::res://Assets/Mapa/Catacombs/candleA_04.png<>uid://dqvy5nsv44icq::::res://Assets/light.png
 world2.tscn::PackedScene::1567542917453127371::1732077465::0::1::::<><>::res://Scripts/area_2d2.gd
-::res://Scripts/::1732150359
+::res://Scripts/::1732195387
 area_2d2.gd::GDScript::-1::1731934193::0::1::::<>Area2D<>::
 area_2d.gd::GDScript::-1::1731934194::0::1::::<>Area2D<>::
 cristales.gd::GDScript::-1::1732049093::0::1::::<>Area2D<>::
-mapa_puzzle_matriz.gd::GDScript::-1::1732150359::0::1::::<>Node2D<>::
+interaccion_cartel.gd::GDScript::-1::1732193067::0::1::::<>Area2D<>::
+interacción_keypad.gd::GDScript::-1::1732152783::0::1::::<>Area2D<>::
+keypad.gd::GDScript::-1::1732189762::0::1::::<>Node2D<>::
+mapa_puzzle_matriz.gd::GDScript::-1::1732190061::0::1::::<>Node2D<>::
 plataforma.gd::GDScript::-1::1731636589::0::1::::<>StaticBody2D<>::
 player.gd::GDScript::-1::1731955326::0::1::::<>CharacterBody2D<>::

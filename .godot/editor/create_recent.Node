@@ -1,3 +1,5 @@
+Node2D
+TextureRect
 CollisionShape2D
 Area2D
 Label
@@ -6,9 +8,7 @@ PointLight2D
 TileMapLayer
 Camera2D
 Sprite2D
-Node2D
 AnimatedSprite2D
-TextureRect
 CanvasLayer
 CharacterBody2D
 TileMap

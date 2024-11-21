@@ -1,9 +1,7 @@
 res://Scenes/Mapa puzzle matriz.tscn
 res://Scenes/VelaAnimada.tscn
-res://prueba_dirección.tscn
-res://Scenes/interactuar_key_pad.gd
 res://Scenes/Keypad.tscn
-res://Scripts/mapa_puzzle_matriz.gd
-res://area_2d.gd
-res://Scenes/interacción_keypad.gd
 res://Scenes/Interacción keypad.tscn
+res://Scenes/keypad.gd
+res://Scripts/mapa_puzzle_matriz.gd
+res://Scenes/interaccion_cartel.gd

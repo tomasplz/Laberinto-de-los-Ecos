@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://f6a6qyl6o16v"
-path="res://.godot/imported/frame_2.png-e519065c1e10b9d4643a44ce5061630e.ctex"
+uid="uid://bnpyefgx86wo1"
+path="res://.godot/imported/fantasma2.webp-a9602c2b42f8c15ea0e6112665de8c26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Animación Cristal/frame_2.png"
-dest_files=["res://.godot/imported/frame_2.png-e519065c1e10b9d4643a44ce5061630e.ctex"]
+source_file="res://Assets/fantasma2.webp"
+dest_files=["res://.godot/imported/fantasma2.webp-a9602c2b42f8c15ea0e6112665de8c26.ctex"]
 
 [params]
 
