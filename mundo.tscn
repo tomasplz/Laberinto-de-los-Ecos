@@ -1017,7 +1017,7 @@ script = ExtResource("8_p73px")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 z_index = 4
-position = Vector2(-564, -293)
+position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_kfawl")
 
 [node name="Camera2D" type="Camera2D" parent="."]
