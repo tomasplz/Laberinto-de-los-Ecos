@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://wllg5qapmesh"]
+
+[ext_resource type="Script" path="res://Scripts/area_2d2.gd" id="1_og3dv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0igkh"]
+size = Vector2(137, 137)
+
+[node name="World2" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-1, 0)
+script = ExtResource("1_og3dv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1318, 554)
+shape = SubResource("RectangleShape2D_0igkh")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
