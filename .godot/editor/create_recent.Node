@@ -1,4 +1,9 @@
 TextureRect
+Button
+HSlider
+Label
+VBoxContainer
+Control
 ColorRect
 Sprite2D
 ParallaxBackground
