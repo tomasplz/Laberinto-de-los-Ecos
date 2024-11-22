@@ -1,8 +1,8 @@
-Node2D
-TextureRect
 CollisionShape2D
 Area2D
+TextureRect
 Label
+Node2D
 CanvasModulate
 PointLight2D
 TileMapLayer

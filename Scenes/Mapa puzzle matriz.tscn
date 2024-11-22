@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=4 uid="uid://du8wii2jti8y"]
+[gd_scene load_steps=72 format=4 uid="uid://du8wii2jti8y"]
 
 [ext_resource type="Texture2D" uid="uid://fm0dc07arb8r" path="res://Assets/Mapa/Catacombs/mainlevbuild.png" id="1_2bffg"]
 [ext_resource type="Script" path="res://Scripts/mapa_puzzle_matriz.gd" id="1_cmh7k"]
@@ -25,6 +25,12 @@
 [ext_resource type="PackedScene" uid="uid://rgoadtl061ea" path="res://Scenes/Interacción keypad.tscn" id="22_5t6wr"]
 [ext_resource type="Script" path="res://Scripts/interaccion_cartel.gd" id="23_p1ajt"]
 [ext_resource type="Texture2D" uid="uid://dbnf6f4ydi88t" path="res://Assets/Mapa/Cartel mini.png" id="25_3wxoo"]
+[ext_resource type="Script" path="res://Scripts/sala_1.gd" id="26_n26uh"]
+[ext_resource type="Script" path="res://Scripts/sala_2.gd" id="27_v2jkf"]
+[ext_resource type="Script" path="res://Scripts/sala_3.gd" id="28_tdasn"]
+[ext_resource type="Script" path="res://Scripts/sala_4.gd" id="29_r385b"]
+[ext_resource type="Script" path="res://Scripts/sala_5.gd" id="30_1mncb"]
+[ext_resource type="Script" path="res://Scripts/sala_6.gd" id="31_m6sqo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ysje"]
 texture = ExtResource("1_2bffg")
@@ -11563,6 +11569,24 @@ size = Vector2(32, 32)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gmkua"]
 size = Vector2(45, 25)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nuypk"]
+size = Vector2(372.75, 155.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xv50f"]
+size = Vector2(385.5, 163)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_es2mr"]
+size = Vector2(372, 200)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_os1fn"]
+size = Vector2(299, 163)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b5ltf"]
+size = Vector2(202, 332.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y5r72"]
+size = Vector2(332, 319)
+
 [sub_resource type="LabelSettings" id="LabelSettings_t3pcj"]
 font = ExtResource("16_wq6sa")
 font_size = 14
@@ -11675,6 +11699,51 @@ script = ExtResource("23_p1ajt")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interacciones/Interaccion Cartel"]
 position = Vector2(217.5, 266.5)
 shape = SubResource("RectangleShape2D_gmkua")
+
+[node name="ColisionesSalas" type="Node2D" parent="."]
+visible = false
+
+[node name="Sala1" type="Area2D" parent="ColisionesSalas"]
+script = ExtResource("26_n26uh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColisionesSalas/Sala1"]
+position = Vector2(514.625, 318.375)
+shape = SubResource("RectangleShape2D_nuypk")
+
+[node name="Sala 2" type="Area2D" parent="ColisionesSalas"]
+script = ExtResource("27_v2jkf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColisionesSalas/Sala 2"]
+position = Vector2(516.25, 489.5)
+shape = SubResource("RectangleShape2D_xv50f")
+
+[node name="Sala 3" type="Area2D" parent="ColisionesSalas"]
+script = ExtResource("28_tdasn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColisionesSalas/Sala 3"]
+position = Vector2(508, 130)
+shape = SubResource("RectangleShape2D_es2mr")
+
+[node name="Sala 4" type="Area2D" parent="ColisionesSalas"]
+script = ExtResource("29_r385b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColisionesSalas/Sala 4"]
+position = Vector2(161.5, 122)
+shape = SubResource("RectangleShape2D_os1fn")
+
+[node name="Sala 5" type="Area2D" parent="ColisionesSalas"]
+script = ExtResource("30_1mncb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColisionesSalas/Sala 5"]
+position = Vector2(216, 383.625)
+shape = SubResource("RectangleShape2D_b5ltf")
+
+[node name="Sala6" type="Area2D" parent="ColisionesSalas"]
+script = ExtResource("31_m6sqo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColisionesSalas/Sala6"]
+position = Vector2(874, 220.5)
+shape = SubResource("RectangleShape2D_y5r72")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
