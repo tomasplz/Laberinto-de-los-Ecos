@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://hchc1ydndqfv"]
+
+[ext_resource type="Script" path="res://Scripts/Arduino/ArduinoGeneral.cs" id="1_5sbk6"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5sbk6")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
