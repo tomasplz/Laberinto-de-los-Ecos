@@ -12,5 +12,5 @@ func _on_body_exited(body: Node2D) -> void:
 
 func _process(delta):
 	if entered and not scene_changed:
-		scene_changed = true 
-		get_tree().change_scene_to_file("res://Scenes/Mapa puzzle matriz.tscn")
+		scene_changed = true
+		get_tree().change_scene_to_file("res://world.tscn")
