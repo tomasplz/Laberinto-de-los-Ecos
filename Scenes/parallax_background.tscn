@@ -8,19 +8,19 @@
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 
 [node name="fondo" type="Sprite2D" parent="ParallaxLayer"]
-position = Vector2(577.438, 322.781)
-scale = Vector2(0.321742, 0.31955)
+position = Vector2(251, 152)
+scale = Vector2(0.139543, 0.148163)
 texture = ExtResource("1_12jn5")
 region_rect = Rect2(-1.17957, 0.317924, 1800.38, 1010.78)
 
 [node name="oscuro1" type="Sprite2D" parent="ParallaxLayer"]
 modulate = Color(0, 0, 0, 0.772549)
-position = Vector2(578, 357.75)
-scale = Vector2(0.6925, 0.1695)
+position = Vector2(257, 201)
+scale = Vector2(0.35725, 0.08075)
 texture = ExtResource("2_03dv7")
 
 [node name="oscuro2" type="Sprite2D" parent="ParallaxLayer"]
 modulate = Color(0, 0, 0, 0.772549)
-position = Vector2(564, 76)
-scale = Vector2(0.682, 0.0915)
+position = Vector2(256, 79)
+scale = Vector2(0.346, 0.06375)
 texture = ExtResource("2_03dv7")

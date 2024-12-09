@@ -21,6 +21,8 @@ buses/default_bus_layout=""
 
 [display]
 
+window/size/viewport_width=500
+window/size/viewport_height=300
 window/stretch/mode="canvas_items"
 
 [dotnet]
