@@ -11,9 +11,19 @@ config_version=5
 [application]
 
 config/name="Laberinto de los Ecos"
+<<<<<<< Updated upstream
 run/main_scene="res://mundo.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+=======
+run/main_scene="res://Scenes/menu.tscn"
+config/features=PackedStringArray("4.3", "C#", "Forward Plus")
+config/icon="res://Assets/icon.svg"
+
+[audio]
+
+buses/default_bus_layout=""
+>>>>>>> Stashed changes
 
 [display]
 
