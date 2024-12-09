@@ -18,6 +18,7 @@ func complete_mission():
 	camera_secondary.current = false
 func _ready():
 	add_to_group("player")
+
 func _physics_process(_delta):
 	direccion = Input.get_axis("ui_left","ui_right") 
 	direccion2= Input.get_axis("ui_up","ui_down")

@@ -4,8 +4,6 @@ var direccion : = 0.0
 var direccion2: = 0.0
 @onready var anim := $AnimationPlayer
 @onready var sprite := $Sprite2D
-func _ready():
-	add_to_group("player")
 func _physics_process(_delta):
 	direccion = Input.get_axis("ui_left2","ui_right2") 
 	direccion2= Input.get_axis("ui_up2","ui_down2")
