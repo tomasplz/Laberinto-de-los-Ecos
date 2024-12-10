@@ -11664,10 +11664,10 @@ position = Vector2(881, 219)
 scale = Vector2(0.3, 0.3)
 
 [node name="Player1" parent="." instance=ExtResource("19_uej1a")]
-position = Vector2(249, 102)
+position = Vector2(940, 486)
 
 [node name="player2" parent="." instance=ExtResource("20_mlitr")]
-position = Vector2(211, 91)
+position = Vector2(902, 475)
 
 [node name="TileMap sobre Personaje" type="Node2D" parent="."]
 
@@ -11703,6 +11703,8 @@ texture = ExtResource("21_q6xrh")
 [node name="Interacciones" type="Node2D" parent="."]
 
 [node name="Cambiar nivel" type="Area2D" parent="Interacciones"]
+position = Vector2(-988, -524)
+scale = Vector2(2, 2)
 script = ExtResource("13_pdwog")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interacciones/Cambiar nivel"]
@@ -11866,5 +11868,6 @@ script = ExtResource("34_bljlf")
 [node name="Camera2D2" type="Camera2D" parent="."]
 position = Vector2(-381, 200)
 
+[connection signal="body_entered" from="Interacciones/Cambiar nivel" to="Player1" method="_on_cambiar_nivel_body_entered"]
 [connection signal="body_entered" from="Interacciones/Cambiar nivel" to="Interacciones/Cambiar nivel" method="_on_body_entered"]
 [connection signal="body_exited" from="Interacciones/Cambiar nivel" to="Interacciones/Cambiar nivel" method="_on_body_exited"]

@@ -1,6 +1,7 @@
+AnimationPlayer
+ColorRect
 Timer
 RichTextLabel
-AnimationPlayer
 Label
 TextureRect
 CanvasLayer
@@ -8,6 +9,5 @@ Button
 HSlider
 VBoxContainer
 Control
-ColorRect
 Sprite2D
 ParallaxBackground
