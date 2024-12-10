@@ -1,10 +1,13 @@
+Timer
+RichTextLabel
+AnimationPlayer
+Label
 TextureRect
+CanvasLayer
 Button
 HSlider
-Label
 VBoxContainer
 Control
 ColorRect
 Sprite2D
 ParallaxBackground
-RichTextLabel
