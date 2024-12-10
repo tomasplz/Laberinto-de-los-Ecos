@@ -8,4 +8,4 @@ func _ready() -> void:
 # Llamado cada cuadro. 'delta' es el tiempo transcurrido desde el cuadro anterior.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("change_scene"):
-		get_tree().change_scene_to_file("res://Scenes/Mapa puzzle matriz post keypad.tscn")
+		get_tree().change_scene_to_file("res://Scenes/Mapa puzzle matriz post KeyPad.tscn")

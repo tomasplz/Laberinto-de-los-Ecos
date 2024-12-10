@@ -7,12 +7,12 @@ var show_delay = 0.1 #mpo en segundos para mostrar los elementos
 var hide_delay = 0.2 # Tiempo en segundos para ocultar los elementos
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.name == "Player":
+	if body.name == "Player1":
 		text_label.visible = true
 		image_rect.visible = true
 
 func _on_body_exited(body: Node2D) -> void:
-	if body.name == "Player":
+	if body.name == "Player1":
 		await get_tree().create_timer(hide_delay).timeout
 		text_label.visible = false
 		image_rect.visible = false

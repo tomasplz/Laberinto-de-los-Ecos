@@ -1,16 +1,14 @@
 extends Area2D
+var player_inside = false
 
-var entered = false
-var scene_changed = false
+func _on_body_entered(body: Node) -> void:
+	if body.name == "player2" or body.name == "Player1":
+		player_inside = true
 
-func _on_body_entered(body: PhysicsBody2D) -> void:
-	entered = true
-
-func _on_body_exited(body: Node2D) -> void:
-	entered = false
-	scene_changed = false
+func _on_body_exited(body: Node) -> void:
+	if body.name == "player2" or body.name == "Player1":
+		player_inside = false
 
 func _process(delta):
-	if entered and not scene_changed:
-		scene_changed = true
-		get_tree().change_scene_to_file("res://Scenes/world2.tscn")
+	if player_inside:
+		get_tree().change_scene_to_file("res://Scenes/TransicionCatacumbasaPalacio.tscn")
