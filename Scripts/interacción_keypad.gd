@@ -1,15 +1,15 @@
 extends Area2D
 
-@onready var text_label = $"/root/World/CanvasLayer/Interaccion Keypad"
+@onready var text_label = $"/root/World/Interaccion Keypad"
 var player_inside = false
 
 func _on_body_entered(body: Node) -> void:
-	if body.name == "Player":
+	if body.name == "player2":
 		text_label.visible = true
 		player_inside = true
 
 func _on_body_exited(body: Node) -> void:
-	if body.name == "Player":
+	if body.name == "player2":
 		text_label.visible = false
 		player_inside = false
 
