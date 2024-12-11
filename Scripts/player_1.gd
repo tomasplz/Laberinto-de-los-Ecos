@@ -6,16 +6,6 @@ var direccion2: = 0.0
 @onready var anim := $AnimationPlayer
 @onready var sprite := $Sprite2D
 
-@onready var camera_main = $"../Camera2D"
-@onready var camera_secondary = $"../Camera2D2"
-
-var mission_completed = false
-
-func complete_mission():
-	mission_completed = true
-	# Regresar a la cámara principal
-	camera_main.current = true
-	camera_secondary.current = false
 func _ready():
 	add_to_group("player")
 func _physics_process(_delta):
