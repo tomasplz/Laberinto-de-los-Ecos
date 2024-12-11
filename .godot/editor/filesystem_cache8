@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733937733
+::res://::1733957915
+MusicPlayer.tscn::PackedScene::5188331103596298343::1733958519::0::1::::<><>::
 ::res://Assets/::1733782535
 fantasma2.webp::CompressedTexture2D::3331305941276368822::1732240034::1733782535::1::::<><>::
 icon.svg::CompressedTexture2D::8939604862758558659::1731632377::1733782534::1::::<><>::
@@ -585,8 +586,10 @@ Sayako_TileC.png::CompressedTexture2D::7720789282927611877::1733782430::17337825
 Tileset.png::CompressedTexture2D::6202590398560729025::1733782430::1733782534::1::::<><>::
 Tileset_48x48_2.png::CompressedTexture2D::6379724798948960579::1733782430::1733782534::1::::<><>::
 WaterDroplet.png::CompressedTexture2D::5508477489192911825::1733782430::1733782534::1::::<><>::
+::res://Audios/::1733957922
+prism.mp3::AudioStreamMP3::2609072744608746694::1733957922::1733957922::1::::<><>::
 ::res://GODOTDiego/::1732240034
-::res://Scenes/::1733893332
+::res://Scenes/::1733958351
 Cristales.tscn::PackedScene::586202533057225195::1733782596::0::1::::<><>::res://Scripts/cristales.gd<>uid://drjx0c3jk1sal::::res://Assets/Mapa/Animación Cristal/frame_0.png<>uid://dddvofi5awjmg::::res://Assets/Mapa/Animación Cristal/frame_1.png<>uid://f6a6qyl6o16v::::res://Assets/Mapa/Animación Cristal/frame_2.png<>uid://fe1x34ali7he::::res://Assets/Mapa/Animación Cristal/frame_3.png<>uid://b0p8w0h7dt4fc::::res://Assets/Mapa/Animación Cristal/frame_4.png<>uid://dd6av0vvct6iq::::res://Assets/Mapa/Animación Cristal/frame_5.png
 game.tscn::PackedScene::7434987093322184082::1733782596::0::1::::<><>::uid://d0mn8r2vksolf::::res://Assets/icon.svg
 Interacción keypad.tscn::PackedScene::1206446833725420696::1733782596::0::1::::<><>::res://Scripts/interacción_keypad.gd
@@ -594,25 +597,25 @@ Keypad.tscn::PackedScene::4761393794689011166::1733782596::0::1::::<><>::res://S
 Mapa puzzle matriz post keypad.tscn::PackedScene::2357806100271276090::1733782599::0::1::::<><>::res://Scripts/mapa_puzzle_matriz.gd<>uid://fm0dc07arb8r::::res://Assets/Mapa/Catacombs/mainlevbuild.png<>uid://crs8kgids11ur::::res://Assets/Mapa/Catacombs/decorative.png<>uid://dnnkmnvdduq7f::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar.png<>uid://kb815gd2iwhh::::res://Assets/Mapa/Appartment/upsized png/apartmentA5demo.png<>uid://d1f7dy555l5mg::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar_Doors.png<>uid://bo0rcugw35fwm::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Decor.png<>uid://bw1e638tygce1::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Floor.png<>uid://deb83jttwtss4::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Walls.png<>uid://cyu7xvcwm06qb::::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://13cne7geos64::::res://Assets/Mapa/MysticAcid_basics_PetricakeGames.png<>uid://j7vicuvnkpse::::res://Assets/Mapa/dungeon temple/16x16/B16x16.png<>uid://dppr12pfk0puw::::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://x1s0t0dci8r5::::res://Scenes/VelaAnimada.tscn<>uid://cvvtfc83hxesd::::res://Assets/Mapa/Catacombs/pixil-frame-0.png<>uid://dbnf6f4ydi88t::::res://Assets/Mapa/Cartel mini.png<>uid://il7w1uui7vxj::::res://Scenes/Cristales.tscn<>uid://x0uasgoef7lv::::res://Scenes/Player.tscn<>uid://dqvy5nsv44icq::::res://Assets/light.png<>res://Scripts/area_2d.gd<>uid://rgoadtl061ea::::res://Scenes/Interacción keypad.tscn<>res://Scripts/interaccion_cartel.gd<>res://Scripts/sala_1.gd<>res://Scripts/sala_2.gd<>res://Scripts/sala_3.gd<>res://Scripts/sala_4.gd<>res://Scripts/sala_5.gd<>res://Scripts/sala_6.gd<>uid://c17d6a2itpipy::::res://Assets/Fuente/Pergamino pixel art.png<>uid://c1dye6pmg4ifm::::res://Assets/Fuente/Pixel Times.ttf<>uid://2blv2yo0hoy6::::res://Assets/Mapa/Cartel.png
 Mapa puzzle matriz.tscn::PackedScene::253897468007270818::1733782602::0::1::::<><>::uid://fm0dc07arb8r::::res://Assets/Mapa/Catacombs/mainlevbuild.png<>res://Scripts/mapa_puzzle_matriz.gd<>uid://crs8kgids11ur::::res://Assets/Mapa/Catacombs/decorative.png<>uid://kb815gd2iwhh::::res://Assets/Mapa/Appartment/upsized png/apartmentA5demo.png<>uid://dnnkmnvdduq7f::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar.png<>uid://d1f7dy555l5mg::::res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar_Doors.png<>uid://bo0rcugw35fwm::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Decor.png<>uid://bw1e638tygce1::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Floor.png<>uid://deb83jttwtss4::::res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Walls.png<>uid://cyu7xvcwm06qb::::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://13cne7geos64::::res://Assets/Mapa/MysticAcid_basics_PetricakeGames.png<>uid://x0uasgoef7lv::::res://Scenes/Player.tscn<>uid://j7vicuvnkpse::::res://Assets/Mapa/dungeon temple/16x16/B16x16.png<>res://Scripts/area_2d.gd<>uid://cvvtfc83hxesd::::res://Assets/Mapa/Catacombs/pixil-frame-0.png<>uid://dppr12pfk0puw::::res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://il7w1uui7vxj::::res://Scenes/Cristales.tscn<>uid://c17d6a2itpipy::::res://Assets/Fuente/Pergamino pixel art.png<>uid://c1dye6pmg4ifm::::res://Assets/Fuente/Pixel Times.ttf<>uid://x1s0t0dci8r5::::res://Scenes/VelaAnimada.tscn<>uid://dqvy5nsv44icq::::res://Assets/light.png<>uid://2blv2yo0hoy6::::res://Assets/Mapa/Cartel.png<>uid://rgoadtl061ea::::res://Scenes/Interacción keypad.tscn<>res://Scripts/interaccion_cartel.gd<>uid://dbnf6f4ydi88t::::res://Assets/Mapa/Cartel mini.png<>res://Scripts/sala_1.gd<>res://Scripts/sala_2.gd<>res://Scripts/sala_3.gd<>res://Scripts/sala_4.gd<>res://Scripts/sala_5.gd<>res://Scripts/sala_6.gd
 Matriz.tscn::PackedScene::495880654347746247::1733782603::0::1::::<><>::
-menu.tscn::PackedScene::1634197264739140538::1733893174::0::1::::<><>::uid://dmynykgt7ly6f::::res://Scenes/parallax_background.tscn<>res://Scripts/scriptjugar.gd
+menu.tscn::PackedScene::1634197264739140538::1733958351::0::1::::<><>::uid://dmynykgt7ly6f::::res://Scenes/parallax_background.tscn<>res://Scripts/scriptjugar.gd<>uid://bdf4buh5ctbec::::res://Audios/prism.mp3
 mundo.tscn::PackedScene::7451637061533917914::1733782602::0::1::::<><>::uid://ch0d331ek1f3y::::res://Scenes/player_1.tscn<>uid://c5nxkdgckbb4h::::res://Scenes/player_2.tscn<>res://Scripts/player_2.gd<>uid://cumt00338knmv::::res://Assets/World/Tileset.png<>uid://go8tbfdoeyy7::::res://Assets/World/Props.png<>uid://dgkdpf4qi6low::::res://Assets/World/Sayako_TileB.png<>uid://diaajh218iaxh::::res://Assets/World/Sayako_TileC.png<>uid://cw5neup1bx8o2::::res://Assets/World/Tileset_48x48_2.png<>res://Scripts/camera_2d.gd<>uid://ckql24jumk5aj::::res://Assets/World/WaterDroplet.png<>res://Scripts/area_2d.gd<>res://Scripts/gota_agua.gd
 node_2d.tscn::PackedScene::1256308720429700717::1733782602::0::1::::<><>::res://Scripts/player2.gd
-opciones.tscn::PackedScene::1944356951784132294::1733893174::0::1::::<><>::res://Scripts/opciones.gd<>uid://bnr7pg7nweilt::::res://Assets/UI/lll.jpg
-parallax_background.tscn::PackedScene::8051905956201632827::1733782603::0::1::::<><>::uid://bnr7pg7nweilt::::res://Assets/UI/lll.jpg<>uid://cvw3lpvltxcn6::::res://Assets/UI/ejesmesi.jpg
+opciones.tscn::PackedScene::1944356951784132294::1733958341::0::1::::<><>::res://Scripts/opciones.gd<>uid://bnr7pg7nweilt::::res://Assets/UI/lll.jpg
+parallax_background.tscn::PackedScene::8051905956201632827::1733953386::0::1::::<><>::uid://bnr7pg7nweilt::::res://Assets/UI/lll.jpg<>uid://cvw3lpvltxcn6::::res://Assets/UI/ejesmesi.jpg
 plataforma.tscn::PackedScene::179896591018818571::1733782602::0::1::::<><>::res://Scripts/plataforma.gd<>uid://dr17ulhirdlm::::res://Assets/rectangulo.png
 Player.tscn::PackedScene::1667168142712372787::1733782602::0::1::::<><>::uid://bnpyefgx86wo1::::res://Assets/fantasma2.webp<>res://Scripts/player.gd
 player_1.tscn::PackedScene::5316006380926412244::1733782602::0::1::::<><>::res://Scripts/player_1.gd<>uid://hso76rggd457::::res://Assets/Player/Player.png
 player_2.tscn::PackedScene::6906758103045780941::1733782602::0::1::::<><>::uid://dswd53u10275h::::res://Assets/Player/player2.png<>res://Scripts/player2.gd
-resolución.gd::GDScript::-1::1733893332::0::1::::<>Control<>::
-resolución.tscn::PackedScene::1122787000533622467::1733893332::0::1::::<><>::res://Scenes/resolución.gd
+resolución.gd::GDScript::-1::1733952946::0::1::::<>Control<>::
+resolución.tscn::PackedScene::1122787000533622467::1733958342::0::1::::<><>::res://Scenes/resolución.gd<>uid://bnr7pg7nweilt::::res://Assets/UI/lll.jpg
 VelaAnimada.tscn::PackedScene::1669155812700813028::1733782602::0::1::::<><>::uid://dmbkjyhga6fjs::::res://Assets/Mapa/Catacombs/candleA_01.png<>uid://44q1cx4ykkfy::::res://Assets/Mapa/Catacombs/candleA_04.png<>uid://dqvy5nsv44icq::::res://Assets/light.png
-volumen.tscn::PackedScene::7518485237510081239::1733893174::0::1::::<><>::res://Scripts/OpcionVolumen.gd<>res://Scripts/AudioVolumen.gd<>uid://bnr7pg7nweilt::::res://Assets/UI/lll.jpg
+volumen.tscn::PackedScene::7518485237510081239::1733958342::0::1::::<><>::res://Scripts/OpcionVolumen.gd<>res://Scripts/AudioVolumen.gd<>uid://bnr7pg7nweilt::::res://Assets/UI/lll.jpg
 world2.tscn::PackedScene::1567542917453127371::1733782603::0::1::::<><>::res://Scripts/area_2d2.gd
 world.tscn::PackedScene::5225506237948366506::1733782603::0::1::::<><>::uid://x0uasgoef7lv::::res://Scenes/Player.tscn<>res://Scripts/area_2d.gd<>uid://cte4um6gdrsl::::res://Scenes/plataforma.tscn<>uid://bt3d1jbxxakcm::::res://Assets/puerta.webp
-::res://Scripts/::1733888231
+::res://Scripts/::1733953384
 area_2d2.gd::GDScript::-1::1732240034::0::1::::<>Area2D<>::
 area_2d.gd::GDScript::-1::1732240034::0::1::::<>Area2D<>::
-AudioVolumen.gd::GDScript::-1::1732234058::0::1::::<>Control<>::
+AudioVolumen.gd::GDScript::-1::1733953383::0::1::::<>Control<>::
 camera_2d.gd::GDScript::-1::1733782430::0::1::::<>Camera2D<>::
 cristales.gd::GDScript::-1::1732240034::0::1::::<>Area2D<>::
 default_bus_layout.tres::AudioBusLayout::4162349769234770148::1732237405::0::1::::<><>::
@@ -622,7 +625,7 @@ interacción_keypad.gd::GDScript::-1::1732240034::0::1::::<>Area2D<>::
 keypad.gd::GDScript::-1::1733782430::0::1::::<>Node2D<>::
 mapa_puzzle_matriz.gd::GDScript::-1::1732240034::0::1::::<>Node2D<>::
 opciones.gd::GDScript::-1::1733888231::0::1::::<>Control<>::
-OpcionVolumen.gd::GDScript::-1::1733874178::0::1::::<>Control<>::
+OpcionVolumen.gd::GDScript::-1::1733953321::0::1::::<>Control<>::
 plataforma.gd::GDScript::-1::1732240034::0::1::::<>StaticBody2D<>::
 player2.gd::GDScript::-1::1733782430::0::1::::<>CharacterBody2D<>::
 player.gd::GDScript::-1::1732240034::0::1::::<>CharacterBody2D<>::

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf6jb44uwrrhn"]
+
+[ext_resource type="AudioStream" uid="uid://bdf4buh5ctbec" path="res://Audios/prism.mp3" id="1_sdw2c"]
+[ext_resource type="Script" path="res://Scenes/music_player.gd" id="2_dy5df"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_sdw2c")
+script = ExtResource("2_dy5df")
