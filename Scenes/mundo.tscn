@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://defvmyaelj307"]
+[gd_scene load_steps=34 format=3 uid="uid://defvmyaelj307"]
 
 [ext_resource type="PackedScene" uid="uid://ch0d331ek1f3y" path="res://Scenes/player_1.tscn" id="1_yq3mj"]
 [ext_resource type="PackedScene" uid="uid://c5nxkdgckbb4h" path="res://Scenes/player_2.tscn" id="2_hmquf"]
@@ -10084,10 +10084,42 @@ tracks/0/keys = {
 "values": [1, 2, 4, 6, 6, 6, 6, 6]
 }
 
+[sub_resource type="Animation" id="Animation_wdro3"]
+resource_name = "copamitad"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.633333, 0.866667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 2, 2]
+}
+
+[sub_resource type="Animation" id="Animation_ysjux"]
+resource_name = "copacasivacia"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.433333, 0.633333, 0.866667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 1, 1, 1]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6ql15"]
 _data = {
 "RESET": SubResource("Animation_a6u1i"),
-"copa": SubResource("Animation_gbnf3")
+"copa": SubResource("Animation_gbnf3"),
+"copacasivacia": SubResource("Animation_ysjux"),
+"copamitad": SubResource("Animation_wdro3")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g7wij"]
@@ -10141,6 +10173,7 @@ script = ExtResource("8_bbf6f")
 
 [node name="Camera2D2" type="Camera2D" parent="."]
 position = Vector2(-381, 200)
+enabled = false
 
 [node name="Gota" type="Area2D" parent="."]
 z_index = 4
