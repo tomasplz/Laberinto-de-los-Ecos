@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=4 uid="uid://va0d168s3cqt"]
+[gd_scene load_steps=16 format=4 uid="uid://va0d168s3cqt"]
 
 [ext_resource type="Texture2D" uid="uid://cyu7xvcwm06qb" path="res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png" id="1_1dd6y"]
+[ext_resource type="Script" path="res://Scenes/potenciometro_1.gd" id="1_w0xwc"]
 [ext_resource type="Texture2D" uid="uid://vf4i3ng7vfnt" path="res://Assets/Potenciometro/pixil-frame-0 (8).png" id="2_xwclc"]
 [ext_resource type="Texture2D" uid="uid://bcsq848yia5p3" path="res://Assets/Potenciometro/pixil-frame-0 (1).png" id="3_kcf6w"]
 [ext_resource type="Texture2D" uid="uid://b17vun4c8bkbo" path="res://Assets/Potenciometro/pixil-frame-0 (2).png" id="4_74oac"]
@@ -319,6 +320,7 @@ outline_color = Color(0, 0, 0, 1)
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(17, 12)
+script = ExtResource("1_w0xwc")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 texture_filter = 1
