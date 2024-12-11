@@ -1,0 +1,93 @@
+[gd_scene load_steps=5 format=3 uid="uid://p85exmmap0v4"]
+
+[ext_resource type="Script" path="res://Scenes/resolución.gd" id="1_mn6hu"]
+[ext_resource type="Texture2D" uid="uid://bnr7pg7nweilt" path="res://Assets/UI/lll.jpg" id="2_gafc7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nxjt2"]
+bg_color = Color(0.892182, 0.473804, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u0gm6"]
+bg_color = Color(0.931503, 0.94235, 0.881078, 1)
+
+[node name="Resolución" type="Control"]
+layout_mode = 3
+anchor_top = -0.00666667
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+script = ExtResource("1_mn6hu")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 501.0
+offset_bottom = 303.0
+texture = ExtResource("2_gafc7")
+expand_mode = 1
+
+[node name="Options" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -150.0
+offset_bottom = 227.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 0.8)
+
+[node name="ResolutionsContainer" type="HBoxContainer" parent="Options"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="Resolution" type="Label" parent="Options/ResolutionsContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1.73271e-06, 0.926022, 0.723173, 1)
+theme_override_colors/font_shadow_color = Color(0.962703, 0.684388, 0.269245, 1)
+theme_override_colors/font_outline_color = Color(0.999999, 0.948812, 0.536693, 1)
+text = "Resolución"
+
+[node name="OptionButton" type="OptionButton" parent="Options/ResolutionsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FullScreenContainer" type="HBoxContainer" parent="Options"]
+layout_mode = 2
+size_flags_vertical = 2
+
+[node name="Label" type="Label" parent="Options/FullScreenContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+theme_override_colors/font_color = Color(0.224963, 0.858808, 3.85046e-07, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+text = "Pantalla Completa"
+
+[node name="FullScreenToggle" type="CheckBox" parent="Options/FullScreenContainer"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Options"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_colors/font_pressed_color = Color(0.51517, 0.682493, 0, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_styles/hover = SubResource("StyleBoxFlat_nxjt2")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_u0gm6")
+text = "Confirmar"
+
+[connection signal="item_selected" from="Options/ResolutionsContainer/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="toggled" from="Options/FullScreenContainer/FullScreenToggle" to="." method="_on_full_screen_toggle_toggled"]
+[connection signal="pressed" from="Options/Button" to="." method="_on_button_pressed"]

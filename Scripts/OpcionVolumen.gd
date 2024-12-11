@@ -14,4 +14,4 @@ func _on_confirmar_pressed():
 	AudioServer.set_bus_volume_db(1, linear_to_db($Audio/VBoxContainer/MusicaSlider.value))
 	AudioServer.set_bus_volume_db(2, linear_to_db($Audio/VBoxContainer/EfectosSlider.value))
 	
-	get_tree().change_scene_to_file("res://Scenes/menu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/opciones.tscn")
