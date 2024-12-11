@@ -38,7 +38,7 @@ func _on_option_button_item_selected(index: int):
 		# Cambiar el tamaño de la ventana
 		DisplayServer.window_set_size(size)
 		# Configurar el aspecto y el modo de escalado
-		ProjectSettings.set_setting("display/window/stretch/aspect", "keep")
+		ProjectSettings.set_setting("display/window/stretch/aspect", "ignore")
 		ProjectSettings.set_setting("display/window/stretch/mode", "viewport")
 		
 		ProjectSettings.save()

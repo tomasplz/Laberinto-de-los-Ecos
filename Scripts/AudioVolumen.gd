@@ -4,7 +4,7 @@ func _ready():
 	# Inicializar valores de los sliders basados en el estado actual de los buses
 	$VBoxContainer/MasterSlider.value = db_to_linear(AudioServer.get_bus_volume_db(0))
 	$VBoxContainer/MusicaSlider.value = db_to_linear(AudioServer.get_bus_volume_db(1))
-	$VBoxContainer/EfectosSlider.value = db_to_linear(AudioServer.get_bus_volume_db(2))
+	#$VBoxContainer/EfectosSlider.value = db_to_linear(AudioServer.get_bus_volume_db(2))
 
 func _process(delta):
 	pass

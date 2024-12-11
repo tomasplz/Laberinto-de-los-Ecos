@@ -21,8 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1.0
 offset_top = 1.0
-offset_right = 7.0
-offset_bottom = -8.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
@@ -31,8 +30,8 @@ script = ExtResource("1_k4016")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 499.0
-offset_bottom = 299.0
+offset_right = 501.0
+offset_bottom = 303.0
 texture = ExtResource("2_tuckr")
 expand_mode = 1
 
@@ -44,20 +43,20 @@ script = ExtResource("2_toikl")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Audio"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = 14
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -238.5
-offset_top = -50.0
-offset_right = 247.5
-offset_bottom = 69.0
+offset_left = 4.0
+offset_top = -39.0
+offset_right = 2.0
+offset_bottom = 39.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="General" type="Label" parent="Audio/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 0
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 12
 text = "Volumen General"
@@ -74,15 +73,6 @@ text = "Música"
 
 [node name="MusicaSlider" type="HSlider" parent="Audio/VBoxContainer"]
 layout_mode = 2
-
-[node name="Efectos De Sonido" type="Label" parent="Audio/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 12
-text = "Efectos De Sonido"
-
-[node name="EfectosSlider" type="HSlider" parent="Audio/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 1
 
 [node name="Confirmar" type="Button" parent="Audio"]
 layout_mode = 1
@@ -104,5 +94,4 @@ script = SubResource("GDScript_yovow")
 
 [connection signal="mouse_exited" from="Audio/VBoxContainer/MasterSlider" to="Audio" method="_on_master_slider_mouse_exited"]
 [connection signal="mouse_exited" from="Audio/VBoxContainer/MusicaSlider" to="Audio" method="_on_musica_slider_mouse_exited"]
-[connection signal="mouse_exited" from="Audio/VBoxContainer/EfectosSlider" to="Audio" method="_on_efectos_slider_mouse_exited"]
 [connection signal="pressed" from="Audio/Confirmar" to="." method="_on_confirmar_pressed"]
