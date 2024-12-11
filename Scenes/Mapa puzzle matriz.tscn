@@ -11664,10 +11664,10 @@ position = Vector2(881, 219)
 scale = Vector2(0.3, 0.3)
 
 [node name="Player1" parent="." instance=ExtResource("19_uej1a")]
-position = Vector2(940, 486)
+position = Vector2(800, 519)
 
 [node name="player2" parent="." instance=ExtResource("20_mlitr")]
-position = Vector2(902, 475)
+position = Vector2(762, 508)
 
 [node name="TileMap sobre Personaje" type="Node2D" parent="."]
 

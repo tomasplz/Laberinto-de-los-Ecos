@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=4 uid="uid://b83ppv60i6k75"]
+[gd_scene load_steps=15 format=4 uid="uid://b83ppv60i6k75"]
 
 [ext_resource type="Script" path="res://Scripts/keypad.gd" id="1_aem0a"]
 [ext_resource type="Texture2D" uid="uid://fm0dc07arb8r" path="res://Assets/Mapa/Catacombs/mainlevbuild.png" id="1_hrf8y"]
 [ext_resource type="Texture2D" uid="uid://dqvy5nsv44icq" path="res://Assets/light.png" id="2_b1k8v"]
+[ext_resource type="Script" path="res://Scripts/Arduino/ArduinoGeneral.cs" id="2_h70i7"]
 [ext_resource type="Texture2D" uid="uid://cqfrrerma7csh" path="res://Assets/Keypad/pixil-frame-0.png" id="2_oc8ll"]
 [ext_resource type="Texture2D" uid="uid://bjrkvilpl3uy7" path="res://Assets/Keypad/0 DIgito.png" id="3_nt6a5"]
 [ext_resource type="Texture2D" uid="uid://b4q360yxh7ora" path="res://Assets/Keypad/1 digito.png" id="4_34w87"]
@@ -1045,6 +1046,13 @@ sources/0 = SubResource("TileSetAtlasSource_28ucb")
 [node name="Node2D" type="Node2D"]
 scale = Vector2(0.435766, 0.491104)
 script = ExtResource("1_aem0a")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_h70i7")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 texture_filter = 1

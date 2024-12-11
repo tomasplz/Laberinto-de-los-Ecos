@@ -1,3 +1,4 @@
+Control
 AnimationPlayer
 ColorRect
 Timer
@@ -8,6 +9,5 @@ CanvasLayer
 Button
 HSlider
 VBoxContainer
-Control
 Sprite2D
 ParallaxBackground

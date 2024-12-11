@@ -3,6 +3,7 @@ extends Area2D
 @onready var text_label = $"/root/World/Interaccion Keypad"
 var player_inside = false
 
+
 func _on_body_entered(body: Node) -> void:
 	if body.name == "player2":
 		text_label.visible = true
