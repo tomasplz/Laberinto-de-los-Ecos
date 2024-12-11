@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Laberinto de los Ecos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60d53a947ec0285eec99100697b84adc0412a6de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+077b45d9b7a4b52108d8901c4a6039bda1279546")]
 [assembly: System.Reflection.AssemblyProductAttribute("Laberinto de los Ecos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Laberinto de los Ecos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

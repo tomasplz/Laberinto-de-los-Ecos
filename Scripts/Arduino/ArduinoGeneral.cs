@@ -204,29 +204,41 @@ public partial class ArduinoGeneral : Node
 		}
 	}
 
+		//Esto sirve para emitir senales a otros nodos
+		[Signal]
+		public delegate void KeypadInputEventHandler(string input);
+
+		private void EmitKeypadSignal(string data)
+		{
+			EmitSignal(SignalName.KeypadInput, data);
+		}
+	
+
 	private void ProcesarMensaje(string message)
 	{
 		if (string.IsNullOrEmpty(message))
 			return;
 
-		GD.Print($"Mensaje recibido: {message}");
+		//GD.Print($"Mensaje recibido: {message}");
 
 		// Manejo de mensajes de sensores y teclado
 		if (message.StartsWith("W:") || message.StartsWith("K:"))
 		{
 			char prefix = message[0];
 			string data = message.Substring(2).Trim(); // Formato "W:datos" o "K:datos"
-
+			
 			switch (prefix)
 			{
 				case 'W':
 					waterSensor.ProcesarDatos(data);
 					break;
 				case 'K':
-					keypad.ProcesarDatos(data);
+					string data_sensor = message.Substring(2).Trim();
+					// Usar CallDeferred para emitir la señal desde el hilo principal
+					CallDeferred(nameof(EmitKeypadSignal), data);
 					break;
 				default:
-					GD.PrintErr($"Prefijo desconocido: {prefix}. Mensaje completo: {message}");
+					//GD.PrintErr($"Prefijo desconocido: {prefix}. Mensaje completo: {message}");
 					break;
 			}
 		}
@@ -248,6 +260,7 @@ public partial class ArduinoGeneral : Node
 			{
 				using (SerialPort tempPort = new SerialPort(portName, BAUD_RATE))
 				{
+
 					tempPort.ReadTimeout = READ_TIMEOUT;
 					tempPort.WriteTimeout = WRITE_TIMEOUT;
 
