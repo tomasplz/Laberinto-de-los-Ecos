@@ -20,4 +20,6 @@ func _on_body_exited(body: Node) -> void:
 
 func _process(delta):
 	if player_inside and Input.is_action_just_pressed("change_scene"):
+		Global.player_positions["Player1"] = $"/root/Laberinto/Player1".global_position
+		Global.player_positions["player2"] = $"/root/Laberinto/player2".global_position
 		get_tree().change_scene_to_file("res://Scenes/Potenciometro2.tscn")
