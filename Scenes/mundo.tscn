@@ -10150,7 +10150,7 @@ size = Vector2(45, 25)
 [node name="Mundo" type="Node"]
 
 [node name="Cristal" parent="." instance=ExtResource("17_vfxu5")]
-position = Vector2(113, 480)
+position = Vector2(110, 521)
 scale = Vector2(0.4, 0.4)
 
 [node name="Player1" parent="." instance=ExtResource("1_yq3mj")]
@@ -10370,22 +10370,23 @@ texture = ExtResource("20_k6yx8")
 [node name="Texto Cartel" type="Label" parent="CanvasLayer"]
 visible = false
 texture_filter = 1
-offset_left = 155.0
-offset_top = 77.0
-offset_right = 635.0
-offset_bottom = 404.0
+offset_left = 138.0
+offset_top = 83.0
+offset_right = 712.0
+offset_bottom = 410.0
 scale = Vector2(0.5, 0.5)
-text = "\"Para encontrar el camino a la
- salida, debes prestar atención
- a la luz que te rodea. No todas
+text = "Para llenar la copa de cristal,
+debes encontrar lo esencial.
 
- las habitaciones brillan de la misma
- manera.Observa con cuidado y 
-cuenta las llamas, pues la solución
 
- se esconde en su número. 
-¿Podrás descifrar el secreto
- de la luz y descifrar el código?\""
+Cada gota que encuentres en el camino,
+será la clave para el destino.
+
+
+Reúne todas con gran destreza,
+y al final habrá agua en la belleza.
+
+"
 label_settings = SubResource("LabelSettings_nmm45")
 
 [node name="Interaccion Cartel" type="Area2D" parent="."]
