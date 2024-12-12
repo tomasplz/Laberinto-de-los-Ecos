@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=4 uid="uid://dgq0cldnojgw8"]
+[gd_scene load_steps=64 format=4 uid="uid://dgq0cldnojgw8"]
 
 [ext_resource type="Script" path="res://Scripts/mapa_puzzle_matriz.gd" id="1_b422t"]
 [ext_resource type="Texture2D" uid="uid://fm0dc07arb8r" path="res://Assets/Mapa/Catacombs/mainlevbuild.png" id="2_dx55h"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://dbnf6f4ydi88t" path="res://Assets/Mapa/Cartel mini.png" id="23_jdeqf"]
 [ext_resource type="Texture2D" uid="uid://b5nsbfhdnp81x" path="res://Assets/Characters/Human/IDLE/base_idle_strip9.png" id="23_py6oe"]
 [ext_resource type="Texture2D" uid="uid://dknw5nyhd5kxv" path="res://Assets/Characters/Human/IDLE/longhair_idle_strip9.png" id="24_l6lwj"]
+[ext_resource type="Script" path="res://Scenes/InteraccionFinal.gd" id="26_78vnt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_07umw"]
 texture = ExtResource("13_75a7h")
@@ -5880,17 +5881,17 @@ offset_top = 77.0
 offset_right = 635.0
 offset_bottom = 404.0
 scale = Vector2(0.5, 0.5)
-text = "\"Para encontrar el camino a la
- salida, debes prestar atención
- a la luz que te rodea. No todas
+text = "1-Soy la mitad de lo que fue,
+si me duplicas, completo seré.
+¿Qué porcentaje soy?
 
- las habitaciones brillan de la misma
- manera.Observa con cuidado y 
-cuenta las llamas, pues la solución
+2- Casi completo siempre estoy,
+solo un quinto me faltó.
+¿Qué porcentaje soy?
 
- se esconde en su número. 
-¿Podrás descifrar el secreto
- de la luz y descifrar el código?\""
+3-De cada diez, tres puedo ser,
+el resto espera para crecer.
+¿Qué porcentaje soy?"
 label_settings = SubResource("LabelSettings_i76eq")
 
 [node name="Potenciometro1" type="Area2D" parent="."]
@@ -5941,6 +5942,15 @@ offset_bottom = 924.0
 text = "Presiona E"
 label_settings = SubResource("LabelSettings_dt0sp")
 
+[node name="Interaccion Final" type="Label" parent="."]
+visible = false
+offset_left = 1138.0
+offset_top = 916.0
+offset_right = 1224.0
+offset_bottom = 939.0
+text = "Presiona E"
+label_settings = SubResource("LabelSettings_dt0sp")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1156, 884)
 sprite_frames = SubResource("SpriteFrames_mkuaf")
@@ -5959,3 +5969,11 @@ script = ExtResource("22_vt3tq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interaccion Cartel"]
 position = Vector2(217.5, 266.5)
 shape = SubResource("RectangleShape2D_ku2ba")
+
+[node name="InteraccionFinal" type="Area2D" parent="."]
+position = Vector2(74, 1092)
+script = ExtResource("26_78vnt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteraccionFinal"]
+position = Vector2(1106, -107)
+shape = SubResource("RectangleShape2D_4r3ov")
