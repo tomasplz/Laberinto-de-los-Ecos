@@ -6,4 +6,5 @@ var player_positions = {
 	"player2": null
 }
 
+var copa_1 = false
 var num_potenciometros = 0

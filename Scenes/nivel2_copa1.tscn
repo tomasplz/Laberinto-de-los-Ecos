@@ -1,0 +1,116 @@
+[gd_scene load_steps=10 format=3 uid="uid://cnr2k7yfqiq31"]
+
+[ext_resource type="Script" path="res://Scripts/nivel_2_copa_1_control.gd" id="1_asecu"]
+[ext_resource type="Script" path="res://Scripts/Arduino/ArduinoGeneral.cs" id="2_elqvd"]
+[ext_resource type="Script" path="res://Scenes/static_body_2d.gd" id="3_kb2qu"]
+[ext_resource type="Texture2D" uid="uid://c41guyf5pmadk" path="res://Assets/pixil-frame-0.png" id="4_8fmgr"]
+
+[sub_resource type="Animation" id="Animation_a6u1i"]
+length = 0.001
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_gbnf3"]
+resource_name = "copa"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.533333, 0.7, 0.866667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [1, 2, 4, 6, 6, 6, 6, 6]
+}
+
+[sub_resource type="Animation" id="Animation_ysjux"]
+resource_name = "copacasivacia"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.433333, 0.633333, 0.866667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 1, 1, 1]
+}
+
+[sub_resource type="Animation" id="Animation_wdro3"]
+resource_name = "copamitad"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.633333, 0.866667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 2, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6ql15"]
+_data = {
+"RESET": SubResource("Animation_a6u1i"),
+"copa": SubResource("Animation_gbnf3"),
+"copacasivacia": SubResource("Animation_ysjux"),
+"copamitad": SubResource("Animation_wdro3")
+}
+
+[node name="Nivel2Copa1Control" type="Node2D"]
+position = Vector2(631, -44)
+script = ExtResource("1_asecu")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_elqvd")
+metadata/_edit_use_anchors_ = true
+
+[node name="StatusLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -11.75
+anchor_top = 1.5
+anchor_right = -6.525
+anchor_bottom = 1.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+script = ExtResource("3_kb2qu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody2D"]
+libraries = {
+"": SubResource("AnimationLibrary_6ql15")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+texture_filter = 1
+position = Vector2(-367, 241)
+scale = Vector2(0.568318, 0.634009)
+texture = ExtResource("4_8fmgr")
+hframes = 3
+vframes = 3

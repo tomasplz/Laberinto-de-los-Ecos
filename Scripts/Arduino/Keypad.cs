@@ -7,7 +7,7 @@ public partial class Keypad : ArduinoDevice
 	[Signal]
 	public delegate void DigitEnteredEventHandler(int digit);
 	
-	[Signal] 
+	[Signal]
 	public delegate void CodeValidatedEventHandler(bool isValid);
 	
 	private string textoAcumulado = "";

@@ -21,8 +21,12 @@ const unsigned long INTERVALO_PING = 1000; // Intervalo de 1 segundo para PING
 unsigned long ultimoPing = 0;
 bool sincronizado = false;
 
+const int potenciometroPin = A3;
+
+
 void setup() {
   Serial.begin(9600);
+      pinMode(potenciometroPin, INPUT);
 }
 
 void loop() {
@@ -97,4 +101,10 @@ void leerYEnviarDatos() {
     Serial.print("W:");
     Serial.println(nivelAgua);
   }
+
+  // Añadir lectura del potenciómetro
+  int valorPotenciometro = analogRead(potenciometroPin);
+  if (valorPotenciometro > 0){
+    Serial.print("P:");
+    Serial.println(valorPotenciometro);
 }

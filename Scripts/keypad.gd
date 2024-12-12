@@ -22,6 +22,18 @@ func _on_keypad_input(input: String):
 	if codigo_actual.length() == 6:
 		if codigo_actual == codigo:
 			print("Codigo correcto")
+			if arduino_control:
+				# Desconectar señales
+				if arduino_control.has_signal("KeypadInput"):
+					arduino_control.disconnect("KeypadInput", _on_keypad_input)
+				
+				# Cerrar puerto
+				arduino_control.CloseConnection()
+				arduino_control.queue_free()
+				
+			# Pequeño delay para asegurar que todo se cierre
+			await get_tree().create_timer(0.1).timeout
+			# Cambiar escena
 			get_tree().change_scene_to_file("res://Scenes/Mapa puzzle matriz post keypad.tscn")
 		else:
 			print("Codigo incorrecto")

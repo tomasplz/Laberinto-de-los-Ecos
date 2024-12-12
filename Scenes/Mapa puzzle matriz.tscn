@@ -11581,8 +11581,8 @@ texture = ExtResource("2_i7agi")
 sources/0 = SubResource("TileSetAtlasSource_qhmae")
 sources/1 = SubResource("TileSetAtlasSource_rxblt")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wwenq"]
-size = Vector2(32, 32)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ccjo"]
+size = Vector2(55, 65)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gmkua"]
 size = Vector2(45, 25)
@@ -11702,18 +11702,16 @@ texture = ExtResource("21_q6xrh")
 
 [node name="Interacciones" type="Node2D" parent="."]
 
-[node name="Cambiar nivel" type="Area2D" parent="Interacciones"]
-position = Vector2(-988, -524)
-scale = Vector2(2, 2)
-script = ExtResource("13_pdwog")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Interacciones/Cambiar nivel"]
-position = Vector2(989, 526)
-shape = SubResource("RectangleShape2D_wwenq")
-
 [node name="Interacción Keypad" parent="Interacciones" instance=ExtResource("22_5t6wr")]
 position = Vector2(770, 466)
 scale = Vector2(2, 2)
+
+[node name="Cambiar nivel" type="Area2D" parent="Interacciones"]
+script = ExtResource("13_pdwog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interacciones/Cambiar nivel"]
+position = Vector2(990.5, 523.5)
+shape = SubResource("RectangleShape2D_8ccjo")
 
 [node name="Interaccion Cartel" type="Area2D" parent="Interacciones"]
 script = ExtResource("23_p1ajt")
@@ -11868,6 +11866,5 @@ script = ExtResource("34_bljlf")
 [node name="Camera2D2" type="Camera2D" parent="."]
 position = Vector2(-381, 200)
 
-[connection signal="body_entered" from="Interacciones/Cambiar nivel" to="Player1" method="_on_cambiar_nivel_body_entered"]
 [connection signal="body_entered" from="Interacciones/Cambiar nivel" to="Interacciones/Cambiar nivel" method="_on_body_entered"]
 [connection signal="body_exited" from="Interacciones/Cambiar nivel" to="Interacciones/Cambiar nivel" method="_on_body_exited"]

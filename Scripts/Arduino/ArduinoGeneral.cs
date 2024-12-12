@@ -30,16 +30,21 @@ public partial class ArduinoGeneral : Node
 		Task.Run(() => ManejarConexion());
 	}
 
+	private bool isRunning = true; // Nueva variable de control
+
 	private void ManejarConexion()
 	{
-		while (true)
+		while (isRunning)
 		{
-			try
+			 try
 			{
+				if (!isRunning) break; // Verificación adicional
+				
 				if (serialPort == null || !serialPort.IsOpen)
 				{
 					EstablecerConexionInicial();
 				}
+
 				else if (!isSynchronized)
 				{
 					SincronizarConArduino();
@@ -71,6 +76,10 @@ public partial class ArduinoGeneral : Node
 			catch (Exception ex)
 			{
 				GD.PrintErr($"Error en ManejarConexion: {ex.Message}");
+				
+				if (!isRunning) break; // Verificación en catch
+				GD.PrintErr($"Error en ManejarConexion: {ex.Message}");
+
 				if (serialPort != null && serialPort.IsOpen)
 				{
 					serialPort.Close();
@@ -163,7 +172,7 @@ public partial class ArduinoGeneral : Node
 			while (serialPort.BytesToRead > 0)
 			{
 				string pendingData = serialPort.ReadLine().Trim();
-				if (pendingData.StartsWith("W:") || pendingData.StartsWith("K:"))
+				if (pendingData.StartsWith("W:") || pendingData.StartsWith("K:") || pendingData.StartsWith("P:"))
 				{
 					ProcesarMensaje(pendingData);
 				}
@@ -204,15 +213,22 @@ public partial class ArduinoGeneral : Node
 		}
 	}
 
-		//Esto sirve para emitir senales a otros nodos
-		[Signal]
-		public delegate void KeypadInputEventHandler(string input);
+	//Senal de keypad
+	[Signal]
+	public delegate void KeypadInputEventHandler(string input);
+	private void EmitKeypadSignal(string data)
+	{
+		EmitSignal(SignalName.KeypadInput, data);
+	}
 
-		private void EmitKeypadSignal(string data)
-		{
-			EmitSignal(SignalName.KeypadInput, data);
-		}
-	
+
+	//Senal de waterSensor
+	[Signal]
+	public delegate void WaterLevelChangedEventHandler(float level);
+	private void EmitWaterLevel(float level)
+	{
+		EmitSignal(SignalName.WaterLevelChanged, level);
+	}
 
 	private void ProcesarMensaje(string message)
 	{
@@ -222,7 +238,7 @@ public partial class ArduinoGeneral : Node
 		//GD.Print($"Mensaje recibido: {message}");
 
 		// Manejo de mensajes de sensores y teclado
-		if (message.StartsWith("W:") || message.StartsWith("K:"))
+		if (message.StartsWith("W:") || message.StartsWith("K:") || message.StartsWith("P:"))
 		{
 			char prefix = message[0];
 			string data = message.Substring(2).Trim(); // Formato "W:datos" o "K:datos"
@@ -231,14 +247,19 @@ public partial class ArduinoGeneral : Node
 			{
 				case 'W':
 					waterSensor.ProcesarDatos(data);
-					break;
+					float waterLevel = float.Parse(data);
+					CallDeferred(nameof(EmitWaterLevel), waterLevel);
+				break;
 				case 'K':
-					string data_sensor = message.Substring(2).Trim();
 					// Usar CallDeferred para emitir la señal desde el hilo principal
 					CallDeferred(nameof(EmitKeypadSignal), data);
 					break;
+				case 'P':
+					GD.Print("Datos del potenciometro: " + data);
+					break;
+
 				default:
-					//GD.PrintErr($"Prefijo desconocido: {prefix}. Mensaje completo: {message}");
+					GD.PrintErr($"Prefijo desconocido: {prefix}. Mensaje completo: {message}");
 					break;
 			}
 		}
@@ -286,6 +307,32 @@ public partial class ArduinoGeneral : Node
 			}
 		}
 		return null;
+	}
+
+	public void CloseConnection()
+	{
+		isRunning = false; // Detener el bucle primero
+		
+		if (serialPort != null)
+		{
+			try
+			{
+				if (serialPort.IsOpen)
+				{
+					serialPort.Close();
+				}
+				serialPort.Dispose();
+				serialPort = null;
+			}
+			catch (Exception ex)
+			{
+				GD.PrintErr($"Error al cerrar conexión: {ex.Message}");
+			}
+		}
+		waterSensor = null;
+		keypad = null;
+		
+		GD.Print("Conexión cerrada exitosamente");
 	}
 
 	public override void _ExitTree()
