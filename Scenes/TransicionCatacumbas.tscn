@@ -1,43 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://c8h7w3er57tuv"]
+[gd_scene load_steps=10 format=3 uid="uid://cxl8m6rg3buel"]
 
-[ext_resource type="Texture2D" uid="uid://caucad2tphvg0" path="res://Assets/Catacumbas a palacio.webp" id="1_dtbvl"]
-[ext_resource type="Texture2D" uid="uid://c6nipqkjjutpd" path="res://Assets/cuadro negro.png" id="2_j4ji0"]
-[ext_resource type="FontFile" uid="uid://c1dye6pmg4ifm" path="res://Assets/Fuente/Pixel Times.ttf" id="3_mq17b"]
-
-[sub_resource type="GDScript" id="GDScript_bigrw"]
-script/source = "extends Node
-
-# Variable para almacenar la próxima escena
-var next_scene = \"res://Scenes/mundo.tscn\"
-
-func _ready():
-	$/root/CanvasLayer/ColorRect.modulate = Color(0, 0, 0, 1)
-	$/root/CanvasLayer/AnimationPlayer.play(\"fade_in\")
-	
-	
-func _process(delta):
-	# Detectar si la tecla \"E\" está siendo presionada
-	if Input.is_action_just_pressed(\"change_scene\"):  # Asumiendo que \"E\" está asignada a \"ui_accept\"
-		start_scene_transition()
-
-func start_scene_transition():
-	# Iniciar el fade out
-	$/root/CanvasLayer/AnimationPlayer.play(\"fade_out\")
-
-func _on_animation_finished(animation_name):
-	if animation_name == \"fade_out\":
-		# Cambiar a la siguiente escena al finalizar el fade out
-		get_tree().change_scene(next_scene)
-
-
-func _on_animation_player_animation_finished(anim_name: StringName) -> void:
-	if anim_name == \"fade_out\":
-		# Cambiar a la siguiente escena al finalizar el fade out
-		get_tree().change_scene_to_file(next_scene)
-"
+[ext_resource type="Script" path="res://Scenes/transicion_catacumbas.gd" id="1_dj200"]
+[ext_resource type="Texture2D" uid="uid://cxd8ngtdjy0o4" path="res://Assets/EntradaCatacumbas.webp" id="1_duovf"]
+[ext_resource type="Texture2D" uid="uid://c6nipqkjjutpd" path="res://Assets/cuadro negro.png" id="2_cn45l"]
+[ext_resource type="FontFile" uid="uid://c1dye6pmg4ifm" path="res://Assets/Fuente/Pixel Times.ttf" id="3_6w4i3"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_2mb4d"]
-font = ExtResource("3_mq17b")
+font = ExtResource("3_6w4i3")
+font_size = 15
 
 [sub_resource type="Animation" id="Animation_77bra"]
 length = 0.001
@@ -142,13 +112,13 @@ _data = {
 }
 
 [node name="CanvasLayer" type="CanvasLayer"]
-script = SubResource("GDScript_bigrw")
+script = ExtResource("1_dj200")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1024.0
 offset_bottom = 1024.0
 scale = Vector2(0.359233, 0.294052)
-texture = ExtResource("1_dtbvl")
+texture = ExtResource("1_duovf")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 offset_left = 369.0
@@ -156,31 +126,33 @@ offset_top = -2.0
 offset_right = 1157.0
 offset_bottom = 878.0
 scale = Vector2(0.168974, 0.343237)
-texture = ExtResource("2_j4ji0")
+texture = ExtResource("2_cn45l")
 
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
-offset_left = 384.0
-offset_top = 16.0
-offset_right = 581.0
-offset_bottom = 429.0
+offset_left = 375.0
+offset_top = 17.0
+offset_right = 572.0
+offset_bottom = 430.0
 scale = Vector2(0.891808, 0.804299)
-text = "Después de 
-superar los 
-oscuros
-laberintos 
-de las
-catacumbas, 
-Aiden y Elara 
-se dirigen ahora 
-al majestuoso
-palacio que 
-se alza frente
-a ellos, 
-buscando
-respuestas
- y un nuevo
-desafío."
+text = "Los protagonistas 
+se embarcan
+en una emocio-
+nante aventura
+llena de misterio
+y peligro. Su 
+primer desafío
+los lleva a aden-
+trarse en unas 
+antiguas catacum-
+bas, un lugar 
+oscuro y lleno 
+de secretos,donde 
+cada rincón 
+promete pruebas 
+inesperadas 
+y revelaciones 
+sorprendentes."
 label_settings = SubResource("LabelSettings_2mb4d")
 
 [node name="ColorRect" type="ColorRect" parent="."]
