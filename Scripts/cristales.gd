@@ -3,6 +3,9 @@ extends Area2D
 @onready var text_label = $"/root/World/CanvasLayer/Texto Lore"
 @onready var image_rect = $"/root/World/CanvasLayer/Pergamino"
 
+@onready var text_label_palacio = $"/root/Mundo/CanvasLayer/Texto Lore"
+@onready var image_rect_palacio= $"/root/Mundo/CanvasLayer/Pergamino"
+
 @onready var text_label_laberinto = $"/root/Laberinto/CanvasLayer/Texto Lore"
 @onready var image_rect_laberinto = $"/root/Laberinto/CanvasLayer/Pergamino"
 
@@ -18,6 +21,9 @@ func _on_body_entered(body: Node2D) -> void:
 		elif get_tree().current_scene.name == "Mapa puzzle matriz" or get_tree().current_scene.name == "Mapa puzzle matriz post keypad":
 			text_label.visible = true
 			image_rect.visible = true
+		elif get_tree().current_scene.name == "Mundo":
+			text_label_palacio.visible = true
+			image_rect_palacio.visible = true
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.name == "Player1":

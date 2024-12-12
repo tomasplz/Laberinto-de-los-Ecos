@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://defvmyaelj307"]
+[gd_scene load_steps=38 format=3 uid="uid://defvmyaelj307"]
 
 [ext_resource type="PackedScene" uid="uid://ch0d331ek1f3y" path="res://Scenes/player_1.tscn" id="1_yq3mj"]
 [ext_resource type="PackedScene" uid="uid://c5nxkdgckbb4h" path="res://Scenes/player_2.tscn" id="2_hmquf"]
@@ -16,6 +16,9 @@
 [ext_resource type="Script" path="res://Scenes/static_body_2d.gd" id="15_6ucgu"]
 [ext_resource type="Texture2D" uid="uid://c41guyf5pmadk" path="res://Assets/pixil-frame-0.png" id="16_iaci7"]
 [ext_resource type="Script" path="res://Scenes/area_2d_2.gd" id="16_kjixn"]
+[ext_resource type="PackedScene" uid="uid://il7w1uui7vxj" path="res://Scenes/Cristales.tscn" id="17_vfxu5"]
+[ext_resource type="Texture2D" uid="uid://c17d6a2itpipy" path="res://Assets/Fuente/Pergamino pixel art.png" id="18_a0xai"]
+[ext_resource type="FontFile" uid="uid://c1dye6pmg4ifm" path="res://Assets/Fuente/Pixel Times.ttf" id="19_lpqbr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kup63"]
 texture = ExtResource("3_uyyai")
@@ -10084,21 +10087,6 @@ tracks/0/keys = {
 "values": [1, 2, 4, 6, 6, 6, 6, 6]
 }
 
-[sub_resource type="Animation" id="Animation_wdro3"]
-resource_name = "copamitad"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.633333, 0.866667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 2, 2]
-}
-
 [sub_resource type="Animation" id="Animation_ysjux"]
 resource_name = "copacasivacia"
 tracks/0/type = "value"
@@ -10112,6 +10100,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 1, 1, 1]
+}
+
+[sub_resource type="Animation" id="Animation_wdro3"]
+resource_name = "copamitad"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.633333, 0.866667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 2, 2]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6ql15"]
@@ -10128,7 +10131,16 @@ size = Vector2(55, 24)
 [sub_resource type="CircleShape2D" id="CircleShape2D_7k4t1"]
 radius = 11.0
 
+[sub_resource type="LabelSettings" id="LabelSettings_d4nba"]
+font = ExtResource("19_lpqbr")
+font_size = 14
+font_color = Color(0, 0, 0, 1)
+
 [node name="Mundo" type="Node"]
+
+[node name="Cristal" parent="." instance=ExtResource("17_vfxu5")]
+position = Vector2(113, 480)
+scale = Vector2(0.4, 0.4)
 
 [node name="Player1" parent="." instance=ExtResource("1_yq3mj")]
 z_index = 4
@@ -10293,6 +10305,46 @@ script = ExtResource("16_kjixn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 shape = SubResource("CircleShape2D_7k4t1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Pergamino" type="TextureRect" parent="CanvasLayer"]
+visible = false
+texture_filter = 1
+offset_left = 98.0
+offset_top = -1.0
+offset_right = 198.0
+offset_bottom = 99.0
+scale = Vector2(3, 3)
+texture = ExtResource("18_a0xai")
+stretch_mode = 3
+
+[node name="Texto Lore" type="Label" parent="CanvasLayer"]
+visible = false
+texture_filter = 1
+offset_left = 157.0
+offset_top = 66.0
+offset_right = 673.0
+offset_bottom = 549.0
+scale = Vector2(0.5, 0.5)
+text = "El Laberinto de los Ecos es un entorno que 
+mezcla paisajes virtuales hiperrealistas con 
+anomalías que retan la lógica. Aiden y Elara 
+enfrentan pruebas físicas y mentales que 
+parecen adaptarse a sus miedos y conflictos
+internos. Mientras resuelven acertijos, 
+desactivan trampas. Ambos comienzan a 
+notar patrones extraños: el laberinto 
+parece estar diseñado específicamente 
+para explorar sus recuerdos y emociones 
+más profundas. Una figura etérea, que se 
+hace llamar Mirra, aparece intermitentemente,
+guiándolos con frases enigmáticas que 
+parecen dirigirse a ambos. Lentamente, se
+dan cuenta de que Mirra no es una 
+simple persona, sino algo más 
+complejo y personal."
+label_settings = SubResource("LabelSettings_d4nba")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Gota" to="Gota" method="_on_body_entered"]
