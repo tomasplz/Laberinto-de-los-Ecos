@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://defvmyaelj307"]
+[gd_scene load_steps=31 format=3 uid="uid://defvmyaelj307"]
 
 [ext_resource type="PackedScene" uid="uid://ch0d331ek1f3y" path="res://Scenes/player_1.tscn" id="1_yq3mj"]
 [ext_resource type="PackedScene" uid="uid://c5nxkdgckbb4h" path="res://Scenes/player_2.tscn" id="2_hmquf"]
@@ -10,11 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://cw5neup1bx8o2" path="res://Assets/World/Tileset_48x48_2.png" id="7_tr4qf"]
 [ext_resource type="Script" path="res://Scripts/camera_2d.gd" id="8_bbf6f"]
 [ext_resource type="Texture2D" uid="uid://ckql24jumk5aj" path="res://Assets/World/WaterDroplet.png" id="8_isplp"]
-[ext_resource type="Script" path="res://Scripts/area_2d.gd" id="8_p73px"]
 [ext_resource type="Texture2D" uid="uid://bcamqfbgftqay" path="res://Assets/table.jpg" id="11_8sfqe"]
 [ext_resource type="Script" path="res://Scripts/gota_agua.gd" id="11_yh6oe"]
-[ext_resource type="Script" path="res://Scenes/static_body_2d.gd" id="15_6ucgu"]
-[ext_resource type="Texture2D" uid="uid://c41guyf5pmadk" path="res://Assets/pixil-frame-0.png" id="16_iaci7"]
+[ext_resource type="Script" path="res://Scenes/nivel2-area_2d-copa1.gd" id="12_nna35"]
 [ext_resource type="Script" path="res://Scenes/area_2d_2.gd" id="16_kjixn"]
 [ext_resource type="PackedScene" uid="uid://il7w1uui7vxj" path="res://Scenes/Cristales.tscn" id="17_vfxu5"]
 [ext_resource type="Texture2D" uid="uid://c17d6a2itpipy" path="res://Assets/Fuente/Pergamino pixel art.png" id="18_a0xai"]
@@ -10056,80 +10054,11 @@ size = Vector2(39.4688, 22.7734)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bodrr"]
 
-[sub_resource type="Animation" id="Animation_a6u1i"]
-length = 0.001
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
-
-[sub_resource type="Animation" id="Animation_gbnf3"]
-resource_name = "copa"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.533333, 0.7, 0.866667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [1, 2, 4, 6, 6, 6, 6, 6]
-}
-
-[sub_resource type="Animation" id="Animation_ysjux"]
-resource_name = "copacasivacia"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.433333, 0.633333, 0.866667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 1, 1, 1]
-}
-
-[sub_resource type="Animation" id="Animation_wdro3"]
-resource_name = "copamitad"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.633333, 0.866667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 2, 2]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_6ql15"]
-_data = {
-"RESET": SubResource("Animation_a6u1i"),
-"copa": SubResource("Animation_gbnf3"),
-"copacasivacia": SubResource("Animation_ysjux"),
-"copamitad": SubResource("Animation_wdro3")
-}
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g7wij"]
 size = Vector2(55, 24)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_7k4t1"]
-radius = 11.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3h86h"]
+size = Vector2(63, 46)
 
 [sub_resource type="LabelSettings" id="LabelSettings_d4nba"]
 font = ExtResource("19_lpqbr")
@@ -10145,12 +10074,12 @@ scale = Vector2(0.4, 0.4)
 [node name="Player1" parent="." instance=ExtResource("1_yq3mj")]
 z_index = 4
 texture_filter = 1
-position = Vector2(160, 143)
+position = Vector2(639, 436)
 
 [node name="player2" parent="." instance=ExtResource("2_hmquf")]
 z_index = 4
 texture_filter = 1
-position = Vector2(177, 132)
+position = Vector2(522, 454)
 script = ExtResource("3_1qo1q")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -10170,7 +10099,7 @@ layer_2/tile_data = PackedInt32Array(2490376, 393217, 5, 2490373, 458754, 30, 24
 [node name="Area2D" type="Area2D" parent="."]
 z_index = 4
 position = Vector2(739, 529)
-script = ExtResource("8_p73px")
+script = ExtResource("12_nna35")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 z_index = 4
@@ -10267,22 +10196,6 @@ position = Vector2(52.9999, 413)
 scale = Vector2(0.78125, 0.625)
 texture = ExtResource("8_isplp")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-script = ExtResource("15_6ucgu")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody2D"]
-libraries = {
-"": SubResource("AnimationLibrary_6ql15")
-}
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-texture_filter = 1
-position = Vector2(-393, 244)
-scale = Vector2(0.568318, 0.634009)
-texture = ExtResource("16_iaci7")
-hframes = 3
-vframes = 3
-
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
@@ -10304,7 +10217,8 @@ position = Vector2(750, 376)
 script = ExtResource("16_kjixn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-shape = SubResource("CircleShape2D_7k4t1")
+position = Vector2(3, 22)
+shape = SubResource("RectangleShape2D_3h86h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

@@ -6,7 +6,6 @@ func _on_body_entered(body: Node) -> void:
 	if body.name == "player2" or body.name =="Player1":
 		player_inside = true
 
-
 func _process(delta):
-		if player_inside && Global.copa_1 == true:
-			get_tree().change_scene_to_file("res://Scenes/Laberinto.tscn")
+	if player_inside:
+		get_tree().change_scene_to_file("res://Scenes/nivel2_copa1.tscn")

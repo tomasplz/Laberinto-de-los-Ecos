@@ -1,18 +1,15 @@
 using Godot;
 
-public partial class WaterSensor : ArduinoDevice
+public partial class WaterSensor : Node
 {
-	public override void ProcesarDatos(string datos)
-	{
-		// Lógica para procesar los datos del sensor de agua
-		if(int.TryParse(datos, out int nivelAgua))
-		{
-			GD.Print("Nivel de agua: " + nivelAgua);
-			// Realizar acciones según el nivel de agua
-		}
-		else
-		{
-			GD.PrintErr("Datos inválidos para el sensor de agua: " + datos);
-		}
-	}
+    [Signal]
+    public delegate void WaterLevelChangedEventHandler(int level);
+
+    public void ProcesarDatos(string data)
+    {
+        if (int.TryParse(data, out int waterLevel))
+        {
+            EmitSignal(SignalName.WaterLevelChanged, waterLevel);
+        }
+    }
 }
