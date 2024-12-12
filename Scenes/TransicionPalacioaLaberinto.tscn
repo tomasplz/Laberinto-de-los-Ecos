@@ -1,9 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://daue5ks826ifw"]
 
-[ext_resource type="Script" path="res://Scenes/transicion_palacioLaberinto.gd" id="1_6b7pt"]
+[ext_resource type="Script" path="res://Scripts/transicion_palacioLaberinto.gd" id="1_6b7pt"]
 [ext_resource type="Texture2D" uid="uid://cueydr448hyas" path="res://Assets/EntradaLaberinto.png" id="2_8ylji"]
 [ext_resource type="Texture2D" uid="uid://c6nipqkjjutpd" path="res://Assets/cuadro negro.png" id="2_q74n1"]
 [ext_resource type="FontFile" uid="uid://c1dye6pmg4ifm" path="res://Assets/Fuente/Pixel Times.ttf" id="3_1nd6g"]
+
 
 [sub_resource type="LabelSettings" id="LabelSettings_2mb4d"]
 font = ExtResource("3_1nd6g")

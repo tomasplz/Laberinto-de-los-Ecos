@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=4 uid="uid://coagtn2ityh2c"]
 
-[ext_resource type="Script" path="res://Scenes/Potenciometro_3.gd" id="1_2j6h7"]
+[ext_resource type="Script" path="res://Scripts/Potenciometro_3.gd" id="1_2j6h7"]
 [ext_resource type="Texture2D" uid="uid://cyu7xvcwm06qb" path="res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png" id="1_mdf11"]
 [ext_resource type="Texture2D" uid="uid://vf4i3ng7vfnt" path="res://Assets/Potenciometro/pixil-frame-0 (8).png" id="2_2dluy"]
 [ext_resource type="Texture2D" uid="uid://bcsq848yia5p3" path="res://Assets/Potenciometro/pixil-frame-0 (1).png" id="3_0snlk"]

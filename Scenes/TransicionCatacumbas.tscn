@@ -1,9 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://cxl8m6rg3buel"]
 
-[ext_resource type="Script" path="res://Scenes/transicion_catacumbas.gd" id="1_dj200"]
+[ext_resource type="Script" path="res://Scripts/transicion_catacumbas.gd" id="1_dj200"]
 [ext_resource type="Texture2D" uid="uid://cxd8ngtdjy0o4" path="res://Assets/EntradaCatacumbas.webp" id="1_duovf"]
 [ext_resource type="Texture2D" uid="uid://c6nipqkjjutpd" path="res://Assets/cuadro negro.png" id="2_cn45l"]
 [ext_resource type="FontFile" uid="uid://c1dye6pmg4ifm" path="res://Assets/Fuente/Pixel Times.ttf" id="3_6w4i3"]
+
 
 [sub_resource type="LabelSettings" id="LabelSettings_2mb4d"]
 font = ExtResource("3_6w4i3")
