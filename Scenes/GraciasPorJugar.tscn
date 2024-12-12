@@ -114,11 +114,11 @@ _data = {
 script = ExtResource("1_nnd3y")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = -1.0
-offset_top = -2.0
-offset_right = 787.0
-offset_bottom = 878.0
-scale = Vector2(0.633597, 0.347638)
+offset_left = -10.0
+offset_top = -5.0
+offset_right = 778.0
+offset_bottom = 875.0
+scale = Vector2(0.664909, 0.35199)
 texture = ExtResource("3_aj7eo")
 
 [node name="Label" type="Label" parent="."]
