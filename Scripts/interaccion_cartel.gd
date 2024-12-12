@@ -3,8 +3,13 @@ extends Area2D
 @onready var text_label = $"/root/World/CanvasLayer/Texto Cartel"
 @onready var image_rect = $"/root/World/CanvasLayer/CartelAcertijo"
 
+@onready var text_label_palacio = $"/root/Mundo/CanvasLayer/Texto Cartel"
+@onready var image_rect_palacio= $"/root/Mundo/CanvasLayer/CartelAcertijo"
+
 @onready var text_label_laberinto = $"/root/Laberinto/CanvasLayer/Texto Cartel"
 @onready var image_rect_laberinto= $"/root/Laberinto/CanvasLayer/CartelAcertijo"
+
+
 
 func _ready():
 	# Conectamos las señales usando Callable
@@ -19,6 +24,9 @@ func _on_body_entered(body: Node):
 		elif get_tree().current_scene.name == "Mapa puzzle matriz" or get_tree().current_scene.name == "Mapa puzzle matriz post keypad":
 			text_label.visible = true
 			image_rect.visible = true
+		elif get_tree().current_scene.name == "Mundo":
+			text_label_palacio.visible = true
+			image_rect_palacio.visible = true
 
 
 func _on_body_exited(body: Node):
@@ -29,3 +37,6 @@ func _on_body_exited(body: Node):
 		elif get_tree().current_scene.name == "Mapa puzzle matriz" or get_tree().current_scene.name == "Mapa puzzle matriz post keypad":
 			text_label.visible = false
 			image_rect.visible = false
+		elif get_tree().current_scene.name == "Mundo":
+			text_label_palacio.visible = false
+			image_rect_palacio.visible = false
