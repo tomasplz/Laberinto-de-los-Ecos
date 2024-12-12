@@ -5,3 +5,5 @@ var player_positions = {
 	"Player1": null,
 	"player2": null
 }
+
+var num_potenciometros = 0

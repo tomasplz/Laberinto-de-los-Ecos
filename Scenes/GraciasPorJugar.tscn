@@ -1,13 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://cxl8m6rg3buel"]
+[gd_scene load_steps=9 format=3 uid="uid://dortr88irac7j"]
 
-[ext_resource type="Script" path="res://Scripts/transicion_catacumbas.gd" id="1_dj200"]
-[ext_resource type="Texture2D" uid="uid://cxd8ngtdjy0o4" path="res://Assets/EntradaCatacumbas.webp" id="1_duovf"]
-[ext_resource type="Texture2D" uid="uid://c6nipqkjjutpd" path="res://Assets/cuadro negro.png" id="2_cn45l"]
-[ext_resource type="FontFile" uid="uid://c1dye6pmg4ifm" path="res://Assets/Fuente/Pixel Times.ttf" id="3_6w4i3"]
+[ext_resource type="Script" path="res://Scenes/gracias_por_jugar.gd" id="1_nnd3y"]
+[ext_resource type="Texture2D" uid="uid://c6nipqkjjutpd" path="res://Assets/cuadro negro.png" id="3_aj7eo"]
+[ext_resource type="FontFile" uid="uid://c1dye6pmg4ifm" path="res://Assets/Fuente/Pixel Times.ttf" id="4_oct6v"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_2mb4d"]
-font = ExtResource("3_6w4i3")
-font_size = 15
+font = ExtResource("4_oct6v")
+font_size = 14
 
 [sub_resource type="Animation" id="Animation_77bra"]
 length = 0.001
@@ -112,47 +111,37 @@ _data = {
 }
 
 [node name="CanvasLayer" type="CanvasLayer"]
-script = ExtResource("1_dj200")
-
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1024.0
-offset_bottom = 1024.0
-scale = Vector2(0.359233, 0.294052)
-texture = ExtResource("1_duovf")
+script = ExtResource("1_nnd3y")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = 369.0
-offset_top = -2.0
-offset_right = 1157.0
-offset_bottom = 878.0
-scale = Vector2(0.168974, 0.343237)
-texture = ExtResource("2_cn45l")
+offset_left = -10.0
+offset_top = -5.0
+offset_right = 778.0
+offset_bottom = 875.0
+scale = Vector2(0.664909, 0.35199)
+texture = ExtResource("3_aj7eo")
 
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
-offset_left = 375.0
-offset_top = 17.0
-offset_right = 572.0
-offset_bottom = 430.0
-scale = Vector2(0.891808, 0.804299)
-text = "Los protagonistas 
-se embarcan
-en una emocio-
-nante aventura
-llena de misterio
-y peligro. Su 
-primer desafío
-los lleva a aden-
-trarse en unas 
-antiguas catacum-
-bas, un lugar 
-oscuro y lleno 
-de secretos,donde 
-cada rincón 
-promete pruebas 
-inesperadas 
-y revelaciones 
-sorprendentes."
+offset_left = 89.0
+offset_top = 132.0
+offset_right = 268.0
+offset_bottom = 527.0
+scale = Vector2(2, 1.803)
+text = "GRACIAS POR JUGAR!
+
+"
+label_settings = SubResource("LabelSettings_2mb4d")
+
+[node name="Label" type="Label" parent="Label"]
+texture_filter = 1
+offset_left = 0.5
+offset_top = 66.0011
+offset_right = 221.5
+offset_bottom = 461.001
+scale = Vector2(0.7, 0.631)
+text = "Presiona e para volver al menú
+"
 label_settings = SubResource("LabelSettings_2mb4d")
 
 [node name="ColorRect" type="ColorRect" parent="."]

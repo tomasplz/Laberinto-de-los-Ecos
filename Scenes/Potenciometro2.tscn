@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://c6u4o6cygk5bh"]
+[gd_scene load_steps=17 format=4 uid="uid://c6u4o6cygk5bh"]
 
 [ext_resource type="Texture2D" uid="uid://cyu7xvcwm06qb" path="res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png" id="1_7xsdy"]
 [ext_resource type="Script" path="res://Scripts/Poteciometro_2.gd" id="1_xynqs"]
@@ -318,6 +318,11 @@ font = ExtResource("10_6dbcv")
 outline_size = 3
 outline_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_3kr6v"]
+font = ExtResource("10_6dbcv")
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+
 [node name="Node2D" type="Node2D"]
 position = Vector2(17, 12)
 script = ExtResource("1_xynqs")
@@ -390,3 +395,13 @@ label_settings = SubResource("LabelSettings_no62t")
 position = Vector2(54, 122)
 color = Color(0.84915, 0.697713, 0, 1)
 texture = ExtResource("11_7w7qg")
+
+[node name="Label2" type="Label" parent="."]
+texture_filter = 1
+offset_left = 229.0
+offset_top = 26.0
+offset_right = 537.0
+offset_bottom = 49.0
+scale = Vector2(2, 2)
+text = "II"
+label_settings = SubResource("LabelSettings_3kr6v")

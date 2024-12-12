@@ -315,7 +315,7 @@ sources/0 = SubResource("TileSetAtlasSource_lmitc")
 
 [sub_resource type="LabelSettings" id="LabelSettings_no62t"]
 font = ExtResource("10_c51j1")
-outline_size = 3
+outline_size = 15
 outline_color = Color(0, 0, 0, 1)
 
 [node name="Node2D" type="Node2D"]
@@ -385,13 +385,22 @@ scale = Vector2(5, 5)
 texture = ExtResource("9_domak")
 
 [node name="Label" type="Label" parent="."]
-visible = false
 texture_filter = 1
 offset_left = 138.0
 offset_top = 84.0
 offset_right = 446.0
 offset_bottom = 107.0
 text = "10% 30% 45% 50% 65% 80% 100%"
+label_settings = SubResource("LabelSettings_no62t")
+
+[node name="Label2" type="Label" parent="."]
+texture_filter = 1
+offset_left = 229.0
+offset_top = 26.0
+offset_right = 537.0
+offset_bottom = 49.0
+scale = Vector2(2, 2)
+text = "I"
 label_settings = SubResource("LabelSettings_no62t")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
