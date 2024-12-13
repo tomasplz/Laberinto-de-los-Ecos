@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://xju8wwp68kfq"]
+[gd_scene load_steps=7 format=3 uid="uid://xju8wwp68kfq"]
 
 [ext_resource type="PackedScene" uid="uid://dmynykgt7ly6f" path="res://Scenes/parallax_background.tscn" id="1_mw4r2"]
 [ext_resource type="Script" path="res://Scripts/scriptjugar.gd" id="1_nm5el"]
+[ext_resource type="Script" path="res://Scenes/control.gd" id="3_oslw3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s27es"]
 bg_color = Color(0, 0, 0, 1)
@@ -22,6 +23,12 @@ offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_nm5el")
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_oslw3")
 
 [node name="vBoxMenu" type="VBoxContainer" parent="."]
 layout_mode = 1

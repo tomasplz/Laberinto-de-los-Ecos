@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://b14eu6uodywab"]
+
+[ext_resource type="AudioStream" uid="uid://bctsws3nelyy7" path="res://Audios/scifi.mp3" id="1_salsn"]
+[ext_resource type="Script" path="res://Scripts/music_level_three.gd" id="1_xt8iu"]
+
+[node name="MusicLevelThree" type="AudioStreamPlayer"]
+stream = ExtResource("1_salsn")
+script = ExtResource("1_xt8iu")

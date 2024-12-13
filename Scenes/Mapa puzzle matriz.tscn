@@ -1,7 +1,7 @@
 [gd_scene load_steps=74 format=4 uid="uid://du8wii2jti8y"]
 
 [ext_resource type="Texture2D" uid="uid://fm0dc07arb8r" path="res://Assets/Mapa/Catacombs/mainlevbuild.png" id="1_2bffg"]
-[ext_resource type="Script" path="res://Scripts/mapa_puzzle_matriz.gd" id="1_cmh7k"]
+[ext_resource type="Script" path="res://Scenes/control_primer_nivel.gd" id="2_bm4ff"]
 [ext_resource type="Texture2D" uid="uid://crs8kgids11ur" path="res://Assets/Mapa/Catacombs/decorative.png" id="2_i7agi"]
 [ext_resource type="Texture2D" uid="uid://kb815gd2iwhh" path="res://Assets/Mapa/Appartment/upsized png/apartmentA5demo.png" id="3_q6ghf"]
 [ext_resource type="Texture2D" uid="uid://dnnkmnvdduq7f" path="res://Assets/Mapa/Farm Game Dungeon Cellar Tileset/Tilesets/FG_Cellar.png" id="4_mlsut"]
@@ -11619,7 +11619,13 @@ font_size = 26
 outline_color = Color(0, 0, 0, 1)
 
 [node name="World" type="Node2D"]
-script = ExtResource("1_cmh7k")
+
+[node name="ControlPrimerNivel" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_bm4ff")
 
 [node name="TileMap debajo personaje" type="Node2D" parent="."]
 

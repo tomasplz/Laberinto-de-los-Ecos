@@ -22,6 +22,10 @@ buses/default_bus_layout=""
 [autoload]
 
 Global="*res://Scripts/Global.gd"
+Music="*res://Scenes/MusicPlayer.tscn"
+MusicLevelOne="*res://Scenes/music_level_one.tscn"
+MusicLevelTwo="*res://Scenes/music_level_two.tscn"
+MusicLevelThree="*res://Scenes/music_level_three.tscn"
 
 [display]
 

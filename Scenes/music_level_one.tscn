@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://66y6ci531n2s"]
+
+[ext_resource type="Script" path="res://Scripts/music_level_one.gd" id="1_nwa0u"]
+[ext_resource type="AudioStream" uid="uid://bqnxwmqtisna4" path="res://Audios/sleepless.mp3" id="1_qefus"]
+
+[node name="MusicLevelOne" type="AudioStreamPlayer"]
+stream = ExtResource("1_qefus")
+script = ExtResource("1_nwa0u")
