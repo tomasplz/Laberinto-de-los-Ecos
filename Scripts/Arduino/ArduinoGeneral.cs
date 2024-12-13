@@ -230,6 +230,15 @@ public partial class ArduinoGeneral : Node
 		EmitSignal(SignalName.WaterLevelChanged, level);
 	}
 
+	//senal potenciometro
+	[Signal]
+	public delegate void PotentiometerChangedEventHandler(float value);
+
+	private void EmitPotentiometerValue(float value)
+	{
+		EmitSignal(SignalName.PotentiometerChanged, value);
+	}
+
 	private void ProcesarMensaje(string message)
 	{
 		if (string.IsNullOrEmpty(message))
@@ -255,7 +264,10 @@ public partial class ArduinoGeneral : Node
 					CallDeferred(nameof(EmitKeypadSignal), data);
 					break;
 				case 'P':
-					GD.Print("Datos del potenciometro: " + data);
+					float potValue = float.Parse(data);
+					// Convertir a porcentaje (0-100)
+					float percentage = (potValue / 1023f) * 100f;
+					CallDeferred(nameof(EmitPotentiometerValue), percentage);
 					break;
 
 				default:

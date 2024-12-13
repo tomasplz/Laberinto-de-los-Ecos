@@ -1,8 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://cnr2k7yfqiq31"]
+[gd_scene load_steps=9 format=3 uid="uid://cnr2k7yfqiq31"]
 
-[ext_resource type="Script" path="res://Scripts/nivel_2_copa_1_control.gd" id="1_asecu"]
 [ext_resource type="Script" path="res://Scripts/Arduino/ArduinoGeneral.cs" id="2_elqvd"]
-[ext_resource type="Script" path="res://Scenes/static_body_2d.gd" id="3_kb2qu"]
+[ext_resource type="Script" path="res://Scenes/static_body_2d_lvl2_copa1.gd" id="3_8txeg"]
 [ext_resource type="Texture2D" uid="uid://c41guyf5pmadk" path="res://Assets/pixil-frame-0.png" id="4_8fmgr"]
 
 [sub_resource type="Animation" id="Animation_a6u1i"]
@@ -76,7 +75,6 @@ _data = {
 
 [node name="Nivel2Copa1Control" type="Node2D"]
 position = Vector2(631, -44)
-script = ExtResource("1_asecu")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -100,7 +98,7 @@ grow_horizontal = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-script = ExtResource("3_kb2qu")
+script = ExtResource("3_8txeg")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody2D"]
 libraries = {

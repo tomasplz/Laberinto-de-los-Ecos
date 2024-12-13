@@ -24,7 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://dqvy5nsv44icq" path="res://Assets/light.png" id="21_q6xrh"]
 [ext_resource type="Texture2D" uid="uid://2blv2yo0hoy6" path="res://Assets/Mapa/Cartel.png" id="21_yfmgx"]
 [ext_resource type="PackedScene" uid="uid://rgoadtl061ea" path="res://Scenes/Interacción keypad.tscn" id="22_5t6wr"]
-[ext_resource type="Script" path="res://Scripts/interaccion_cartel.gd" id="23_p1ajt"]
+[ext_resource type="Script" path="res://Scripts/interaccion_cartel_nivel1.gd" id="23_p1ajt"]
 [ext_resource type="Texture2D" uid="uid://dbnf6f4ydi88t" path="res://Assets/Mapa/Cartel mini.png" id="25_3wxoo"]
 [ext_resource type="Script" path="res://Scripts/sala_1.gd" id="26_n26uh"]
 [ext_resource type="Script" path="res://Scripts/sala_2.gd" id="27_v2jkf"]
@@ -11664,10 +11664,10 @@ position = Vector2(881, 219)
 scale = Vector2(0.3, 0.3)
 
 [node name="Player1" parent="." instance=ExtResource("19_uej1a")]
-position = Vector2(800, 519)
+position = Vector2(158, 106)
 
 [node name="player2" parent="." instance=ExtResource("20_mlitr")]
-position = Vector2(762, 508)
+position = Vector2(120, 95)
 
 [node name="TileMap sobre Personaje" type="Node2D" parent="."]
 

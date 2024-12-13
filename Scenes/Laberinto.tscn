@@ -1,6 +1,6 @@
-[gd_scene load_steps=64 format=4 uid="uid://dgq0cldnojgw8"]
+[gd_scene load_steps=65 format=4 uid="uid://dgq0cldnojgw8"]
 
-[ext_resource type="Script" path="res://Scripts/mapa_puzzle_matriz.gd" id="1_b422t"]
+[ext_resource type="Script" path="res://Scenes/Control-lvl3.gd" id="1_865jv"]
 [ext_resource type="Texture2D" uid="uid://fm0dc07arb8r" path="res://Assets/Mapa/Catacombs/mainlevbuild.png" id="2_dx55h"]
 [ext_resource type="Texture2D" uid="uid://gcreeg8o85l" path="res://Assets/Potenciometro/potenciometro mini.png" id="9_r4coj"]
 [ext_resource type="Texture2D" uid="uid://deb83jttwtss4" path="res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Walls.png" id="9_w6upc"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://Scripts/camera_2d_3.gd" id="12_jm5ry"]
 [ext_resource type="Texture2D" uid="uid://dmbkjyhga6fjs" path="res://Assets/Mapa/Catacombs/candleA_01.png" id="12_wu0qr"]
 [ext_resource type="Texture2D" uid="uid://dppr12pfk0puw" path="res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png" id="13_75a7h"]
+[ext_resource type="Script" path="res://Scripts/cristal_nivel3.gd" id="13_k2j0c"]
 [ext_resource type="Texture2D" uid="uid://44q1cx4ykkfy" path="res://Assets/Mapa/Catacombs/candleA_04.png" id="13_kld0d"]
 [ext_resource type="Texture2D" uid="uid://dqvy5nsv44icq" path="res://Assets/light.png" id="14_ob263"]
 [ext_resource type="PackedScene" uid="uid://il7w1uui7vxj" path="res://Scenes/Cristales.tscn" id="15_o8w7m"]
@@ -21,10 +22,10 @@
 [ext_resource type="Script" path="res://Scripts/Interaccion Potenciometro1.gd" id="18_p72gm"]
 [ext_resource type="PackedScene" uid="uid://c5nxkdgckbb4h" path="res://Scenes/player_2.tscn" id="19_xuqgp"]
 [ext_resource type="Script" path="res://Scripts/Interaccion Potenciometro3.gd" id="19_yt8wp"]
-[ext_resource type="Script" path="res://Scripts/interaccion_cartel.gd" id="22_vt3tq"]
 [ext_resource type="Texture2D" uid="uid://dbnf6f4ydi88t" path="res://Assets/Mapa/Cartel mini.png" id="23_jdeqf"]
 [ext_resource type="Texture2D" uid="uid://b5nsbfhdnp81x" path="res://Assets/Characters/Human/IDLE/base_idle_strip9.png" id="23_py6oe"]
 [ext_resource type="Texture2D" uid="uid://dknw5nyhd5kxv" path="res://Assets/Characters/Human/IDLE/longhair_idle_strip9.png" id="24_l6lwj"]
+[ext_resource type="Script" path="res://Scripts/interaccion_cartel_nivel3.gd" id="26_5f0q4"]
 [ext_resource type="Script" path="res://Scenes/InteraccionFinal.gd" id="26_78vnt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_07umw"]
@@ -5219,7 +5220,7 @@ size = Vector2(45, 25)
 
 [node name="Laberinto" type="Node2D"]
 position = Vector2(0, 195)
-script = ExtResource("1_b422t")
+script = ExtResource("1_865jv")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.493544, 0.493546, 0.493545, 1)
@@ -5241,21 +5242,6 @@ texture_filter = 1
 position = Vector2(186, -289)
 scale = Vector2(0.205, 0.195)
 texture = ExtResource("23_jdeqf")
-
-[node name="PotenciometroMini" type="Sprite2D" parent="."]
-position = Vector2(919, 599)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("9_r4coj")
-
-[node name="PotenciometroMini2" type="Sprite2D" parent="."]
-position = Vector2(1104, -136)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("9_r4coj")
-
-[node name="PotenciometroMini3" type="Sprite2D" parent="."]
-position = Vector2(103, 921)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("9_r4coj")
 
 [node name="Antorchas" type="Node2D" parent="."]
 
@@ -5803,6 +5789,7 @@ texture = ExtResource("14_ob263")
 [node name="Cristal" parent="." instance=ExtResource("15_o8w7m")]
 position = Vector2(73, 826)
 scale = Vector2(0.4, 0.4)
+script = ExtResource("13_k2j0c")
 
 [node name="Player1" parent="." instance=ExtResource("18_le36m")]
 position = Vector2(117, -254)
@@ -5897,6 +5884,11 @@ label_settings = SubResource("LabelSettings_i76eq")
 [node name="Potenciometro1" type="Area2D" parent="."]
 script = ExtResource("18_p72gm")
 
+[node name="PotenciometroMini1" type="Sprite2D" parent="Potenciometro1"]
+position = Vector2(1104, -136)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_r4coj")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Potenciometro1"]
 position = Vector2(1106, -107)
 shape = SubResource("RectangleShape2D_4r3ov")
@@ -5904,12 +5896,22 @@ shape = SubResource("RectangleShape2D_4r3ov")
 [node name="Potenciometro2" type="Area2D" parent="."]
 script = ExtResource("18_1nyuv")
 
+[node name="PotenciometroMini2" type="Sprite2D" parent="Potenciometro2"]
+position = Vector2(919, 599)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_r4coj")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Potenciometro2"]
 position = Vector2(915, 627)
 shape = SubResource("RectangleShape2D_4r3ov")
 
 [node name="Potenciometro3" type="Area2D" parent="."]
 script = ExtResource("19_yt8wp")
+
+[node name="PotenciometroMini3" type="Sprite2D" parent="Potenciometro3"]
+position = Vector2(103, 921)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_r4coj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Potenciometro3"]
 position = Vector2(97, 950)
@@ -5964,7 +5966,7 @@ autoplay = "default"
 
 [node name="Interaccion Cartel" type="Area2D" parent="."]
 position = Vector2(-31, -531)
-script = ExtResource("22_vt3tq")
+script = ExtResource("26_5f0q4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interaccion Cartel"]
 position = Vector2(217.5, 266.5)

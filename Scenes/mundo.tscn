@@ -1,8 +1,10 @@
-[gd_scene load_steps=31 format=3 uid="uid://defvmyaelj307"]
+[gd_scene load_steps=37 format=3 uid="uid://defvmyaelj307"]
 
+[ext_resource type="Script" path="res://Scenes/lvl2-Control.gd" id="1_npk2f"]
 [ext_resource type="PackedScene" uid="uid://ch0d331ek1f3y" path="res://Scenes/player_1.tscn" id="1_yq3mj"]
 [ext_resource type="PackedScene" uid="uid://c5nxkdgckbb4h" path="res://Scenes/player_2.tscn" id="2_hmquf"]
 [ext_resource type="Script" path="res://Scripts/player_2.gd" id="3_1qo1q"]
+[ext_resource type="Script" path="res://Scripts/cristal_nivel2.gd" id="3_ntq8o"]
 [ext_resource type="Texture2D" uid="uid://cumt00338knmv" path="res://Assets/World/Tileset.png" id="3_uyyai"]
 [ext_resource type="Texture2D" uid="uid://go8tbfdoeyy7" path="res://Assets/World/Props.png" id="4_ia8cj"]
 [ext_resource type="Texture2D" uid="uid://dgkdpf4qi6low" path="res://Assets/World/Sayako_TileB.png" id="5_sqoay"]
@@ -13,12 +15,12 @@
 [ext_resource type="Texture2D" uid="uid://bcamqfbgftqay" path="res://Assets/table.jpg" id="11_8sfqe"]
 [ext_resource type="Script" path="res://Scripts/gota_agua.gd" id="11_yh6oe"]
 [ext_resource type="Script" path="res://Scenes/nivel2-area_2d-copa1.gd" id="12_nna35"]
-[ext_resource type="Script" path="res://Scenes/area_2d_2.gd" id="16_kjixn"]
+[ext_resource type="Script" path="res://Scenes/area_2d_transicion_laberinto.gd" id="15_7yij5"]
 [ext_resource type="PackedScene" uid="uid://il7w1uui7vxj" path="res://Scenes/Cristales.tscn" id="17_vfxu5"]
 [ext_resource type="Texture2D" uid="uid://c17d6a2itpipy" path="res://Assets/Fuente/Pergamino pixel art.png" id="18_a0xai"]
 [ext_resource type="FontFile" uid="uid://c1dye6pmg4ifm" path="res://Assets/Fuente/Pixel Times.ttf" id="19_lpqbr"]
 [ext_resource type="Texture2D" uid="uid://2blv2yo0hoy6" path="res://Assets/Mapa/Cartel.png" id="20_k6yx8"]
-[ext_resource type="Script" path="res://Scripts/interaccion_cartel.gd" id="21_mqt6b"]
+[ext_resource type="Script" path="res://Scripts/interaccion_cartel_nivel2.gd" id="21_8bp5p"]
 [ext_resource type="Texture2D" uid="uid://dbnf6f4ydi88t" path="res://Assets/Mapa/Cartel mini.png" id="22_ffj2l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kup63"]
@@ -10053,15 +10055,12 @@ sources/5 = SubResource("TileSetAtlasSource_bh8dv")
 sources/6 = SubResource("TileSetAtlasSource_smak0")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kfawl"]
-size = Vector2(39.4688, 22.7734)
+size = Vector2(39.7344, 22.7734)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bodrr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g7wij"]
 size = Vector2(55, 24)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3h86h"]
-size = Vector2(63, 46)
 
 [sub_resource type="LabelSettings" id="LabelSettings_d4nba"]
 font = ExtResource("19_lpqbr")
@@ -10078,19 +10077,27 @@ size = Vector2(45, 25)
 
 [node name="Mundo" type="Node"]
 
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_npk2f")
+
 [node name="Cristal" parent="." instance=ExtResource("17_vfxu5")]
 position = Vector2(110, 521)
 scale = Vector2(0.4, 0.4)
+script = ExtResource("3_ntq8o")
 
 [node name="Player1" parent="." instance=ExtResource("1_yq3mj")]
 z_index = 4
 texture_filter = 1
-position = Vector2(639, 436)
+position = Vector2(177, 145)
 
 [node name="player2" parent="." instance=ExtResource("2_hmquf")]
 z_index = 4
 texture_filter = 1
-position = Vector2(522, 454)
+position = Vector2(147, 135)
 script = ExtResource("3_1qo1q")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -10114,7 +10121,7 @@ script = ExtResource("12_nna35")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 z_index = 4
-position = Vector2(-3, -3.61328)
+position = Vector2(-2.86719, -3.61328)
 shape = SubResource("RectangleShape2D_kfawl")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -10207,11 +10214,13 @@ position = Vector2(52.9999, 413)
 scale = Vector2(0.78125, 0.625)
 texture = ExtResource("8_isplp")
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(752, 403)
+script = ExtResource("15_7yij5")
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+[node name="Sprite2D" type="Sprite2D" parent="Area2D2"]
 texture_filter = 1
-position = Vector2(758, 404)
+position = Vector2(3.69653, -0.455898)
 scale = Vector2(1.01786, 0.95098)
 texture = ExtResource("5_sqoay")
 offset = Vector2(-7, 0)
@@ -10219,17 +10228,9 @@ hframes = 8
 vframes = 13
 frame = 78
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(751.5, 404)
-shape = SubResource("RectangleShape2D_g7wij")
-
-[node name="Area2D2" type="Area2D" parent="."]
-position = Vector2(750, 376)
-script = ExtResource("16_kjixn")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2(3, 22)
-shape = SubResource("RectangleShape2D_3h86h")
+position = Vector2(-0.303467, -0.455902)
+shape = SubResource("RectangleShape2D_g7wij")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -10304,7 +10305,7 @@ y al final habrá agua en la belleza.
 label_settings = SubResource("LabelSettings_nmm45")
 
 [node name="Interaccion Cartel" type="Area2D" parent="."]
-script = ExtResource("21_mqt6b")
+script = ExtResource("21_8bp5p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interaccion Cartel"]
 position = Vector2(369, 99)

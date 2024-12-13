@@ -4,6 +4,8 @@ extends Node
 var next_scene = "res://Scenes/Laberinto.tscn"
 
 func _ready():
+	Global.player_positions["Player1"] = null
+	Global.player_positions["Player2"] = null
 	$/root/CanvasLayer/ColorRect.modulate = Color(0, 0, 0, 1)
 	$/root/CanvasLayer/AnimationPlayer.play("fade_in")
 	
