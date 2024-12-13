@@ -8,6 +8,7 @@ func _ready():
 	self.connect("body_entered", Callable(self, "_on_body_entered"))
 	self.connect("body_exited", Callable(self, "_on_body_exited"))
 	
+	
 func _on_body_entered(body: Node) -> void:
 	if body.name == "player2":
 		text_label.visible = true

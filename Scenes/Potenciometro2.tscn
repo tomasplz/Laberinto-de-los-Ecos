@@ -1,8 +1,10 @@
-[gd_scene load_steps=17 format=4 uid="uid://c6u4o6cygk5bh"]
+[gd_scene load_steps=18 format=4 uid="uid://c6u4o6cygk5bh"]
 
 [ext_resource type="Texture2D" uid="uid://cyu7xvcwm06qb" path="res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png" id="1_7xsdy"]
-[ext_resource type="Script" path="res://Scripts/Poteciometro_2.gd" id="1_xynqs"]
+[ext_resource type="Script" path="res://Scripts/potenciometro_1.gd" id="1_gispi"]
+[ext_resource type="Script" path="res://Scripts/Arduino/ArduinoGeneral.cs" id="2_6wr5p"]
 [ext_resource type="Texture2D" uid="uid://vf4i3ng7vfnt" path="res://Assets/Potenciometro/pixil-frame-0 (8).png" id="2_iqfqe"]
+[ext_resource type="Script" path="res://Scenes/static_body_2d_lvl3_potenciometro2.gd" id="3_1ss6r"]
 [ext_resource type="Texture2D" uid="uid://bcsq848yia5p3" path="res://Assets/Potenciometro/pixil-frame-0 (1).png" id="3_qfcpx"]
 [ext_resource type="Texture2D" uid="uid://b17vun4c8bkbo" path="res://Assets/Potenciometro/pixil-frame-0 (2).png" id="4_3xji2"]
 [ext_resource type="Texture2D" uid="uid://mmtests3uueu" path="res://Assets/Potenciometro/pixil-frame-0 (3).png" id="5_yav2d"]
@@ -315,74 +317,87 @@ sources/0 = SubResource("TileSetAtlasSource_lmitc")
 
 [sub_resource type="LabelSettings" id="LabelSettings_no62t"]
 font = ExtResource("10_6dbcv")
-outline_size = 3
-outline_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_3kr6v"]
-font = ExtResource("10_6dbcv")
 outline_size = 15
 outline_color = Color(0, 0, 0, 1)
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(17, 12)
-script = ExtResource("1_xynqs")
+script = ExtResource("1_gispi")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_6wr5p")
+metadata/_edit_use_anchors_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+script = ExtResource("3_1ss6r")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="StaticBody2D"]
 texture_filter = 1
 position = Vector2(-17, -10)
 scale = Vector2(10.4168, 9.49349)
 tile_map_data = PackedByteArray("AAACAAAAAAACAAEAAAABAAAAAAABAAUAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAEAAAABAAEAAAABAAEAAAACAAEAAAACAAEAAAA=")
 tile_set = SubResource("TileSet_eh1ax")
 
-[node name="0 por ciento" type="Sprite2D" parent="."]
+[node name="0 por ciento" type="Sprite2D" parent="StaticBody2D"]
 texture_filter = 1
 position = Vector2(248, 127)
 scale = Vector2(5, 5)
 texture = ExtResource("2_iqfqe")
 
-[node name="10 por ciento" type="Sprite2D" parent="."]
+[node name="10 por ciento" type="Sprite2D" parent="StaticBody2D"]
+visible = false
 texture_filter = 1
 position = Vector2(248, 127)
 scale = Vector2(5, 5)
 texture = ExtResource("3_qfcpx")
 
-[node name="30 por ciento" type="Sprite2D" parent="."]
+[node name="30 por ciento" type="Sprite2D" parent="StaticBody2D"]
+visible = false
 texture_filter = 1
 position = Vector2(248, 127)
 scale = Vector2(5, 5)
 texture = ExtResource("4_3xji2")
 
-[node name="45 por ciento" type="Sprite2D" parent="."]
+[node name="45 por ciento" type="Sprite2D" parent="StaticBody2D"]
+visible = false
 texture_filter = 1
 position = Vector2(248, 127)
 scale = Vector2(5, 5)
 texture = ExtResource("5_yav2d")
 
-[node name="50 por ciento" type="Sprite2D" parent="."]
+[node name="50 por ciento" type="Sprite2D" parent="StaticBody2D"]
+visible = false
 texture_filter = 1
 position = Vector2(248, 127)
 scale = Vector2(5, 5)
 texture = ExtResource("6_ds27v")
 
-[node name="65 por ciento" type="Sprite2D" parent="."]
+[node name="65 por ciento" type="Sprite2D" parent="StaticBody2D"]
+visible = false
 texture_filter = 1
 position = Vector2(248, 127)
 scale = Vector2(5, 5)
 texture = ExtResource("7_3h013")
 
-[node name="80 por ciento" type="Sprite2D" parent="."]
+[node name="80 por ciento" type="Sprite2D" parent="StaticBody2D"]
+visible = false
 texture_filter = 1
 position = Vector2(248, 127)
 scale = Vector2(5, 5)
 texture = ExtResource("8_dqfi0")
 
-[node name="100 por ciento" type="Sprite2D" parent="."]
+[node name="100 por ciento" type="Sprite2D" parent="StaticBody2D"]
+visible = false
 texture_filter = 1
 position = Vector2(248, 127)
 scale = Vector2(5, 5)
 texture = ExtResource("9_2nqc6")
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="StaticBody2D"]
 texture_filter = 1
 offset_left = 138.0
 offset_top = 84.0
@@ -390,13 +405,9 @@ offset_right = 446.0
 offset_bottom = 107.0
 text = "10% 30% 45% 50% 65% 80% 100%"
 label_settings = SubResource("LabelSettings_no62t")
+metadata/_edit_use_anchors_ = true
 
-[node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(54, 122)
-color = Color(0.84915, 0.697713, 0, 1)
-texture = ExtResource("11_7w7qg")
-
-[node name="Label2" type="Label" parent="."]
+[node name="Label2" type="Label" parent="StaticBody2D"]
 texture_filter = 1
 offset_left = 229.0
 offset_top = 26.0
@@ -404,4 +415,9 @@ offset_right = 537.0
 offset_bottom = 49.0
 scale = Vector2(2, 2)
 text = "II"
-label_settings = SubResource("LabelSettings_3kr6v")
+label_settings = SubResource("LabelSettings_no62t")
+
+[node name="PointLight2D" type="PointLight2D" parent="StaticBody2D"]
+position = Vector2(54, 122)
+color = Color(0.84915, 0.697713, 0, 1)
+texture = ExtResource("11_7w7qg")
