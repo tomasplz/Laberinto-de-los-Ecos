@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://oatdv7esllp6"]
+[gd_scene load_steps=11 format=3 uid="uid://oatdv7esllp6"]
 
 [ext_resource type="Script" path="res://Scenes/transicion_final.gd" id="1_qblpb"]
 [ext_resource type="Texture2D" uid="uid://cbe4u8hm6ju3b" path="res://Assets/ImagenFinal.png" id="2_8xfn2"]
@@ -8,6 +8,11 @@
 [sub_resource type="LabelSettings" id="LabelSettings_2mb4d"]
 font = ExtResource("4_gft3h")
 font_size = 14
+
+[sub_resource type="LabelSettings" id="LabelSettings_k8dps"]
+font = ExtResource("4_gft3h")
+font_size = 11
+font_color = Color(0.894516, 0.734163, 7.70092e-07, 1)
 
 [sub_resource type="Animation" id="Animation_77bra"]
 length = 0.001
@@ -154,6 +159,15 @@ consigo mismos
 para alcanzar 
 la plenitud."
 label_settings = SubResource("LabelSettings_2mb4d")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 376.0
+offset_top = 272.0
+offset_right = 506.0
+offset_bottom = 309.0
+text = "Presiona 'e' para 
+continuar"
+label_settings = SubResource("LabelSettings_k8dps")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color(0, 0, 0, 0.255)

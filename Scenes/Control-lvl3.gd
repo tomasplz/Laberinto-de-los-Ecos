@@ -7,7 +7,10 @@ func _ready():
 		$"/root/Laberinto/Player1".global_position = Global.player_positions["Player1"]
 	if Global.player_positions["player2"] != null:
 		$"/root/Laberinto/player2".global_position = Global.player_positions["player2"]
-
+	Music.stop()
+	MusicLevelOne.stop()
+	MusicLevelTwo.stop()
+	MusicLevelThree.play()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	#print("Estado p1: ", Global.potenciometro1)

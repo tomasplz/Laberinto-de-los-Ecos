@@ -107,4 +107,5 @@ void leerYEnviarDatos() {
   if (valorPotenciometro > 0){
     Serial.print("P:");
     Serial.println(valorPotenciometro);
+  }
 }

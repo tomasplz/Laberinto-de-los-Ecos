@@ -1,6 +1,6 @@
 extends Node2D
 
-var codigo = "A332B#";
+var codigo = "A23*0#";
 @onready var arduino_control = $Control
 var codigo_actual = ""
 @onready var Digito0 = $'0DIgito'

@@ -8,8 +8,8 @@
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 
 [node name="fondo" type="Sprite2D" parent="ParallaxLayer"]
-position = Vector2(248, 149.5)
-scale = Vector2(0.146763, 0.155762)
+position = Vector2(256.5, 149.5)
+scale = Vector2(0.151506, 0.149663)
 texture = ExtResource("1_12jn5")
 region_rect = Rect2(-1.17957, 0.317924, 1800.38, 1010.78)
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://daue5ks826ifw"]
+[gd_scene load_steps=11 format=3 uid="uid://daue5ks826ifw"]
 
 [ext_resource type="Script" path="res://Scripts/transicion_palacioLaberinto.gd" id="1_6b7pt"]
 [ext_resource type="Texture2D" uid="uid://cueydr448hyas" path="res://Assets/EntradaLaberinto.png" id="2_8ylji"]
@@ -7,6 +7,11 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_2mb4d"]
 font = ExtResource("3_1nd6g")
+
+[sub_resource type="LabelSettings" id="LabelSettings_5uak1"]
+font = ExtResource("3_1nd6g")
+font_size = 11
+font_color = Color(0.894516, 0.734163, 7.70092e-07, 1)
 
 [sub_resource type="Animation" id="Animation_77bra"]
 length = 0.001
@@ -129,19 +134,17 @@ texture = ExtResource("2_q74n1")
 
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
-offset_left = 381.0
-offset_top = 10.0
-offset_right = 560.0
-offset_bottom = 405.0
+offset_left = 375.0
+offset_top = 3.0
+offset_right = 554.0
+offset_bottom = 398.0
 scale = Vector2(0.891808, 0.804299)
 text = "Después de 
 superar la
-prueba del agua
-en el 
-Palacio, los 
-protagonistas 
-se adentran en
-el desafío final:
+prueba del agua, 
+los protagonistas
+se adentran en el 
+desafío final:
 un laberinto
 ancestral,
 donde cada paso 
@@ -153,6 +156,15 @@ cambiarán sus
 destinos para
 siempre."
 label_settings = SubResource("LabelSettings_2mb4d")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 376.0
+offset_top = 272.0
+offset_right = 506.0
+offset_bottom = 309.0
+text = "Presiona 'e' para 
+continuar"
+label_settings = SubResource("LabelSettings_5uak1")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color(0, 0, 0, 0.255)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://daue5ks826ifw"]
+[gd_scene load_steps=11 format=3 uid="uid://daue5ks826ifw"]
 
 [ext_resource type="Texture2D" uid="uid://caucad2tphvg0" path="res://Assets/Catacumbas a palacio.webp" id="1_dtbvl"]
 [ext_resource type="Texture2D" uid="uid://c6nipqkjjutpd" path="res://Assets/cuadro negro.png" id="2_j4ji0"]
@@ -38,6 +38,11 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 
 [sub_resource type="LabelSettings" id="LabelSettings_2mb4d"]
 font = ExtResource("3_mq17b")
+
+[sub_resource type="LabelSettings" id="LabelSettings_in08d"]
+font = ExtResource("3_mq17b")
+font_size = 11
+font_color = Color(0.894516, 0.734163, 7.70092e-07, 1)
 
 [sub_resource type="Animation" id="Animation_77bra"]
 length = 0.001
@@ -160,10 +165,10 @@ texture = ExtResource("2_j4ji0")
 
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
-offset_left = 384.0
-offset_top = 16.0
-offset_right = 581.0
-offset_bottom = 429.0
+offset_left = 376.0
+offset_top = 8.0
+offset_right = 573.0
+offset_bottom = 421.0
 scale = Vector2(0.891808, 0.804299)
 text = "Después de 
 superar los 
@@ -182,6 +187,15 @@ respuestas
  y un nuevo
 desafío."
 label_settings = SubResource("LabelSettings_2mb4d")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 376.0
+offset_top = 272.0
+offset_right = 506.0
+offset_bottom = 309.0
+text = "Presiona 'e' para 
+continuar"
+label_settings = SubResource("LabelSettings_in08d")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color(0, 0, 0, 0.255)

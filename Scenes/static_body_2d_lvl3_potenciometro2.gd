@@ -62,7 +62,7 @@ func _on_potentiometer_changed(value: float):
 		porcentaje65.visible = false
 		porcentaje80.visible = false
 		porcentaje100.visible = false
-		Global.potenciometro2 = true #RANGO 30-45%
+		Global.potenciometro2 = false
 	elif value > 45 and value <= 50: #rango 45-50%
 		porcentaje0.visible = false
 		porcentaje10.visible = false
@@ -92,7 +92,7 @@ func _on_potentiometer_changed(value: float):
 		porcentaje65.visible = false
 		porcentaje80.visible = true
 		porcentaje100.visible = false
-		Global.potenciometro2 = false
+		Global.potenciometro2 = true #Rango 80 TRUE
 	elif value > 80 and value <= 100: #rango 65-80%
 		porcentaje0.visible = false
 		porcentaje10.visible = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://p85exmmap0v4"]
+[gd_scene load_steps=5 format=3 uid="uid://2bb83w80efff"]
 
 [ext_resource type="Script" path="res://Scenes/resolución.gd" id="1_mn6hu"]
 [ext_resource type="Texture2D" uid="uid://bnr7pg7nweilt" path="res://Assets/UI/lll.jpg" id="2_gafc7"]

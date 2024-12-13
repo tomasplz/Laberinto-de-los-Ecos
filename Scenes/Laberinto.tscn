@@ -5220,6 +5220,7 @@ size = Vector2(45, 25)
 
 [node name="Laberinto" type="Node2D"]
 position = Vector2(0, 195)
+scale = Vector2(0.998303, 0.987572)
 script = ExtResource("1_865jv")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
@@ -5247,6 +5248,7 @@ texture = ExtResource("23_jdeqf")
 
 [node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Antorchas"]
 position = Vector2(497, -115)
+scale = Vector2(1, 0.999315)
 sprite_frames = SubResource("SpriteFrames_0q335")
 frame_progress = 0.999967
 

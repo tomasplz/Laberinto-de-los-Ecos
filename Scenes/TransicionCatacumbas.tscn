@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cxl8m6rg3buel"]
+[gd_scene load_steps=11 format=3 uid="uid://cxl8m6rg3buel"]
 
 [ext_resource type="Script" path="res://Scripts/transicion_catacumbas.gd" id="1_dj200"]
 [ext_resource type="Texture2D" uid="uid://cxd8ngtdjy0o4" path="res://Assets/EntradaCatacumbas.webp" id="1_duovf"]
@@ -8,6 +8,11 @@
 [sub_resource type="LabelSettings" id="LabelSettings_2mb4d"]
 font = ExtResource("3_6w4i3")
 font_size = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_y32cp"]
+font = ExtResource("3_6w4i3")
+font_size = 11
+font_color = Color(0.894516, 0.734163, 7.70092e-07, 1)
 
 [sub_resource type="Animation" id="Animation_77bra"]
 length = 0.001
@@ -130,10 +135,10 @@ texture = ExtResource("2_cn45l")
 
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
-offset_left = 375.0
-offset_top = 17.0
-offset_right = 572.0
-offset_bottom = 430.0
+offset_left = 376.0
+offset_top = 5.0
+offset_right = 657.0
+offset_bottom = 527.0
 scale = Vector2(0.891808, 0.804299)
 text = "Los protagonistas 
 se embarcan
@@ -154,6 +159,15 @@ inesperadas
 y revelaciones 
 sorprendentes."
 label_settings = SubResource("LabelSettings_2mb4d")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 376.0
+offset_top = 272.0
+offset_right = 506.0
+offset_bottom = 309.0
+text = "Presiona 'e' para 
+continuar"
+label_settings = SubResource("LabelSettings_y32cp")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color(0, 0, 0, 0.255)

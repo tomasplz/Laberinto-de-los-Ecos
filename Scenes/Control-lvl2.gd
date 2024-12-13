@@ -1,6 +1,5 @@
 extends Control
 
-
 @onready var sprite_copa = $'../Area2D2/Sprite2D'  # Ajusta la ruta según tu estructura
 
 func _ready():
@@ -16,4 +15,3 @@ func _ready():
 	MusicLevelOne.stop()
 	MusicLevelTwo.play()
 	MusicLevelThree.stop()
-	
