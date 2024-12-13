@@ -12,6 +12,7 @@ extends Area2D
 var show_delay = 0.1 # Tiempo en segundos para mostrar los elementos
 var hide_delay = 0.2 # Tiempo en segundos para ocultar los elementos
 
+
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player1":
 		# Usar el nombre del nodo raíz de la escena actual

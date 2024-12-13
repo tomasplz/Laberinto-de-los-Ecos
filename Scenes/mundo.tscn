@@ -1,7 +1,8 @@
-[gd_scene load_steps=31 format=3 uid="uid://defvmyaelj307"]
+[gd_scene load_steps=36 format=3 uid="uid://defvmyaelj307"]
 
 [ext_resource type="PackedScene" uid="uid://ch0d331ek1f3y" path="res://Scenes/player_1.tscn" id="1_yq3mj"]
 [ext_resource type="PackedScene" uid="uid://c5nxkdgckbb4h" path="res://Scenes/player_2.tscn" id="2_hmquf"]
+[ext_resource type="Script" path="res://Scenes/control_nivel_dos.gd" id="2_uelku"]
 [ext_resource type="Script" path="res://Scripts/player_2.gd" id="3_1qo1q"]
 [ext_resource type="Texture2D" uid="uid://cumt00338knmv" path="res://Assets/World/Tileset.png" id="3_uyyai"]
 [ext_resource type="Texture2D" uid="uid://go8tbfdoeyy7" path="res://Assets/World/Props.png" id="4_ia8cj"]
@@ -13,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://bcamqfbgftqay" path="res://Assets/table.jpg" id="11_8sfqe"]
 [ext_resource type="Script" path="res://Scripts/gota_agua.gd" id="11_yh6oe"]
 [ext_resource type="Script" path="res://Scenes/nivel2-area_2d-copa1.gd" id="12_nna35"]
-[ext_resource type="Script" path="res://Scenes/area_2d_2.gd" id="16_kjixn"]
 [ext_resource type="PackedScene" uid="uid://il7w1uui7vxj" path="res://Scenes/Cristales.tscn" id="17_vfxu5"]
 [ext_resource type="Texture2D" uid="uid://c17d6a2itpipy" path="res://Assets/Fuente/Pergamino pixel art.png" id="18_a0xai"]
 [ext_resource type="FontFile" uid="uid://c1dye6pmg4ifm" path="res://Assets/Fuente/Pixel Times.ttf" id="19_lpqbr"]
@@ -10078,6 +10078,13 @@ size = Vector2(45, 25)
 
 [node name="Mundo" type="Node"]
 
+[node name="ControlNivelDos" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_uelku")
+
 [node name="Cristal" parent="." instance=ExtResource("17_vfxu5")]
 position = Vector2(110, 521)
 scale = Vector2(0.4, 0.4)
@@ -10225,7 +10232,6 @@ shape = SubResource("RectangleShape2D_g7wij")
 
 [node name="Area2D2" type="Area2D" parent="."]
 position = Vector2(750, 376)
-script = ExtResource("16_kjixn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2(3, 22)

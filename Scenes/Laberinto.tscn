@@ -1,7 +1,7 @@
 [gd_scene load_steps=64 format=4 uid="uid://dgq0cldnojgw8"]
 
-[ext_resource type="Script" path="res://Scripts/mapa_puzzle_matriz.gd" id="1_b422t"]
 [ext_resource type="Texture2D" uid="uid://fm0dc07arb8r" path="res://Assets/Mapa/Catacombs/mainlevbuild.png" id="2_dx55h"]
+[ext_resource type="Script" path="res://Scenes/control_nivel_tres.gd" id="2_hgs6d"]
 [ext_resource type="Texture2D" uid="uid://gcreeg8o85l" path="res://Assets/Potenciometro/potenciometro mini.png" id="9_r4coj"]
 [ext_resource type="Texture2D" uid="uid://deb83jttwtss4" path="res://Assets/Mapa/Mini_Dungeon_v1.0/Tilesets/Walls.png" id="9_w6upc"]
 [ext_resource type="Texture2D" uid="uid://b50y4arqgbiwj" path="res://Assets/Mapa/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png" id="10_k4hq6"]
@@ -5219,7 +5219,13 @@ size = Vector2(45, 25)
 
 [node name="Laberinto" type="Node2D"]
 position = Vector2(0, 195)
-script = ExtResource("1_b422t")
+
+[node name="ControlNivelTres" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_hgs6d")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.493544, 0.493546, 0.493545, 1)

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1f42pgyfg57a"]
+
+[ext_resource type="AudioStream" uid="uid://ciwn3q1psyu6i" path="res://Audios/aeon.mp3" id="1_e75de"]
+[ext_resource type="Script" path="res://Scripts/music_level_two.gd" id="1_jb2ot"]
+
+[node name="MusicLevelTwo" type="AudioStreamPlayer"]
+stream = ExtResource("1_e75de")
+script = ExtResource("1_jb2ot")
